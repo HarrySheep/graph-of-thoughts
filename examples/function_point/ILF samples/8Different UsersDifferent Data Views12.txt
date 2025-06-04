@@ -1,0 +1,6 @@
+| 可能的ILF功能点 | 实际是否ILF功能点 | 理由 |
+|------------------|------------------|------|
+| Employee information (HR Application) | 是 | 该数据组逻辑完整且用户可识别，包含员工基本信息，并通过HR应用中的基本流程维护。 |
+| Employee information (Mail Distribution Application) | 是 | 该数据组逻辑完整且用户可识别，包含员工邮件分发信息，并通过Mail Distribution应用中的基本流程维护。 |
+
+结论: 2个ILF功能点。

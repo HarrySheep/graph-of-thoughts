@@ -57,8 +57,15 @@ class ChatGPT(AbstractLanguageModel):
         self.api_key: str = os.getenv("OPENAI_API_KEY", self.config["api_key"])
         if self.api_key == "":
             raise ValueError("OPENAI_API_KEY is not set")
+        # Get base_url from config or use default None
+        self.base_url: str = self.config.get("base_url", "")
         # Initialize the OpenAI Client
-        self.client = OpenAI(api_key=self.api_key, organization=self.organization)
+        client_kwargs = {"api_key": self.api_key}
+        if self.organization:
+            client_kwargs["organization"] = self.organization
+        if self.base_url:
+            client_kwargs["base_url"] = self.base_url
+        self.client = OpenAI(**client_kwargs)
 
     def query(
         self, query: str, num_responses: int = 1

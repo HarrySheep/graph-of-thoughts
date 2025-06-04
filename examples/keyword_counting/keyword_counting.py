@@ -1402,14 +1402,24 @@ def run(
                     f"Budget has been depleted, stopping. Method {method.__name__} has not been run."
                 )
                 break
-            lm = language_models.ChatGPT(
-                os.path.join(
-                    os.path.dirname(__file__),
-                    "../../graph_of_thoughts/language_models/config.json",
-                ),
-                model_name=lm_name,
-                cache=True,
-            )
+            # if lm_name == "deepseek":
+            #     lm = language_models.DeepSeek(
+            #         os.path.join(
+            #             os.path.dirname(__file__),
+            #             "../../graph_of_thoughts/language_models/config.json",
+            #         ),
+            #         model_name=lm_name,
+            #         cache=True,
+            #     )
+            else:
+                lm = language_models.ChatGPT(
+                    os.path.join(
+                        os.path.dirname(__file__),
+                        "../../graph_of_thoughts/language_models/config.json",
+                    ),
+                    model_name=lm_name,
+                    cache=True,
+                )
             operations_graph = method(all_potential_countries)
             executor = controller.Controller(
                 lm,
@@ -1449,10 +1459,10 @@ if __name__ == "__main__":
     Output Example:
         {Spain: 2, ...}
     """
-    budget = 30
-    samples = [item for item in range(0, 100)]
-    approaches = [io, cot, tot, tot2, got4, got8, gotx]
+    budget = 5
+    samples = [0]  # 只使用第一个样本进行测试
+    approaches = [cot,tot]  # 只使用最简单的io方法进行测试
 
-    spent = run(samples, approaches, budget, "chatgpt")
+    spent = run(samples, approaches, budget, "deepseek")  # 改用deepseek模型
 
     logging.info(f"Spent {spent} out of {budget} budget.")
