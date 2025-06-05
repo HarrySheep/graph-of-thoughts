@@ -152,6 +152,51 @@ class FunctionPointPrompter(prompter.Prompter):
 
 最终答案：[是/否]"""
 
+    tot_improve_prompt = """你是一个IFPUG功能点分析专家。基于之前的分析结果进行改进：
+
+之前的判断：{current}
+
+[需求文档]
+{requirement_text}
+
+[候选功能点]
+名称：{candidate_name}
+
+请基于之前的判断进行改进：
+1. 分析之前判断的优点
+2. 找出可能的问题或遗漏
+3. 提出改进的思路
+4. 给出改进后的判断
+
+最终答案：[是/否]"""
+
+    perspective_prompt = """你是一个IFPUG功能点分析专家。请从{perspective}分析此功能点是否构成ILF：
+
+[需求文档]
+{requirement_text}
+
+[候选功能点]
+名称：{candidate_name}
+
+分析思路：
+1. ...
+2. ...
+
+最终答案：[是/否]"""
+
+    merge_prompt = """你是一个IFPUG功能点分析专家。请综合以下三个视角的分析结果：
+
+用户视角分析：{user_perspective}
+系统视角分析：{system_perspective}
+IFPUG规则视角分析：{ifpug_perspective}
+
+请综合考虑：
+1. 分析各视角的共识点
+2. 处理可能的分歧
+3. 权衡不同因素
+
+最终答案：[是/否]"""
+
     def generate_prompt(self, num_branches: int, original: str, current: str, method: str, **kwargs) -> str:
         """
         Generate a generate prompt for the language model.
@@ -182,7 +227,13 @@ class FunctionPointPrompter(prompter.Prompter):
                 candidate_name=kwargs["candidate_name"]
             )
         elif method.startswith("tot"):
-            return self.tot_prompt.format(
+            if current is None or current == "":
+                return self.tot_prompt.format(
+                    requirement_text=kwargs["requirement_text"],
+                    candidate_name=kwargs["candidate_name"]
+                )
+            return self.tot_improve_prompt.format(
+                current=current,
                 requirement_text=kwargs["requirement_text"],
                 candidate_name=kwargs["candidate_name"]
             )
@@ -390,14 +441,63 @@ def tot() -> operations.GraphOfOperations:
 def got() -> operations.GraphOfOperations:
     """
     Generates the Graph of Operations for the GoT method.
-
-    :return: Graph of Operations
-    :rtype: GraphOfOperations
+    使用图结构来分析ILF判断问题：
+    1. 从三个不同视角分析（用户视角、系统视角、IFPUG规则视角）
+    2. 每个视角生成多个思路
+    3. 合并和验证结果
     """
     operations_graph = operations.GraphOfOperations()
 
-    operations_graph.append_operation(operations.Generate(1, 1))
-    operations_graph.append_operation(operations.Score(1, False, score_assessment))
+    # 1. 首先从三个视角分别分析
+    sub_analyses = []
+    perspectives = ["用户视角", "系统视角", "IFPUG规则视角"]
+    
+    for perspective in perspectives:
+        # 1.1 选择特定视角
+        sub_analysis = operations.Selector(
+            lambda thoughts, p=perspective: [
+                thought for thought in thoughts 
+                if thought.state.get("perspective") == p
+            ]
+        )
+        operations_graph.add_operation(sub_analysis)
+
+        # 1.2 从该视角生成多个分析
+        generate = operations.Generate(1, 5)  # 每个视角生成5个思路
+        generate.add_predecessor(sub_analysis)
+        operations_graph.add_operation(generate)
+
+        # 1.3 评分并保留最佳
+        score = operations.Score(1, False, score_assessment)
+        score.add_predecessor(generate)
+        operations_graph.add_operation(score)
+        
+        keep_best = operations.KeepBestN(1, False)
+        keep_best.add_predecessor(score)
+        operations_graph.add_operation(keep_best)
+
+        sub_analyses.append(keep_best)
+
+    # 2. 合并三个视角的结果
+    aggregate = operations.Aggregate(3)  # 生成3个合并方案
+    for analysis in sub_analyses:
+        aggregate.add_predecessor(analysis)
+    operations_graph.add_operation(aggregate)
+
+    # 3. 验证和改进合并结果
+    validate_improve = operations.ValidateAndImprove(1, True, 3)
+    validate_improve.add_predecessor(aggregate)
+    operations_graph.add_operation(validate_improve)
+
+    # 4. 最终评分和验证
+    final_score = operations.Score(1, False, score_assessment)
+    final_score.add_predecessor(validate_improve)
+    operations_graph.add_operation(final_score)
+
+    keep_best_final = operations.KeepBestN(1, False)
+    keep_best_final.add_predecessor(final_score)
+    operations_graph.add_operation(keep_best_final)
+
     operations_graph.append_operation(operations.GroundTruth(test_ilf_assessment))
 
     return operations_graph
