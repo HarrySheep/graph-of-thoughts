@@ -1,0 +1,18 @@
+[
+    {
+        "systemName": "中台系统",
+        "complexityScore": 33.0
+    },
+    {
+        "systemName": "中台系统.1",
+        "complexityScore": 26.0
+    },
+    {
+        "systemName": "中台系统.2",
+        "complexityScore": 22.0
+    },
+    {
+        "systemName": "中台系统.3",
+        "complexityScore": 17.0
+    }
+]

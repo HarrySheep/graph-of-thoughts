@@ -3,7 +3,7 @@
 
 """
 功能点评估实验实现。
-使用不同的提示工程方法（IO、COT、TOT、GOT）来判断功能点是否为ILF。
+使用不同的提示工程方法（IO、COT、TOT、GOT）来判断功能点是否为EIF。
 """
 
 import os
@@ -16,7 +16,7 @@ from functools import partial, total_ordering
 from typing import Dict, List, Callable, Union
 from graph_of_thoughts import controller, language_models, operations, prompter, parser
 
-def test_ilf_assessment(state: Dict) -> bool:
+def test_eif_assessment(state: Dict) -> bool:
     """
     Function to test whether the final solution matches ground truth.
 
@@ -68,7 +68,7 @@ class FunctionPointPrompter(prompter.Prompter):
     Inherits from the Prompter class and implements its abstract methods.
     """
 
-    io_prompt = """你是一个IFPUG功能点分析专家。请判断给定的功能点是否构成内部逻辑文件（ILF）。
+    io_prompt = """你是一个IFPUG功能点分析专家。请判断给定的功能点是否构成外部接口文件（EIF）。
 只需回答"是"或"否"。
 
 [需求文档]
@@ -77,12 +77,12 @@ class FunctionPointPrompter(prompter.Prompter):
 [候选功能点]
 名称：{candidate_name}"""
 
-    cot_prompt = """你是一个IFPUG功能点分析专家。请判断给定的功能点是否构成内部逻辑文件（ILF）。
+    cot_prompt = """你是一个IFPUG功能点分析专家。请判断给定的功能点是否构成外部接口文件（EIF）。
 请按照以下步骤进行分析：
 
-1. 首先，判断是否是用户可识别的逻辑相关数据组
-2. 然后，判断是否在应用边界内维护
-3. 最后，判断是否通过应用的基本流程维护
+1. 首先，判断是否逻辑上独立且用户可识别
+2. 然后，判断是否被当前应用引用，但物理/逻辑上存在于当前应用之外
+3. 最后，判断是否不由当前应用进行维护（即只读，不增删改）
 4. 根据以上分析，得出最终结论
 
 [需求文档]
@@ -100,7 +100,7 @@ class FunctionPointPrompter(prompter.Prompter):
 
 最终答案：[是/否]"""
 
-    tot_prompt = """你是一个IFPUG功能点分析专家。请判断给定的功能点是否构成内部逻辑文件（ILF）。
+    tot_prompt = """你是一个IFPUG功能点分析专家。请判断给定的功能点是否构成外部接口文件（EIF）。
 
 [需求文档]
 {requirement_text}
@@ -108,7 +108,7 @@ class FunctionPointPrompter(prompter.Prompter):
 [候选功能点]
 名称：{candidate_name}
 
-请按以下方法分析候选功能点是否为ILF功能点：
+请按以下方法分析候选功能点是否为EIF功能点：
 
 1. 初步判断
    1.1 [第一印象]
@@ -116,11 +116,11 @@ class FunctionPointPrompter(prompter.Prompter):
 
 2. 深入分析
    2.1 数据组特征
-       - [分析数据的逻辑相关性]
+       - [分析数据是否逻辑上独立]
        - [分析用户可识别性]
-   2.2 维护方式
-       - [分析应用边界]
-       - [分析维护流程]
+   2.2 数据位置与访问方式
+       - [分析数据是否存在于应用边界之外]
+       - [分析应用是否仅引用（读取）该数据，不进行维护]
 
 3. 反向验证
    3.1 [考虑相反情况]
@@ -129,7 +129,7 @@ class FunctionPointPrompter(prompter.Prompter):
 4. 最终结论
    [是/否]"""
 
-    got_prompt = """你是一个IFPUG功能点分析专家。请判断给定的功能点是否构成内部逻辑文件（ILF）。
+    got_prompt = """你是一个IFPUG功能点分析专家。请判断给定的功能点是否构成外部接口文件（EIF）。
 
 [需求文档]
 {requirement_text}
@@ -142,7 +142,7 @@ class FunctionPointPrompter(prompter.Prompter):
 1. 需求分解
 - 识别关键数据实体
 - 分析数据关系
-- 标注维护方式
+- 标注数据来源和访问方式
 
 2. 多路径验证
 路径1：从用户视角
@@ -150,11 +150,11 @@ class FunctionPointPrompter(prompter.Prompter):
 - 用户是否能识别此数据组
 
 路径2：从系统视角
-- 数据是否在应用边界内
-- 是否有完整的维护流程
+- 数据是否存在于应用边界之外
+- 应用是否仅引用（读取）该数据，不进行增删改操作
 
 路径3：从IFPUG规则视角
-- 检查是否符合ILF定义
+- 检查是否符合EIF定义
 - 验证是否满足所有条件
 
 3. 结果合并
@@ -177,12 +177,12 @@ class FunctionPointPrompter(prompter.Prompter):
 请基于之前的判断进行改进：
 1. 分析之前判断的优点
 2. 找出可能的问题或遗漏
-3. 提出改进的思路
+3. 重新检查EIF的三个关键条件
 4. 给出改进后的判断
 
 最终答案：[是/否]"""
 
-    perspective_prompt = """你是一个IFPUG功能点分析专家。请从{perspective}分析此功能点是否构成ILF。
+    perspective_prompt = """你是一个IFPUG功能点分析专家。请从{perspective}分析此功能点是否构成EIF。
 
 [需求文档]
 {requirement_text}
@@ -192,17 +192,17 @@ class FunctionPointPrompter(prompter.Prompter):
 
 [分析视角说明]
 用户视角 - 关注：
-- 数据组是否满足完整的业务需求（不能只满足部分需求）
-- 数据组是否能独立存在，还是必须与其他数据组配合使用
+- 数据组是否逻辑上独立且用户可识别
+- 数据组是否能满足特定的业务需求
 - 数据组对用户是否有实际业务价值
 
 系统视角 - 关注：
-- 是否有完整的CRUD操作流程
-- 是否在应用边界内独立维护
-- 是否与其他数据有必要的关联关系
+- 数据是否物理/逻辑上存在于当前应用之外
+- 应用是否仅引用（读取）该数据，不进行增删改操作
+- 数据是否由其他应用或系统维护
 
 IFPUG规则视角 - 关注：
-- 是否满足ILF的所有必要条件
+- 是否满足EIF的所有必要条件（逻辑独立、外部存储、只读引用）
 - 是否存在反例或例外情况
 - 是否符合IFPUG的最佳实践
 
@@ -231,7 +231,7 @@ IFPUG规则视角 - 关注：
 
 该视角的判断：[是/否]"""
 
-    merge_prompt = """你是一个IFPUG功能点分析专家。请综合以下三个视角的分析结果，判断此功能点是否构成ILF。
+    merge_prompt = """你是一个IFPUG功能点分析专家。请综合以下三个视角的分析结果，判断此功能点是否构成EIF。
 
 [需求文档]
 {requirement_text}
@@ -250,17 +250,15 @@ IFPUG规则视角分析：
 {ifpug_perspective}
 
 [分析要求]
-1. 必须同时满足以下所有条件才能判定为ILF：
-   - 是用户可识别的完整逻辑相关数据组
-   - 在应用边界内维护
-   - 通过应用的基本流程维护
-   - 数据组必须能独立满足业务需求
-   - 具有完整的CRUD操作支持
+1. 必须同时满足以下所有条件才能判定为EIF：
+   - 逻辑上独立且用户可识别的数据组
+   - 被当前应用引用，但物理/逻辑上存在于当前应用之外
+   - 不由当前应用进行维护（即只读，不增删改）
 
-2. 存在以下任一情况就不能判定为ILF：
-   - 数据组不完整，需要与其他数据组配合使用
-   - 缺乏完整的维护流程
-   - 不在应用边界内维护
+2. 存在以下任一情况就不能判定为EIF：
+   - 数据由当前应用维护（有增删改操作）
+   - 数据存储在应用边界内
+   - 数据不是逻辑独立的
    - 不符合IFPUG规则的要求
 
 请按以下步骤综合分析：
@@ -277,11 +275,9 @@ IFPUG规则视角分析：
    IFPUG规则视角：[关键发现]
 
 2. 必要条件检查：
-   - 完整逻辑数据组：[是/否] - [理由]
-   - 应用边界内维护：[是/否] - [理由]
-   - 基本流程维护：[是/否] - [理由]
-   - 独立满足业务需求：[是/否] - [理由]
-   - CRUD操作支持：[是/否] - [理由]
+   - 逻辑上独立且用户可识别：[是/否] - [理由]
+   - 存在于应用边界之外：[是/否] - [理由]
+   - 仅引用不维护（只读）：[是/否] - [理由]
 
 3. 排除条件检查：
    [列出发现的任何排除条件]
@@ -569,7 +565,7 @@ def io() -> operations.GraphOfOperations:
 
     operations_graph.append_operation(operations.Generate(1, 1))
     operations_graph.append_operation(operations.Score(1, False, score_assessment))
-    operations_graph.append_operation(operations.GroundTruth(test_ilf_assessment))
+    operations_graph.append_operation(operations.GroundTruth(test_eif_assessment))
 
     return operations_graph
 
@@ -584,7 +580,7 @@ def cot() -> operations.GraphOfOperations:
 
     operations_graph.append_operation(operations.Generate(1, 1))
     operations_graph.append_operation(operations.Score(1, False, score_assessment))
-    operations_graph.append_operation(operations.GroundTruth(test_ilf_assessment))
+    operations_graph.append_operation(operations.GroundTruth(test_eif_assessment))
 
     return operations_graph
 
@@ -612,14 +608,14 @@ def tot() -> operations.GraphOfOperations:
         keep_best_1 = keep_best_2
 
     operations_graph.append_operation(operations.KeepBestN(1, True))  # True: 选择最高分数
-    operations_graph.append_operation(operations.GroundTruth(test_ilf_assessment))
+    operations_graph.append_operation(operations.GroundTruth(test_eif_assessment))
 
     return operations_graph
 
 def got() -> operations.GraphOfOperations:
     """
     Generates the Graph of Operations for the GoT method.
-    使用图结构来分析ILF判断问题：
+    使用图结构来分析EIF判断问题：
     1. 从三个不同视角分析（用户视角、系统视角、IFPUG规则视角）
     2. 每个视角生成多个思路并选择最佳
     3. 合并和验证结果
@@ -673,7 +669,7 @@ def got() -> operations.GraphOfOperations:
     operations_graph.add_operation(final_keep)
 
     # 4. 验证
-    operations_graph.append_operation(operations.GroundTruth(test_ilf_assessment))
+    operations_graph.append_operation(operations.GroundTruth(test_eif_assessment))
 
     return operations_graph
 
@@ -694,7 +690,7 @@ def run(data_ids: List[int], methods: List[Callable[[], operations.GraphOfOperat
     :rtype: float
     """
     orig_budget = budget
-    data_path = os.path.join(os.path.dirname(__file__), "ilf_samples.csv")
+    data_path = os.path.join(os.path.dirname(__file__), "eif_samples.csv")
     data = []
     with open(data_path, "r", encoding="gbk") as f:  # 使用 GBK 编码
         reader = csv.reader(f)
@@ -810,18 +806,18 @@ if __name__ == "__main__":
     print("=" * 50)
     
     budget = 5
-    samples = [8,9]  # 只使用第一个样本进行测试
+    samples = [0,1,2,3,4,5,6,7,8,9]  # 只使用第一个样本进行测试
     approaches = [got]  # 使用所有方法进行测试
 
     print(f"📊 实验配置:")
     print(f"   - 预算: ${budget}")
     print(f"   - 样本数量: {len(samples)}")
     print(f"   - 方法: {[method.__name__ for method in approaches]}")
-    print(f"   - 模型: qwen3")
+    print(f"   - 模型: qwen")
     print("=" * 50)
 
 
-    spent = run(samples, approaches, budget, "r1-7b")
+    spent = run(samples, approaches, budget, "qwen3-235b")
 
     print("=" * 50)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
     print(f"✅ 实验完成！")

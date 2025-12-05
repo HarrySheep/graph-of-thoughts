@@ -410,6 +410,7 @@ class Generate(Operation):
         self.num_branches_prompt: int = num_branches_prompt
         self.num_branches_response: int = num_branches_response
         self.thoughts: List[Thought] = []
+        self.initial_state: Dict = {}
 
     def get_thoughts(self) -> List[Thought]:
         """
@@ -442,11 +443,13 @@ class Generate(Operation):
             return
 
         if len(previous_thoughts) == 0:
-            # no predecessors, use kwargs as base state
-            previous_thoughts = [Thought(state=kwargs)]
+            # no predecessors, use initial_state and kwargs as base state
+            base_state = {**kwargs, **self.initial_state}
+            previous_thoughts = [Thought(state=base_state)]
 
         for thought in previous_thoughts:
-            base_state = thought.state
+            # 合并 initial_state 到基础状态中
+            base_state = {**thought.state, **self.initial_state}
             prompt = prompter.generate_prompt(self.num_branches_prompt, **base_state)
             self.logger.debug("Prompt for LM: %s", prompt)
             responses = lm.get_response_texts(

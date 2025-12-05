@@ -148,5 +148,5 @@ class Controller:
             }
         )
 
-        with open(path, "w") as file:
-            file.write(json.dumps(output, indent=2))
+        with open(path, "w", encoding="utf-8") as file:
+            json.dump(output, file, ensure_ascii=False, indent=2)

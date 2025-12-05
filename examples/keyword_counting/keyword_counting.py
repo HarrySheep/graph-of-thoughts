@@ -1461,7 +1461,7 @@ if __name__ == "__main__":
     """
     budget = 5
     samples = [0]  # 只使用第一个样本进行测试
-    approaches = [cot,tot]  # 只使用最简单的io方法进行测试
+    approaches = [tot]  # 只使用最简单的io方法进行测试
 
     spent = run(samples, approaches, budget, "deepseek")  # 改用deepseek模型
 

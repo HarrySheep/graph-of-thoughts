@@ -1,0 +1,7 @@
+| 可能的ILF功能点 | 实际是否ILF功能点 | 理由 |
+|------------------|------------------|------|
+| Job              | 否               | Job单独使用时不符合用户逻辑需求，必须包含Job description才能完整表示用户需求。 |
+| Job description  | 否               | Job description单独使用时不符合用户逻辑需求，必须与Job结合使用才能完整表示用户需求。 |
+| Job information  | 是               | Job和Job description合并后形成一个逻辑组，符合用户需求，并通过基本流程在应用边界内维护。 |
+
+结论: 1个ILF功能点。

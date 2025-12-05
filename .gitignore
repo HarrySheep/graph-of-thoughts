@@ -30,3 +30,7 @@ env/
 
 # Config File
 **/config.json
+
+# Local POC Data
+examples/poc/requirement fetch/
+examples/poc/系统复杂度评估20240711.xlsx

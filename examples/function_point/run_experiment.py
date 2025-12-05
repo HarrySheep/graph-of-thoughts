@@ -19,7 +19,8 @@ if __name__ == "__main__":
     # 配置日志
     logging.basicConfig(
         level=logging.INFO,
-        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+        encoding="utf-8"  # 添加 UTF-8 编码
     )
     logger = logging.getLogger(__name__)
 

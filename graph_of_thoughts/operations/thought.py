@@ -10,6 +10,7 @@ from __future__ import annotations
 import logging
 from typing import Iterator, Dict, Optional
 import itertools
+import copy
 
 
 class Thought:
@@ -40,11 +41,13 @@ class Thought:
     def from_thought(thought: Thought) -> Thought:
         """
         Creates a new thought from an existing one.
+        Performs a deep copy of the state to avoid reference sharing.
 
         :param thought: An instance of a Thought to clone.
         :return: A new Thought instance with properties copied from the input thought.
         """
-        new_thought = Thought(thought.state)
+        # 深复制状态以避免引用共享
+        new_thought = Thought(copy.deepcopy(thought.state))
         new_thought.score = thought.score
         new_thought.valid = thought.valid
         new_thought.solved = thought.solved
