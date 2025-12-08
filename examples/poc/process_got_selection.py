@@ -20,11 +20,15 @@ def import_module_from_path(module_name, file_path):
     return module
 
 # Import eif_selection and ilf_selection
-eif_path = os.path.join(os.path.dirname(current_dir), 'eif_selection', 'eif_selection.py')
-ilf_path = os.path.join(os.path.dirname(current_dir), 'ilf_selection', 'ilf_selection.py')
+# Import eif_selection and ilf_selection
+eif_path = os.path.join(current_dir, 'eif_selection_inference.py')
+ilf_path = os.path.join(current_dir, 'ilf_selection_inference.py')
 
 eif_module = import_module_from_path('eif_selection', eif_path)
 ilf_module = import_module_from_path('ilf_selection', ilf_path)
+
+trans_path = os.path.join(current_dir, 'transaction_selection_inference.py')
+trans_module = import_module_from_path('transaction_selection', trans_path)
 
 def process_got_selection(root_dir, limit=None):
     """
@@ -152,10 +156,44 @@ def process_got_selection(root_dir, limit=None):
                     if "final_answer" in best_thought_ilf.state:
                         ilf_result = best_thought_ilf.state["final_answer"]
 
+                # --- Transaction Selection (EI, EO, EQ) ---
+                # Use CoT as 'got' logic in transaction script might be incomplete for structure
+                trans_types = [("EI", trans_module.cot_ei), ("EO", trans_module.cot_eo), ("EQ", trans_module.cot_eq)]
+                trans_results = {}
+
+                for t_type, t_func in trans_types:
+                    logging.info(f"Running {t_type} Selection for {req_folder}")
+                    t_graph = t_func()
+                    t_controller = controller.Controller(
+                        lm,
+                        t_graph,
+                        trans_module.FunctionPointPrompter(),
+                        trans_module.FunctionPointParser(),
+                        {
+                            "requirement_text": requirement_text,
+                            "ground_truth": [],
+                            "current": "",
+                            "method": "cot",
+                            "function_type": t_type # Pass type to Prompter
+                        },
+                    )
+                    t_controller.run()
+                    
+                    t_result = []
+                    final_op_t = t_graph.operations[-1]
+                    if final_op_t.thoughts:
+                        best_thought_t = max(final_op_t.thoughts, key=lambda t: t.score if t.score is not None else 0)
+                        if "final_answer" in best_thought_t.state:
+                            t_result = best_thought_t.state["final_answer"]
+                    trans_results[t_type] = t_result
+
                 # Save Result
                 result_data = {
                     "EIF": eif_result,
-                    "ILF": ilf_result
+                    "ILF": ilf_result,
+                    "EI": trans_results["EI"],
+                    "EO": trans_results["EO"],
+                    "EQ": trans_results["EQ"]
                 }
                 
                 with open(output_path, 'w', encoding='utf-8') as f:
