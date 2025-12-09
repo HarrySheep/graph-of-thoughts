@@ -249,17 +249,24 @@ def process_directory(directory_path, verbose: bool = False):
         return
 
     try:
-        # Read GOT results
+        # Read GOT results (all categories)
         with open(got_file_path, 'r', encoding='utf-8') as f:
             got_data = json.load(f)
             got_ilf_list = got_data.get('ILF', [])
             got_eif_list = got_data.get('EIF', [])
+            got_ei_list = got_data.get('EI', [])
+            got_eo_list = got_data.get('EO', [])
+            got_eq_list = got_data.get('EQ', [])
+            
+            # 合并所有GOT条目（用于混合比较）
+            got_all_list = got_ilf_list + got_eif_list + got_ei_list + got_eo_list + got_eq_list
 
-        # Read Expert results
+        # Read Expert results (all categories)
         with open(expert_file_path, 'r', encoding='utf-8') as f:
             expert_data = json.load(f)
             expert_ilf_list = []
             expert_eif_list = []
+            expert_ef_list = []  # EF包括EI, EO, EQ等事务功能
             for item in expert_data:
                 f_type = item.get('functionType')
                 f_name = item.get('functionName', '')
@@ -267,6 +274,11 @@ def process_directory(directory_path, verbose: bool = False):
                     expert_ilf_list.append(f_name)
                 elif f_type == 'EIF':
                     expert_eif_list.append(f_name)
+                elif f_type == 'EF':
+                    expert_ef_list.append(f_name)
+            
+            # 合并所有Expert条目（用于混合比较）
+            expert_all_list = expert_ilf_list + expert_eif_list + expert_ef_list
 
         print(f"\n📁 处理: {os.path.basename(os.path.dirname(directory_path))}/{os.path.basename(directory_path)}")
         
@@ -278,10 +290,16 @@ def process_directory(directory_path, verbose: bool = False):
         if verbose:
             print("  📊 EIF比较:")
         eif_similarity = calculate_semantic_similarity(got_eif_list, expert_eif_list, verbose=verbose)
+        
+        # 混合比较（不区分类别）
+        if verbose:
+            print("  📊 混合比较（不区分类别）:")
+        mixed_similarity = calculate_semantic_similarity(got_all_list, expert_all_list, verbose=verbose)
 
         # Calculate simple count-based scores
         ilf_count_score = calculate_match_score(len(got_ilf_list), len(expert_ilf_list))
         eif_count_score = calculate_match_score(len(got_eif_list), len(expert_eif_list))
+        mixed_count_score = calculate_match_score(len(got_all_list), len(expert_all_list))
 
         result = {
             "summary": {
@@ -289,10 +307,14 @@ def process_directory(directory_path, verbose: bool = False):
                 "expert_ILF_count": len(expert_ilf_list),
                 "got_EIF_count": len(got_eif_list),
                 "expert_EIF_count": len(expert_eif_list),
+                "got_total_count": len(got_all_list),
+                "expert_total_count": len(expert_all_list),
                 "ilf_count_match_score": round(ilf_count_score, 2),
                 "eif_count_match_score": round(eif_count_score, 2),
+                "mixed_count_match_score": round(mixed_count_score, 2),
                 "ilf_semantic_f1": ilf_similarity["f1_score"],
                 "eif_semantic_f1": eif_similarity["f1_score"],
+                "mixed_semantic_f1": mixed_similarity["f1_score"],
                 "use_llm_semantic": _USE_LLM_SEMANTIC
             },
             "ILF_comparison": {
@@ -320,6 +342,19 @@ def process_directory(directory_path, verbose: bool = False):
                 "fuzzy_matches": eif_similarity["fuzzy_matches"],
                 "unmatched_predicted": eif_similarity["unmatched_predicted"],
                 "unmatched_ground_truth": eif_similarity["unmatched_ground_truth"]
+            },
+            "Mixed_comparison": {
+                "got_list": got_all_list,
+                "expert_list": expert_all_list,
+                "semantic_metrics": {
+                    "f1_score": mixed_similarity["f1_score"],
+                    "precision": mixed_similarity["precision"],
+                    "recall": mixed_similarity["recall"]
+                },
+                "exact_matches": mixed_similarity["exact_matches"],
+                "fuzzy_matches": mixed_similarity["fuzzy_matches"],
+                "unmatched_predicted": mixed_similarity["unmatched_predicted"],
+                "unmatched_ground_truth": mixed_similarity["unmatched_ground_truth"]
             }
         }
 
@@ -331,6 +366,7 @@ def process_directory(directory_path, verbose: bool = False):
         # Print summary
         print(f"   ILF: GOT={len(got_ilf_list)}, Expert={len(expert_ilf_list)}, F1={ilf_similarity['f1_score']:.3f} (P={ilf_similarity['precision']:.2f}, R={ilf_similarity['recall']:.2f})")
         print(f"   EIF: GOT={len(got_eif_list)}, Expert={len(expert_eif_list)}, F1={eif_similarity['f1_score']:.3f} (P={eif_similarity['precision']:.2f}, R={eif_similarity['recall']:.2f})")
+        print(f"   🔀 混合: GOT={len(got_all_list)}, Expert={len(expert_all_list)}, F1={mixed_similarity['f1_score']:.3f} (P={mixed_similarity['precision']:.2f}, R={mixed_similarity['recall']:.2f})")
         
         # Print match details
         if ilf_similarity["exact_matches"]:
@@ -352,6 +388,13 @@ def process_directory(directory_path, verbose: bool = False):
             print(f"   EIF未匹配(GOT): {eif_similarity['unmatched_predicted']}")
         if eif_similarity["unmatched_ground_truth"]:
             print(f"   EIF未匹配(Expert): {eif_similarity['unmatched_ground_truth']}")
+        
+        # Print mixed match details
+        if mixed_similarity["exact_matches"]:
+            print(f"   🔀混合精确匹配({len(mixed_similarity['exact_matches'])}): {[m['predicted'] for m in mixed_similarity['exact_matches']]}")
+        if mixed_similarity["fuzzy_matches"]:
+            mixed_fuzzy_strs = [f"{m['predicted']} ↔ {m['ground_truth']} ({m['score']})" for m in mixed_similarity['fuzzy_matches']]
+            print(f"   🔀混合语义匹配({len(mixed_similarity['fuzzy_matches'])}): {mixed_fuzzy_strs}")
 
     except Exception as e:
         print(f"❌ Error processing {directory_path}: {e}")
@@ -365,6 +408,7 @@ def main():
     parser.add_argument('--use-llm', action='store_true', help='使用LLM进行语义比较（更精确但有API成本）')
     parser.add_argument('--model', type=str, default='deepseek', help='LLM模型名称')
     parser.add_argument('--verbose', action='store_true', help='显示详细的匹配过程')
+    parser.add_argument('--limit', type=int, default=None, help='限制处理的目录数量')
     args = parser.parse_args()
     
     base_dir = os.path.join(os.path.dirname(__file__), 'requirement fetch')
@@ -376,16 +420,30 @@ def main():
     # 初始化LLM（如果启用）
     init_llm(model_name=args.model, use_semantic=args.use_llm)
     
+    if args.limit:
+        print(f"📌 限制处理数量: {args.limit}")
+    
     processed_count = 0
+    
+    skipped_count = 0
     
     # Walk through the directory
     for root, dirs, files in os.walk(base_dir):
+        if args.limit and processed_count >= args.limit:
+            print(f"\n⏹️ 已达到限制数量 {args.limit}，停止处理")
+            break
+            
         if 'got_selection_result.json' in files and 'functions_cleaned.json' in files:
+            # 跳过已有comparison_result.json的目录
+            if 'comparison_result.json' in files:
+                skipped_count += 1
+                continue
+            
             process_directory(root, verbose=args.verbose)
             processed_count += 1
     
     print("\n" + "=" * 70)
-    print(f"✅ 处理完成，共处理 {processed_count} 个目录")
+    print(f"✅ 处理完成，共处理 {processed_count} 个目录，跳过 {skipped_count} 个已处理目录")
     if _USE_LLM_SEMANTIC and _LLM_INSTANCE:
         print(f"💰 LLM API成本: ${_LLM_INSTANCE.cost:.4f}")
     print("=" * 70)

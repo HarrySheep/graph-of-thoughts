@@ -1,0 +1,1086 @@
+2025-12-09 10:07:58,783 - INFO - ============================================================
+2025-12-09 10:07:58,790 - INFO - Starting requirement document filtering
+2025-12-09 10:07:58,790 - INFO - Model: qwen3-235b
+2025-12-09 10:07:58,790 - INFO - Dry run: True
+2025-12-09 10:07:58,791 - INFO - ============================================================
+2025-12-09 10:07:59,455 - INFO - Processing month: 2024-02
+2025-12-09 10:07:59,472 - INFO - Found 24 requirement files in 2024-02
+2025-12-09 10:08:00,391 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:08:00,392 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '185041d43582a92a'}
+2025-12-09 10:08:00,400 - INFO - KEEP: CR2402011383_个性化分期账务中心配套需求 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '185041d43582a92a'}
+2025-12-09 10:08:00,510 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:08:00,510 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '5acfe557278d5361'}
+2025-12-09 10:08:00,511 - INFO - KEEP: CR2402011586_个性化分期调账平台配套需求 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '5acfe557278d5361'}
+2025-12-09 10:08:00,621 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:08:00,623 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '2e5aeff273868ad5'}
+2025-12-09 10:08:00,624 - INFO - KEEP: CR2402022546_抖音月付新增机构授信及清退文件对接需求说明书 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '2e5aeff273868ad5'}
+2025-12-09 10:08:00,730 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:08:00,731 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': 'f67320f1011cb3ec'}
+2025-12-09 10:08:00,732 - INFO - KEEP: CR2402053522_渠道号申请审批流程修改 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': 'f67320f1011cb3ec'}
+2025-12-09 10:08:00,858 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:08:00,859 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': 'b518a85d36bffc58'}
+2025-12-09 10:08:00,859 - INFO - KEEP: CR2402053902_新增客户各产品额度状态标签 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': 'b518a85d36bffc58'}
+2025-12-09 10:08:00,979 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:08:00,979 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '2f68df3cd4b525a6'}
+2025-12-09 10:08:00,979 - INFO - KEEP: CR2402064355_新增客户外部价值模型相关标签 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '2f68df3cd4b525a6'}
+2025-12-09 10:08:01,077 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:08:01,078 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '033680df907a2ae2'}
+2025-12-09 10:08:01,078 - INFO - KEEP: CR2402185542_手工短信功能优化需求 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '033680df907a2ae2'}
+2025-12-09 10:08:01,206 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:08:01,207 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '85f68d0f04a4b499'}
+2025-12-09 10:08:01,207 - INFO - KEEP: CR2402185696_贷款用途选项修改 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '85f68d0f04a4b499'}
+2025-12-09 10:08:01,337 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:08:01,338 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '20c928ca2b899862'}
+2025-12-09 10:08:01,339 - INFO - KEEP: CR2402196507_机器人系统2月迭代需求 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '20c928ca2b899862'}
+2025-12-09 10:08:01,465 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:08:01,465 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '335e913aa356375c'}
+2025-12-09 10:08:01,466 - INFO - KEEP: CR2402206916_风险监管报表新增美团生活费（纯引流）改造需求 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '335e913aa356375c'}
+2025-12-09 10:08:01,577 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:08:01,578 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': 'b65231cc27e07992'}
+2025-12-09 10:08:01,578 - INFO - KEEP: CR2402207169_BI报表新增拍拍贷改造需求 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': 'b65231cc27e07992'}
+2025-12-09 10:08:01,691 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:08:01,691 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '2b94598133f84b0c'}
+2025-12-09 10:08:01,691 - INFO - KEEP: CR2402228658_中邮消费金融公司蚂蚁贷超产品功能需求（客服部分） - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '2b94598133f84b0c'}
+2025-12-09 10:08:01,819 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:08:01,820 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': 'a14d0b894a3cc18e'}
+2025-12-09 10:08:01,820 - INFO - KEEP: CR2402228689_客服身份核实流程优化需求 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': 'a14d0b894a3cc18e'}
+2025-12-09 10:09:02,474 - INFO - ============================================================
+2025-12-09 10:09:02,475 - INFO - Starting requirement document filtering
+2025-12-09 10:09:02,475 - INFO - Model: qwen3-235b
+2025-12-09 10:09:02,476 - INFO - Dry run: True
+2025-12-09 10:09:02,476 - INFO - ============================================================
+2025-12-09 10:09:03,073 - INFO - Processing month: 2024-02
+2025-12-09 10:09:03,077 - INFO - Found 24 requirement files in 2024-02
+2025-12-09 10:09:03,949 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:09:03,951 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '5b88e2dcb73185af'}
+2025-12-09 10:09:03,951 - INFO - KEEP: CR2402011383_个性化分期账务中心配套需求 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '5b88e2dcb73185af'}
+2025-12-09 10:09:04,054 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:09:04,054 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '02d5ac0e1b2b42ff'}
+2025-12-09 10:09:04,055 - INFO - KEEP: CR2402011586_个性化分期调账平台配套需求 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '02d5ac0e1b2b42ff'}
+2025-12-09 10:09:04,150 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:09:04,151 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': 'bc5a861e669a4451'}
+2025-12-09 10:09:04,151 - INFO - KEEP: CR2402022546_抖音月付新增机构授信及清退文件对接需求说明书 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': 'bc5a861e669a4451'}
+2025-12-09 10:09:04,244 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:09:04,245 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '98689e620f6e4ac0'}
+2025-12-09 10:09:04,245 - INFO - KEEP: CR2402053522_渠道号申请审批流程修改 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '98689e620f6e4ac0'}
+2025-12-09 10:09:04,338 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:09:04,339 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '515ead46c3075269'}
+2025-12-09 10:09:04,339 - INFO - KEEP: CR2402053902_新增客户各产品额度状态标签 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '515ead46c3075269'}
+2025-12-09 10:09:04,432 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:09:04,433 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '8e11b48c9f1c0a2c'}
+2025-12-09 10:09:04,434 - INFO - KEEP: CR2402064355_新增客户外部价值模型相关标签 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '8e11b48c9f1c0a2c'}
+2025-12-09 10:09:04,542 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:09:04,542 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '94b83df30cca1170'}
+2025-12-09 10:09:04,542 - INFO - KEEP: CR2402185542_手工短信功能优化需求 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '94b83df30cca1170'}
+2025-12-09 10:09:04,646 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:09:04,647 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '2e651f375f37ba67'}
+2025-12-09 10:09:04,648 - INFO - KEEP: CR2402185696_贷款用途选项修改 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '2e651f375f37ba67'}
+2025-12-09 10:09:04,766 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:09:04,767 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': 'd103196af9bce08f'}
+2025-12-09 10:09:04,767 - INFO - KEEP: CR2402196507_机器人系统2月迭代需求 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': 'd103196af9bce08f'}
+2025-12-09 10:09:04,859 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:09:04,860 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': 'f694b72686d3b6cc'}
+2025-12-09 10:09:04,861 - INFO - KEEP: CR2402206916_风险监管报表新增美团生活费（纯引流）改造需求 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': 'f694b72686d3b6cc'}
+2025-12-09 10:09:04,956 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:09:04,957 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '9f536b1f62ce2827'}
+2025-12-09 10:09:04,957 - INFO - KEEP: CR2402207169_BI报表新增拍拍贷改造需求 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '9f536b1f62ce2827'}
+2025-12-09 10:09:05,058 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:09:05,058 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': 'a23deb6c7141f3c3'}
+2025-12-09 10:09:05,059 - INFO - KEEP: CR2402228658_中邮消费金融公司蚂蚁贷超产品功能需求（客服部分） - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': 'a23deb6c7141f3c3'}
+2025-12-09 10:09:05,162 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:09:05,162 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '6a90323d5e0b782b'}
+2025-12-09 10:09:05,163 - INFO - KEEP: CR2402228689_客服身份核实流程优化需求 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '6a90323d5e0b782b'}
+2025-12-09 10:09:05,360 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:09:05,360 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '701553f311ba0494'}
+2025-12-09 10:09:05,360 - INFO - KEEP: CR2402238926_乐信担保引流项目需求（风险需求） - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '701553f311ba0494'}
+2025-12-09 10:09:05,482 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:09:05,482 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '5b6923d9755cd3f2'}
+2025-12-09 10:09:05,482 - INFO - KEEP: CR2402239027_奇富数科小程序引流 风险需求 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '5b6923d9755cd3f2'}
+2025-12-09 10:09:05,597 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:09:05,598 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': 'af3a1bc9169a488a'}
+2025-12-09 10:09:05,598 - INFO - KEEP: CR2402239379_蚂蚁贷超引流业务需求说明书（风险需求） - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': 'af3a1bc9169a488a'}
+2025-12-09 10:09:05,711 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:09:05,712 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '4a7e0547fcbab2a8'}
+2025-12-09 10:09:05,712 - INFO - KEEP: CR2402269645_数字化转型策略可信度追踪 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '4a7e0547fcbab2a8'}
+2025-12-09 10:09:05,820 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:09:05,821 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': 'dd719dcc5cb16386'}
+2025-12-09 10:09:05,822 - INFO - KEEP: CR2402269897_关于修改老带新重构活动的现金红包报税记录的需求 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': 'dd719dcc5cb16386'}
+2025-12-09 10:09:05,941 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:09:05,942 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '4cd259a14243b0a6'}
+2025-12-09 10:09:05,943 - INFO - KEEP: CR2402270377_新增额度使用率相关标签 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '4cd259a14243b0a6'}
+2025-12-09 10:09:06,074 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:09:06,075 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': 'b029967244a5c49b'}
+2025-12-09 10:09:06,075 - INFO - KEEP: CR2402271117_新增贷款用途总次数总金额相关标签 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': 'b029967244a5c49b'}
+2025-12-09 10:09:06,191 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:09:06,192 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': 'e1c19a22bea653dd'}
+2025-12-09 10:09:06,193 - INFO - KEEP: CR2402271149_客服系统工单大模型_客户问题总结生成优化V1.2 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': 'e1c19a22bea653dd'}
+2025-12-09 10:09:06,309 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:09:06,310 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '1079e6514ef4b0f9'}
+2025-12-09 10:09:06,310 - INFO - KEEP: CR2402281793_模型变更机器人通知需求 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '1079e6514ef4b0f9'}
+2025-12-09 10:09:06,418 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:09:06,419 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '63a3aeaf6a199cd8'}
+2025-12-09 10:09:06,419 - INFO - KEEP: CR2402292159_风险管理大屏、风险预警大屏客群选项改造需求 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': '63a3aeaf6a199cd8'}
+2025-12-09 10:09:06,533 - INFO - HTTP Request: POST https://api.scnet.cn/api/llm/v1/chat/completions "HTTP/1.1 422 Unprocessable Entity"
+2025-12-09 10:09:06,534 - ERROR - Error calling LLM: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': 'ea25dadf8c352dd4'}
+2025-12-09 10:09:06,534 - INFO - KEEP: CR2402292750_策略可信度BI平台需求 - LLM调用失败: Error code: 422 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': '422'}, 'request_id': 'ea25dadf8c352dd4'}
+2025-12-09 10:09:06,535 - INFO - ============================================================
+2025-12-09 10:09:06,535 - INFO - Processing complete!
+2025-12-09 10:09:06,535 - INFO - Total kept: 24
+2025-12-09 10:09:06,535 - INFO - Total moved to rubbish2: 0
+2025-12-09 10:09:06,536 - INFO - ============================================================
+2025-12-09 10:10:27,109 - INFO - ============================================================
+2025-12-09 10:10:27,109 - INFO - Starting requirement document filtering
+2025-12-09 10:10:27,110 - INFO - Model: deepseek
+2025-12-09 10:10:27,110 - INFO - Dry run: True
+2025-12-09 10:10:27,110 - INFO - ============================================================
+2025-12-09 10:10:27,728 - INFO - Processing month: 2024-02
+2025-12-09 10:10:27,732 - INFO - Found 24 requirement files in 2024-02
+2025-12-09 10:10:28,450 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:10:31,534 - INFO - KEEP: CR2402011383_个性化分期账务中心配套需求 - 该文档标题为“业务需求说明书”，包含需求背景、业务目标、业务流程、需求详情等结构化章节，详细描述了系统功能、业务规则和入账逻辑，符合软件需求文档的特征。
+2025-12-09 10:10:31,755 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:10:35,012 - INFO - KEEP: CR2402011586_个性化分期调账平台配套需求 - 该文档标题为“业务需求说明书”，具备标准的软件需求文档结构，包含需求背景、业务目标、业务流程、需求详情等章节，并详细描述了系统功能、业务规则和接口要求，符合软件需求文档的特征。
+2025-12-09 10:10:35,124 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:10:38,740 - INFO - KEEP: CR2402022546_抖音月付新增机构授信及清退文件对接需求说明书 - 该文档标题为“需求说明书”，结构包含需求背景、业务目标、业务功能需求（含流程图和业务规则说明）、非功能需求等典型软件需求文档章节，详细描述了系统功能、文件交互流程、业务规则及接口要求，符合软件需求文档的特征。
+2025-12-09 10:10:38,857 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:10:41,873 - INFO - KEEP: CR2402053522_渠道号申请审批流程修改 - 该文档包含需求背景、范围、功能模块说明和详细的需求说明，具体描述了系统功能修改、业务规则、界面控件行为和接口送值规则，符合软件需求文档的结构化特征。
+2025-12-09 10:10:41,990 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:10:45,668 - INFO - KEEP: CR2402053902_新增客户各产品额度状态标签 - 该文档具备软件需求文档的核心特征：包含明确的需求背景、业务目标（筛选客户、规避风险）、结构化功能描述（标签概述、配置规则）、具体业务规则说明（标签配置逻辑与应用场景），且内容完整超过100字。
+2025-12-09 10:10:45,788 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:10:48,734 - INFO - KEEP: CR2402064355_新增客户外部价值模型相关标签 - 该文本具有明确的软件需求文档特征：包含“需求背景”、“需求价值”、“需求内容”等结构化章节，并具体描述了拟新增“客户外部价值”标签的功能点，旨在为系统开发提供明确的需求说明。
+2025-12-09 10:10:48,848 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:10:52,220 - INFO - KEEP: CR2402185542_手工短信功能优化需求 - 该文档标题为“需求规格说明书”，包含需求背景、功能说明、业务流程描述、操作界面、岗位权限等结构化章节，详细描述了系统功能变更、业务规则和计算逻辑，符合软件需求文档的特征。
+2025-12-09 10:10:52,480 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:10:56,823 - INFO - KEEP: CR2402185696_贷款用途选项修改 - 该文档包含明确的软件需求文档特征：有需求背景（监管要求）、需求概述、范围说明、详细的功能需求描述（贷款用途枚举值修改、多个弹窗的触发规则与文案变更）、业务规则说明（相同贷款用途的异常判断逻辑），以及结构化的需求说明章节。内容针对系统功能修改提出具体技术要求，符合软件需求文档的定义。
+2025-12-09 10:10:56,931 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:11:01,702 - INFO - KEEP: CR2402196507_机器人系统2月迭代需求 - 该文档标题为“需求说明书”，具有软件需求文档的典型结构化特征：包含需求概述（背景、目标、业务流程）、需求与功能点清单、详细的功能需求规格说明（如功能描述、业务规则、操作界面、权限等）以及非功能需求章节。文档内容具体描述了系统功能优化点（如模糊搜索、导出功能）和业务规则，符合软件需求文档的定义。
+2025-12-09 10:11:01,815 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:11:04,914 - INFO - KEEP: CR2402206916_风险监管报表新增美团生活费（纯引流）改造需求 - 该文档标题为“需求说明书”，并包含需求概述、需求背景、业务目标、功能需求等典型软件需求文档的结构化章节，明确描述了系统改造的功能目标（监管报表改造）和业务背景（新增美团生活费业务）。
+2025-12-09 10:11:05,118 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:11:08,442 - INFO - KEEP: CR2402207169_BI报表新增拍拍贷改造需求 - 该文档标题为《业务需求说明书》，并包含需求概述、需求背景、业务目标、功能需求等典型软件需求文档章节结构。内容描述了新增产品属性、监管报表改造的具体功能需求（如统计逻辑、指标要求）和业务规则，符合软件需求文档的特征。
+2025-12-09 10:11:08,560 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:11:12,594 - INFO - KEEP: CR2402228658_中邮消费金融公司蚂蚁贷超产品功能需求（客服部分） - 该文档具有软件需求文档的典型特征：包含需求背景、业务目标、功能描述等结构化章节；详细描述了系统功能（结清证明对接的业务流程、系统交互逻辑）和业务规则；提供了明确的证明模板和字段说明；文档结构完整，内容实质超过100字。
+2025-12-09 10:11:12,726 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:11:15,684 - INFO - KEEP: CR2402228689_客服身份核实流程优化需求 - 该文档包含需求背景、业务目标、详细的功能描述（如机器人接口、客服系统、在线系统的具体优化点）、业务流程说明和接口要求，具有明确的结构化需求特征，符合软件需求文档的定义。
+2025-12-09 10:11:15,920 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:11:19,967 - INFO - KEEP: CR2402238926_乐信担保引流项目需求（风险需求） - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程、功能点清单（如信审页面功能、决策流程节点、报表功能等）、接口要求、非功能需求章节，且内容详细、结构完整，符合需求说明书的典型格式。
+2025-12-09 10:11:20,104 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:11:24,979 - INFO - KEEP: CR2402239027_奇富数科小程序引流 风险需求 - 该文档具备软件需求文档的核心特征：1. 包含明确的需求背景、业务目标章节；2. 详细描述了业务流程（授信/用信流程图）、系统功能（决策流程节点、接口清单、数据校验等）和业务规则；3. 提供了结构化的需求描述（如功能点清单、流程说明、接口清单）；4. 文档整体结构完整，包含目录、修订记录及需求规格说明等标准章节，符合软件需求文档的典型格式。
+2025-12-09 10:11:25,100 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:11:28,398 - INFO - KEEP: CR2402239379_蚂蚁贷超引流业务需求说明书（风险需求） - 该文档标题为“需求说明书”，并包含典型的软件需求文档结构，如需求背景、业务目标、业务流程、功能需求、非功能需求、接口清单等章节，详细描述了系统功能、业务规则和交互要求，符合软件需求文档的特征。
+2025-12-09 10:11:28,528 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:11:31,983 - INFO - KEEP: CR2402269645_数字化转型策略可信度追踪 - 该文档具有软件需求文档的典型特征：包含需求背景、业务目标、功能需求清单、结构化功能描述（如页面交互逻辑、计算规则、数据存储要求）、非功能需求章节等，且文档标题和结构明确为需求说明书。
+2025-12-09 10:11:32,093 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:11:35,224 - INFO - REMOVE: CR2402269897_关于修改老带新重构活动的现金红包报税记录的需求 - 文本内容为系统集成测试报告（SIT报告），包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告类别，而非描述需求背景、功能、业务流程的软件需求文档。
+2025-12-09 10:11:35,374 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:11:38,869 - INFO - KEEP: CR2402270377_新增额度使用率相关标签 - 该文本具有软件需求文档的典型特征：标题明确为“需求文档”，并包含“需求背景”、“需求价值”、“需求内容”等结构化章节，具体描述了要新增的标签（功能点）及其业务目标，符合需求文档的定义。
+2025-12-09 10:11:38,980 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:11:43,213 - INFO - KEEP: CR2402271117_新增贷款用途总次数总金额相关标签 - 该文本具备软件需求文档的核心特征：包含明确的需求背景（配套CR2402185696）、业务目标（用于渠道控制）、以及结构化的功能描述（详细列举了拟新增的14个/16个用户属性标签及其计算规则）。文档结构完整，有目录、修订记录等章节，内容聚焦于系统需要实现的新功能点。
+2025-12-09 10:11:43,366 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:11:46,403 - INFO - KEEP: CR2402271149_客服系统工单大模型_客户问题总结生成优化V1.2 - 该文档标题为“业务需求说明书”，内容包含需求背景、业务目标、功能说明、业务规则、操作界面描述、数据需求及埋点等结构化章节，符合软件需求文档的特征。
+2025-12-09 10:11:46,515 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:11:49,736 - INFO - KEEP: CR2402281793_模型变更机器人通知需求 - 该文档标题为《业务需求说明书》，具有软件需求文档的典型结构（需求概述、需求规格说明等章节），并明确描述了功能需求（模型变更时发送通知的具体规则和内容格式），符合软件需求文档的特征。
+2025-12-09 10:11:49,849 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:11:53,846 - INFO - KEEP: CR2402292159_风险管理大屏、风险预警大屏客群选项改造需求 - 第二个文档（需求说明书）包含需求背景、业务目标、功能需求清单和明确的功能点说明（如删除筛选维度、数据重跑规则），符合软件需求文档的结构化特征。第一个文档是测试报告，不属于需求文档，但整体输入包含需求文档内容。
+2025-12-09 10:11:53,941 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:11:56,674 - INFO - KEEP: CR2402292750_策略可信度BI平台需求 - 文档标题为《业务需求书》，且内容结构包含需求背景、业务目标、功能描述等典型需求文档章节，符合软件需求文档的特征。
+2025-12-09 10:11:56,674 - INFO - ============================================================
+2025-12-09 10:11:56,674 - INFO - Processing complete!
+2025-12-09 10:11:56,674 - INFO - Total kept: 23
+2025-12-09 10:11:56,675 - INFO - Total moved to rubbish2: 1
+2025-12-09 10:11:56,675 - INFO - ============================================================
+2025-12-09 10:12:19,030 - INFO - ============================================================
+2025-12-09 10:12:19,030 - INFO - Starting requirement document filtering
+2025-12-09 10:12:19,030 - INFO - Model: deepseek
+2025-12-09 10:12:19,030 - INFO - Dry run: False
+2025-12-09 10:12:19,031 - INFO - ============================================================
+2025-12-09 10:12:19,645 - INFO - Processing month: 2024-02
+2025-12-09 10:12:19,648 - INFO - Found 24 requirement files in 2024-02
+2025-12-09 10:12:20,322 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:12:23,945 - INFO - KEEP: CR2402011383_个性化分期账务中心配套需求 - 该文档标题为“业务需求说明书”，包含需求背景、业务目标、业务流程等结构化章节，并详细描述了系统功能、业务规则和入账逻辑等具体需求点，符合软件需求文档的特征。
+2025-12-09 10:12:24,053 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:12:26,938 - INFO - KEEP: CR2402011586_个性化分期调账平台配套需求 - 该文档标题为“业务需求说明书”，包含需求背景、业务目标、业务流程等标准章节，并详细描述了系统功能、业务规则、接口要求等结构化需求，符合软件需求文档的特征。
+2025-12-09 10:12:27,071 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:12:30,727 - INFO - KEEP: CR2402022546_抖音月付新增机构授信及清退文件对接需求说明书 - 文档标题为“需求说明书”，结构包含需求背景、业务目标、业务功能需求（含流程图和业务规则说明）、非功能需求等典型需求文档章节，并详细描述了系统功能、文件交互流程、业务规则和接口要求，符合软件需求文档的特征。
+2025-12-09 10:12:30,926 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:12:33,821 - INFO - KEEP: CR2402053522_渠道号申请审批流程修改 - 该文档包含需求背景、范围、功能模块说明和详细的需求说明，具体描述了系统功能修改、业务规则、界面控件行为和接口送值规则，具有软件需求文档的结构化特征。
+2025-12-09 10:12:33,949 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:12:36,874 - INFO - KEEP: CR2402053902_新增客户各产品额度状态标签 - 该文档标题明确为需求文档，内容包含需求背景、需求价值、需求内容等结构化章节，详细描述了新增标签的功能目标、应用场景和具体的业务规则（如标签配置规则），符合软件需求文档的特征。
+2025-12-09 10:12:36,986 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:12:40,354 - INFO - KEEP: CR2402064355_新增客户外部价值模型相关标签 - 该文本具有明确的软件需求文档特征：包含“需求背景”、“需求价值”、“需求内容”等结构化章节，并具体描述了拟新增“客户外部价值”标签的功能点，旨在为系统开发提供明确的需求说明。
+2025-12-09 10:12:40,488 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:12:43,507 - INFO - KEEP: CR2402185542_手工短信功能优化需求 - 该文档标题为“需求规格说明书”，包含需求背景、功能说明、业务流程描述、操作界面、岗位权限等结构化章节，详细描述了系统功能变更、业务规则和计算逻辑，符合软件需求文档的特征。
+2025-12-09 10:12:43,627 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:12:48,614 - INFO - KEEP: CR2402185696_贷款用途选项修改 - 该文档包含明确的软件需求文档特征：有需求背景（监管要求）、业务目标、详细的功能描述（贷款用途枚举值修改、多个弹窗的触发规则与文案变更）、结构化的需求说明（分章节、功能点列表、业务规则说明），并描述了系统功能、业务流程及接口要求（如与后管配置、数据表的交互）。内容不属于非需求文档的类别（如测试报告、会议纪要等）。
+2025-12-09 10:12:48,725 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:12:53,256 - INFO - KEEP: CR2402196507_机器人系统2月迭代需求 - 该文档标题为“需求说明书”，并具有软件需求文档的典型结构化特征：包含需求概述（背景、目标、业务流程）、需求与功能点清单、详细的功能需求规格说明（如功能描述、业务规则、操作界面等）以及非功能需求章节。文档内容具体描述了系统功能优化点（如模糊搜索、导出功能），符合软件需求文档的定义。
+2025-12-09 10:12:53,366 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:12:58,342 - INFO - KEEP: CR2402206916_风险监管报表新增美团生活费（纯引流）改造需求 - 该文档标题为“需求说明书”，具备软件需求文档的典型结构（如需求概述、需求背景、功能需求等章节），并明确描述了系统改造的功能需求（BI监管报表改造）和业务背景，符合软件需求文档的特征。
+2025-12-09 10:12:58,449 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:13:01,870 - INFO - KEEP: CR2402207169_BI报表新增拍拍贷改造需求 - 该文档标题为“业务需求说明书”，具有软件需求文档的典型结构（如需求概述、背景、目标、功能需求等章节），并明确描述了系统改造的功能需求（如新增产品属性、报表统计逻辑调整）和业务目标，符合软件需求文档的特征。
+2025-12-09 10:13:01,984 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:13:05,851 - INFO - KEEP: CR2402228658_中邮消费金融公司蚂蚁贷超产品功能需求（客服部分） - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、功能描述等结构化章节；详细描述了系统功能（结清证明申请、查询、开具流程）和业务流程；明确了功能点与业务规则；文档结构完整，包含目录、修订记录和具体需求规格说明。
+2025-12-09 10:13:05,972 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:13:09,747 - INFO - KEEP: CR2402228689_客服身份核实流程优化需求 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、功能描述等结构化章节；详细描述了系统功能（如客服系统、在线系统、机器人接口的优化）、业务流程和接口要求；并提供了明确的功能点与业务规则说明（如状态展示、按钮交互、验证逻辑）。
+2025-12-09 10:13:09,922 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:13:13,311 - INFO - KEEP: CR2402238926_乐信担保引流项目需求（风险需求） - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程、功能点清单（如信审页面功能、决策流程节点、报表功能等）、接口要求、非功能需求章节，且内容结构化，详细描述了系统功能、业务规则和实现要求。
+2025-12-09 10:13:13,444 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:13:16,874 - INFO - KEEP: CR2402239027_奇富数科小程序引流 风险需求 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程、功能需求清单、非功能需求、接口清单等结构化章节，详细描述了系统功能、业务规则和流程，符合需求文档的定义。
+2025-12-09 10:13:17,001 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:13:22,099 - INFO - KEEP: CR2402239379_蚂蚁贷超引流业务需求说明书（风险需求） - 该文档标题为“需求说明书”，并包含需求背景、业务目标、业务流程、功能需求、接口清单、非功能需求等结构化章节，详细描述了系统功能、业务规则和交互要求，符合软件需求文档的核心特征。
+2025-12-09 10:13:22,221 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:13:25,722 - INFO - KEEP: CR2402269645_数字化转型策略可信度追踪 - 该文档具有软件需求文档的典型特征：包含需求背景、业务目标、业务流程、功能需求清单、功能点详细描述（如页面交互逻辑、计算规则、数据存储要求）、非功能需求章节等结构化内容，旨在定义系统改造的功能与规格。
+2025-12-09 10:13:25,847 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:13:28,540 - INFO - REMOVE: CR2402269897_关于修改老带新重构活动的现金红包报税记录的需求 - 文本内容为系统集成测试报告，包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告类别，不符合软件需求文档的特征（如需求背景、功能描述、业务规则等）。
+2025-12-09 10:13:28,541 - INFO - Moved to rubbish2: CR2402269897_关于修改老带新重构活动的现金红包报税记录的需求 - Reason: 文本内容为系统集成测试报告，包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告类别，不符合软件需求文档的特征（如需求背景、功能描述、业务规则等）。
+2025-12-09 10:13:28,652 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:13:32,281 - INFO - KEEP: CR2402270377_新增额度使用率相关标签 - 该文本具有软件需求文档的典型特征：标题明确为“需求文档”，包含“需求背景”、“需求价值”、“需求内容”等结构化章节，并具体描述了拟新增的4个用户属性（功能点/业务规则），旨在定义系统（标签图书馆）需要实现的新功能。
+2025-12-09 10:13:32,590 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:13:36,536 - INFO - KEEP: CR2402271117_新增贷款用途总次数总金额相关标签 - 该文本具备软件需求文档的核心特征：包含明确的需求背景（配套CR2402185696）、业务目标（用于渠道控制）、以及结构化的功能描述（详细列举了拟新增的14个/16个用户属性标签及其计算规则）。文档结构完整，有目录、修订记录等章节，内容聚焦于系统需要实现的新功能点。
+2025-12-09 10:13:36,664 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:13:39,952 - INFO - KEEP: CR2402271149_客服系统工单大模型_客户问题总结生成优化V1.2 - 该文档标题为“业务需求说明书”，内容包含需求背景、业务目标、功能说明、业务规则、操作界面描述、数据需求（含指标、埋点、字段说明）等结构化章节，符合软件需求文档的特征。
+2025-12-09 10:13:40,066 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:13:44,457 - INFO - KEEP: CR2402281793_模型变更机器人通知需求 - 该文档标题为《业务需求说明书》，具备软件需求文档的典型结构，包含需求概述（需求背景、业务目标、业务流程等章节）、需求规格说明（功能需求、非功能需求）以及功能点清单。内容明确描述了系统功能（模型变更时发送飞邮通知）和具体的业务规则（通知内容格式、生产上线与修复上线的区别），符合软件需求文档的特征。
+2025-12-09 10:13:44,569 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:13:48,551 - INFO - KEEP: CR2402292159_风险管理大屏、风险预警大屏客群选项改造需求 - 第二个文档（需求说明书）包含需求背景、业务目标、功能需求等章节，明确描述了系统改造对象、具体功能调整内容（如下线筛选维度、数据重跑规则）和业务规则，符合软件需求文档的结构化特征。第一个文档是测试报告，不属于需求文档，但整体判断依据以需求说明书为准。
+2025-12-09 10:13:48,661 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:13:51,085 - INFO - REMOVE: CR2402292750_策略可信度BI平台需求 - 文本仅提供了文档标题和来源信息，无任何实质内容描述（如背景、功能、规则等），内容过少，不符合软件需求文档的特征。
+2025-12-09 10:13:51,087 - INFO - Moved to rubbish2: CR2402292750_策略可信度BI平台需求 - Reason: 文本仅提供了文档标题和来源信息，无任何实质内容描述（如背景、功能、规则等），内容过少，不符合软件需求文档的特征。
+2025-12-09 10:13:51,087 - INFO - ============================================================
+2025-12-09 10:13:51,087 - INFO - Processing complete!
+2025-12-09 10:13:51,087 - INFO - Total kept: 22
+2025-12-09 10:13:51,088 - INFO - Total moved to rubbish2: 2
+2025-12-09 10:13:51,088 - INFO - ============================================================
+2025-12-09 10:15:17,449 - INFO - ============================================================
+2025-12-09 10:15:17,449 - INFO - Starting requirement document filtering
+2025-12-09 10:15:17,449 - INFO - Model: deepseek
+2025-12-09 10:15:17,450 - INFO - Dry run: False
+2025-12-09 10:15:17,450 - INFO - ============================================================
+2025-12-09 10:15:18,093 - INFO - Processing month: 2024-03
+2025-12-09 10:15:18,101 - INFO - Found 47 requirement files in 2024-03
+2025-12-09 10:15:18,854 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:15:22,823 - INFO - KEEP: CR2403013185_拍怕贷融担项目风险需求 202403 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程、产品属性等结构化章节，并详细描述了具体的功能需求（如审批系统前置规则优化、征信授权书获取调整等），符合需求文档的格式和内容要求。
+2025-12-09 10:15:22,959 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:15:26,351 - INFO - KEEP: CR2403013505_渠道分类调整需求 - 该文档包含需求背景（财务要求）、范围（渠道新后管-渠道号查询菜单）、功能模块说明以及结构化的需求描述（具体功能点修改、枚举值调整、存量数据处理规则），符合软件需求文档的特征。
+2025-12-09 10:15:26,473 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:15:29,774 - INFO - KEEP: CR2403013582_三方循环贷营销卡券对接 - 该文档标题为“业务需求说明书”，并包含需求背景、目的、范围、功能摘要、详细的业务流程和业务规则说明，以及接口要求、异常处理等结构化需求描述，符合软件需求文档的特征。
+2025-12-09 10:15:29,891 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:15:33,262 - INFO - KEEP: CR2403044125_催收死亡类案件转五级分类调整流程线上化 - 该文档标题为“需求规格说明书”，内容包含明确的需求背景、业务流程描述、功能点说明（如新增接口、字段、脱敏规则、审批流程优化）、结构化章节（如需求清单、功能说明、业务流程描述），符合软件需求文档的特征。
+2025-12-09 10:15:33,530 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:15:38,023 - INFO - KEEP: CR2403054795_手机银行渠道身份证组件流程优化 - 该文档具备软件需求文档的核心特征：包含需求背景、来源、范围等结构化章节；详细描述了系统功能、业务流程（如手机银行授权下的三种处理流程）和明确的业务规则；内容围绕功能优化展开，而非测试、运维或会议记录等类型。
+2025-12-09 10:15:38,153 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:15:41,708 - INFO - KEEP: CR2403055260_担保模式综合定价校验与文件稽核 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、功能描述等结构化章节；详细描述了系统功能（如综合定价校验与稽核）、业务流程、接口要求；明确了具体的业务规则和功能点；文档结构完整，内容详实，属于典型的业务需求说明书。
+2025-12-09 10:15:41,816 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:15:45,090 - INFO - KEEP: CR2403055319_【魔盒需求】2024经营绩效风险指标报表需求 - 该文档标题为“需求说明书”，并包含需求概述、背景、业务目标、业务流程、功能需求等结构化章节，明确描述了报表系统的功能、数据规则和上线要求，符合软件需求文档的特征。
+2025-12-09 10:15:45,251 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:15:49,093 - INFO - KEEP: CR2403065591_蚂蚁贷超产品合同发送需求（客服部分） - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、功能描述等结构化章节；详细描述了系统功能、业务规则、接口要求（如与客服系统、服务开放前置的交互）和操作页面；内容为明确的功能点说明，而非测试报告、会议纪要或运维工单等类型。
+2025-12-09 10:15:49,203 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:15:52,262 - INFO - REMOVE: CR2403076586_第三方产品综合定价校验与稽核业务账务中心需求 - 该文档标题为“SIT测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告类别，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 10:15:52,264 - INFO - Moved to rubbish2: CR2403076586_第三方产品综合定价校验与稽核业务账务中心需求 - Reason: 该文档标题为“SIT测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告类别，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 10:15:52,410 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:15:55,825 - INFO - KEEP: CR2403086916_借呗中额核销需求 - 该文档标题为“业务需求书”，内容结构包含需求背景、业务目标、需求概述、整体业务流程图及详细的系统功能需求章节（如案件查询、分批管理等），每个功能点均描述了功能描述、业务流程和业务规则，符合软件需求文档的结构化特征。
+2025-12-09 10:15:55,961 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:16:00,346 - INFO - KEEP: CR2403086951_通用循环贷行为评分上线 - 该文档标题为“业务需求说明书”，并包含软件需求文档的典型特征：有明确的需求背景、业务目标、业务流程章节；在需求规格说明中详细描述了功能需求（如数据跑批逻辑、模型计算规则、落库要求）、非功能需求等结构化内容；文档整体结构完整，旨在定义系统应实现的功能和规则。
+2025-12-09 10:16:00,490 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:16:04,032 - INFO - KEEP: CR2403087047_标准API职业信息采集优化 - 该文档具备软件需求文档的核心特征：包含需求背景、目的、业务范围等概述章节；详细描述了多个API接口的功能需求、业务流程和具体的业务规则（如字段选输逻辑、校验规则、报错信息）；文档结构清晰，有功能列表和结构化说明。
+2025-12-09 10:16:04,152 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:16:07,909 - INFO - KEEP: CR2403117985_新增是否在授信风险管控期内标签 - 该文本具备软件需求文档的核心特征：包含需求背景、需求价值和需求内容等结构化章节；明确描述了新增“是否在授信风险管控期内”标签的业务目标、功能描述和应用场景；内容完整，属于需求定义范畴，而非测试、运维或会议记录等类型文档。
+2025-12-09 10:16:08,230 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:16:14,698 - INFO - KEEP: CR2403129568_收钱吧循环贷引流业务需求说明书（风险需求） - 该文档具备软件需求文档的核心特征：1. 包含需求背景、业务目标、业务流程等标准章节；2. 详细描述了系统功能（如决策流程节点、接口清单、字段映射）、业务流程（授信、用信、资料变更流程）和接口要求；3. 提供了明确的功能点与业务规则说明（如审批节点顺序、字段枚举值、数据校验规则）；4. 文档结构清晰，具有目录、修订记录及结构化的需求描述（如功能清单、流程说明、接口清单）。其内容旨在定义系统应实现的功能与规则，符合需求文档的定义。
+2025-12-09 10:16:14,844 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:16:19,552 - INFO - KEEP: CR2403129865_中邮消费金融历史业务数据查询功能业务需求说明书 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程等标准章节；详细描述了系统功能（如历史数据库建立、后管查询功能）、业务流程和接口要求；提供了结构化的功能点清单和需求规格说明；内容完整详实，远超100字。其结构和内容符合需求规格说明书定义，而非测试报告、会议纪要等其他类型文档。
+2025-12-09 10:16:19,687 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:16:22,979 - INFO - KEEP: CR2403132273_通用循环贷标准API（百融&爱奇艺）授信字段后置 - 该文本具备软件需求文档的核心特征：包含需求背景、业务目标、功能描述、业务流程和业务规则等结构化章节，详细描述了系统功能、接口调整和业务逻辑，属于明确的需求规格说明。
+2025-12-09 10:16:23,132 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:16:27,586 - INFO - KEEP: CR2403132707_中邮消费金融公司业财差异通报功能业务需求说明书 - 该文档具备软件需求文档的核心特征：包含明确的需求背景、业务目标、业务流程章节；详细描述了功能需求（如差异通报功能、界面、业务规则）和非功能需求；提供了结构化的需求描述（如功能点清单、需求规格说明）。其内容与测试报告、会议纪要等非需求文档类型有显著区别。
+2025-12-09 10:16:27,731 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:16:31,502 - INFO - KEEP: CR2403143366_字节放心借产品子借据结清证明需求（客服部分） - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、功能描述等结构化章节；详细描述了系统功能（客服系统改造、结清证明对接）、业务流程（用户发起、接口调用、判断逻辑）和接口要求；并提供了明确的功能点与业务规则说明。
+2025-12-09 10:16:31,682 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:16:34,945 - INFO - KEEP: CR2403184761_正和消保平台转办件RPA机器人建单及台账生成优化需求 - 该文档包含需求背景、业务目标、详细的功能描述（如登录步骤、数据获取、建单规则、分类匹配逻辑、台账生成等）、明确的业务规则和结构化需求说明，符合软件需求文档的特征。
+2025-12-09 10:16:35,160 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:16:38,747 - INFO - KEEP: CR2403184880_客服机器人优化需求 - 该文档具备软件需求文档的核心特征：包含明确的需求背景、业务目标、功能描述章节；详细描述了多个具体的功能优化点（如接口配置、词槽管理、报表优化等）及其业务规则；内容结构化，分章节说明了功能说明、业务规则和操作界面。
+2025-12-09 10:16:38,860 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:16:42,436 - INFO - KEEP: CR2403185130_拍拍贷融担产品优化需求 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、功能描述等结构化章节；详细描述了系统功能（结清证明对接流程）、业务流程和接口要求；有明确的功能点说明和业务规则；整体为需求规格说明书的格式。
+2025-12-09 10:16:42,560 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:16:45,340 - INFO - REMOVE: CR2403185295_订阅报表图片推送飞邮机器人 - 该文档标题为“SIT测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能点等）。
+2025-12-09 10:16:45,341 - INFO - Moved to rubbish2: CR2403185295_订阅报表图片推送飞邮机器人 - Reason: 该文档标题为“SIT测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能点等）。
+2025-12-09 10:16:45,466 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:16:49,367 - INFO - KEEP: CR2403185353_风险管理部三方数据效果监控需求说明书 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程、功能需求（如三方数据效果计算、数据存储、数据展示）、非功能需求等结构化章节；详细描述了系统的功能点、业务规则和计算指标；文档结构完整，符合需求说明书的格式要求。
+2025-12-09 10:16:49,505 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:16:52,777 - INFO - KEEP: CR2403195813_模型依赖数据源发生调用节点变动导致模型计算异常机器人通知需求 - 第二个文档（需求规格说明书）明确包含需求背景、业务目标、业务流程、功能点清单和详细的功能需求描述，符合软件需求文档的结构化特征。第一个文档是测试报告，不符合需求文档定义。
+2025-12-09 10:16:52,902 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:16:56,896 - INFO - KEEP: CR2403206681_结算平台邮政邮储引荐服务费报账结算需求 - 该文本具备软件需求文档的核心特征：包含明确的需求背景和概述，详细描述了结算管理模块的功能（如账单结算、报账信息）、页面示意、功能点、业务规则（如单据状态流转、操作按钮控制）以及接口匹配逻辑，文档结构清晰，符合需求说明书的格式。
+2025-12-09 10:16:57,006 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:17:00,706 - INFO - KEEP: CR2403206815_清分中心新增拍拍贷、360借条等新产品需求 - 该文档标题为需求规格说明书，结构完整，包含需求背景、业务目标、业务流程、功能需求清单、非功能需求等软件需求文档的典型章节，并详细描述了新增资金对账业务的具体功能点和业务规则。
+2025-12-09 10:17:00,802 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:17:03,477 - INFO - KEEP: CR2403217284_151报表新增自催非自催判断标识 - 文档标题为“业务需求说明书”并包含具体功能描述（BI报表增加字段），符合软件需求文档通常具有明确功能点描述和结构化章节的特征。
+2025-12-09 10:17:03,692 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:17:07,216 - INFO - KEEP: CR2403217429_客服工单资料收集优化V2.1 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、功能说明、业务规则等结构化章节；详细描述了系统功能、业务流程和具体规则；内容为功能设计说明而非测试、运维或会议记录类文档。
+2025-12-09 10:17:07,350 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:17:10,696 - INFO - KEEP: CR2403217584_关于优化关联交易管理系统关联法人名单同步财务和一般关联交易备案功能的需求 - 该文档包含明确的“需求背景”和“具体需求”章节，详细描述了系统功能优化的问题点、优化点及具体业务规则，具有结构化的功能描述和流程说明，符合软件需求文档的特征。
+2025-12-09 10:17:10,812 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:17:15,102 - INFO - REMOVE: CR2403227988_二代人行数字解读分回溯需求 - 提供的文本主体是《技术测试报告》，内容为测试人员、周期、案例执行情况和结论，属于测试报告范畴。虽然也提及了另一份《业务需求说明书》的文件名和部分章节标题，但未展示其核心的需求描述内容（如功能点、业务流程等）。根据判断规则，测试报告不属于软件需求文档。
+2025-12-09 10:17:15,103 - INFO - Moved to rubbish2: CR2403227988_二代人行数字解读分回溯需求 - Reason: 提供的文本主体是《技术测试报告》，内容为测试人员、周期、案例执行情况和结论，属于测试报告范畴。虽然也提及了另一份《业务需求说明书》的文件名和部分章节标题，但未展示其核心的需求描述内容（如功能点、业务流程等）。根据判断规则，测试报告不属于软件需求文档。
+2025-12-09 10:17:15,219 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:17:18,682 - INFO - KEEP: CR2403228438_车主贷凭证开具功能优化 - 该文档具备软件需求文档的核心特征：包含需求背景、目的、业务范围、功能需求（详细描述了新增API接口的业务流程和规则）、系统接口说明及结构化章节（如功能需求、业务规则等），旨在定义系统应实现的功能和行为。
+2025-12-09 10:17:18,804 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:17:23,807 - INFO - KEEP: CR2403228650_车主贷贷款用途规则修改和装修租房贷款用途枚举值拆分 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、功能模块说明；详细描述了系统功能修改点（如贷款用途规则、枚举值拆分）、业务流程、前后端修改逻辑；以结构化的方式列出了明确的功能点和业务规则（分一期、二期方案，并有具体触发条件和校验规则）；整体内容完整，旨在定义系统应实现的功能和行为。
+2025-12-09 10:17:23,929 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:17:26,894 - INFO - REMOVE: CR2403238672_结算平台外部账号统一申请入口业务需求 - 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 10:17:26,897 - INFO - Moved to rubbish2: CR2403238672_结算平台外部账号统一申请入口业务需求 - Reason: 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 10:17:27,036 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:17:30,281 - INFO - KEEP: CR2403258917_新增租房装修贷款用途总次数总金额标签 - 该文本具有软件需求文档的典型特征：包含明确的“需求背景”、“需求内容”等结构化章节，描述了新增业务标签（功能点）的具体目标、业务规则和实现要求，旨在指导系统开发。
+2025-12-09 10:17:30,407 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:17:34,147 - INFO - KEEP: CR2403259023_饿了么C端引流启动策略 - 该文档具备软件需求文档的核心特征：包含明确的需求背景、业务目标、业务流程章节；详细描述了系统功能（如决策流程节点、接口清单、字段映射）、业务规则和数据结构；文档结构完整，包含目录、修订记录及功能与非功能需求说明，符合需求规格说明的格式。
+2025-12-09 10:17:34,312 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:17:38,929 - INFO - KEEP: CR2403259382_银联商务渠道转API对接（风险需求） - 该文档具有软件需求文档的典型特征：包含需求背景、业务目标、业务流程、功能需求（如决策流程节点逻辑、接口要求、数据落库说明等）等结构化章节，并详细描述了系统功能、业务规则和修改点，符合需求文档的定义。
+2025-12-09 10:17:39,296 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:17:42,135 - INFO - KEEP: CR2403260035_客服系统投诉调解线上化需求V1.0 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程、功能说明、业务规则等结构化章节，详细描述了系统功能、操作逻辑和接口要求，旨在定义待开发系统的行为与能力。
+2025-12-09 10:17:42,477 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:17:45,299 - INFO - REMOVE: CR2403271603_结算平台（渠道业务 和 支付业务）对接财务费用结算单需求 - 该文档标题为“SIT测试业务系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 10:17:45,301 - INFO - Moved to rubbish2: CR2403271603_结算平台（渠道业务 和 支付业务）对接财务费用结算单需求 - Reason: 该文档标题为“SIT测试业务系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 10:17:45,403 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:17:48,797 - INFO - KEEP: CR2403271720_营销邮你APP屏蔽“机构二维码”模块需求 - 该文档具备软件需求文档的核心特征：包含需求背景、范围、功能模块说明等结构化章节；明确描述了功能修改的具体内容（针对特定角色隐藏“机构二维码”入口）和业务规则；属于对系统功能的描述性说明文档。
+2025-12-09 10:17:48,936 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:17:53,097 - INFO - KEEP: CR2403282275_安徽征信API对接业务需求说明书（风险需求） - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程等结构化章节；详细描述了系统功能（如决策流程、接口清单、数据校验）、业务规则和功能点清单；内容完整且超过100字，属于用于定义系统功能和约束的规格说明书，而非测试报告、会议纪要等其他类型文档。
+2025-12-09 10:17:53,235 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:17:57,010 - INFO - KEEP: CR2403282378_抖音月付账单延期还款支持修改金额需求 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、功能描述等结构化章节；详细描述了系统功能改动、业务规则和数据处理逻辑；有明确的功能点说明（如账务文件字段改动、供数逻辑改动）和业务规则；文档结构完整，符合需求说明书的格式。
+2025-12-09 10:17:57,132 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:18:01,135 - INFO - KEEP: CR2403292995_清分中心资金对账相关功能优化需求 - 该文档具备软件需求文档的核心特征：包含明确的需求背景、业务目标、业务流程描述、功能点清单、详细的功能需求说明（如对账功能优化、自动识别、通知方式变更等）、非功能需求章节以及结构化的目录。内容完整，旨在定义系统应实现的功能与规则。
+2025-12-09 10:18:01,249 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:18:03,571 - INFO - KEEP: CR2403293079_营销策略引擎外部营销对接质检中心 - 文本包含需求背景、涉及范围、功能说明等结构化章节，明确描述了系统功能、业务流程和接口要求，符合软件需求文档的特征。
+2025-12-09 10:18:03,696 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:18:07,531 - INFO - KEEP: CR2403293105_模型开发平台六期功能设计 - 该文档标题为《业务需求说明书》，并包含需求背景、业务目标、术语定义、功能点清单等结构化章节。内容详细描述了多个功能模块（如模型概况、样本选取、前期分析等）的具体需求、业务规则和实现逻辑，符合软件需求文档的特征。
+2025-12-09 10:18:07,675 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:18:12,399 - INFO - KEEP: CR2403293366_客服系统及工单优化业务需求 - 该文本具备软件需求文档的核心特征：1. 标题明确为“业务需求规格说明书”；2. 包含“需求概述”、“需求规格说明”等结构化章节；3. 详细描述了功能优化点（如工单详情优化、催办功能、短信关联等）、业务规则和操作界面要求；4. 明确了需求背景、业务目标和功能点清单，符合软件需求文档的定义。
+2025-12-09 10:18:12,521 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:18:15,346 - INFO - REMOVE: CR2403293412_中邮消费金融存量第三方产品标准化应用业务需求 - 该文本是SIT测试报告，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告类别，不符合软件需求文档的特征（如描述需求背景、功能、业务规则等）。
+2025-12-09 10:18:15,348 - INFO - Moved to rubbish2: CR2403293412_中邮消费金融存量第三方产品标准化应用业务需求 - Reason: 该文本是SIT测试报告，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告类别，不符合软件需求文档的特征（如描述需求背景、功能、业务规则等）。
+2025-12-09 10:18:16,281 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:18:20,129 - INFO - KEEP: CR2403293592_针对APP、小程序、网页等入口的客户和营销员的信息采集及相关配套设施 - 该文档具备软件需求文档的核心特征：包含明确的需求背景、业务目标、业务流程章节；有结构化的功能说明（如数据采集、反欺诈指标、接口要求等）；详细描述了系统需实现的功能点与业务规则；整体文档结构完整，符合需求规格说明书的格式。
+2025-12-09 10:18:20,129 - INFO - ============================================================
+2025-12-09 10:18:20,129 - INFO - Processing complete!
+2025-12-09 10:18:20,129 - INFO - Total kept: 41
+2025-12-09 10:18:20,130 - INFO - Total moved to rubbish2: 6
+2025-12-09 10:18:20,130 - INFO - ============================================================
+2025-12-09 10:36:53,805 - INFO - ============================================================
+2025-12-09 10:36:53,805 - INFO - Starting requirement document filtering
+2025-12-09 10:36:53,805 - INFO - Model: deepseek
+2025-12-09 10:36:53,806 - INFO - Dry run: False
+2025-12-09 10:36:53,806 - INFO - ============================================================
+2025-12-09 10:36:54,065 - INFO - Processing month: 2024-05
+2025-12-09 10:36:54,072 - INFO - Found 49 requirement files in 2024-05
+2025-12-09 10:36:54,962 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:36:58,256 - INFO - KEEP: CR2405061581_百融借贷意向验证ApplyLoanStr全部字段接入需求 - 该文档标题为“需求说明书”，结构包含需求背景、业务目标、业务流程、功能需求等标准章节，内容描述了系统接入外部数据字段的具体功能目标、实现方式和业务规则，符合软件需求文档的特征。
+2025-12-09 10:36:58,391 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:37:03,078 - INFO - KEEP: CR2405061636_样本选择过滤掉已停用的编排需求 - 第一个文档（需求说明书）具有软件需求文档的典型特征：包含需求背景、业务目标、业务流程、功能需求等结构化章节，并明确描述了具体的功能修改点（样本选择时过滤已停用的编排）。第二个文档是测试报告，属于非需求文档类别，但问题要求判断整体文本，而第一个文档是明确的需求文档。
+2025-12-09 10:37:03,197 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:37:07,075 - INFO - REMOVE: CR2405072139_5月派案修数需求 - 该文本内容为具体的数据修复操作指令和任务清单，描述了在特定日期范围内对数据库表、报表进行数据修复和字段补充的详细操作步骤，属于“修数申请、数据修复单”的范畴，不具备软件需求文档的结构化特征（如需求背景、业务目标、功能描述等）。
+2025-12-09 10:37:07,077 - INFO - Moved to rubbish2: CR2405072139_5月派案修数需求 - Reason: 该文本内容为具体的数据修复操作指令和任务清单，描述了在特定日期范围内对数据库表、报表进行数据修复和字段补充的详细操作步骤，属于“修数申请、数据修复单”的范畴，不具备软件需求文档的结构化特征（如需求背景、业务目标、功能描述等）。
+2025-12-09 10:37:07,207 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:37:09,857 - INFO - REMOVE: CR2405072477_会议管理新建会议关联预安排事项规则调整 - 该文档标题为“SIT测试业务系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征。
+2025-12-09 10:37:09,859 - INFO - Moved to rubbish2: CR2405072477_会议管理新建会议关联预安排事项规则调整 - Reason: 该文档标题为“SIT测试业务系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征。
+2025-12-09 10:37:09,999 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:37:14,653 - INFO - KEEP: CR2405072952_蚂蚁信用贷四期正向提额降价_风险需求 - 该文档具备软件需求文档的核心特征：包含明确的需求背景、业务目标、业务流程、功能需求（如决策流程、接口清单、数据校验规则等）、非功能需求（如审批时效）以及结构化的需求描述（如目录、功能点清单）。其内容旨在定义系统应实现的功能和行为，而非测试、运维或流程审批记录。
+2025-12-09 10:37:14,760 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:37:18,024 - INFO - REMOVE: CR2405073000_统一身份管理平台屏蔽手机号等需求 - 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告范畴，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 10:37:18,028 - INFO - Moved to rubbish2: CR2405073000_统一身份管理平台屏蔽手机号等需求 - Reason: 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告范畴，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 10:37:18,151 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:37:22,396 - INFO - KEEP: CR2405083950_暂停合作机构客户账户变更需求 - 第二个文档（暂停合作机构客户账户变更需求1.0.docx）是软件需求文档，因为它包含了需求背景、业务目标、功能点清单和详细的需求规格说明，符合软件需求文档的结构化特征。第一个文档是SIT测试报告，属于测试报告类别，不是需求文档。
+2025-12-09 10:37:22,554 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:37:26,164 - INFO - KEEP: CR2405105458_ITM风控政策变更单流程优化 - 该文档具有软件需求文档的典型特征：包含需求背景、业务目标、业务流程等结构化章节，并详细描述了具体的功能变更点（如审批流程节点调整、字段展示逻辑优化）和业务规则说明，符合需求文档的定义。
+2025-12-09 10:37:26,279 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:37:29,564 - INFO - REMOVE: CR2405105537_关于调动人员PBC季度考核生成的需求 - 该文档标题为“SIT测试业务系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 10:37:29,570 - INFO - Moved to rubbish2: CR2405105537_关于调动人员PBC季度考核生成的需求 - Reason: 该文档标题为“SIT测试业务系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 10:37:29,691 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:37:32,897 - INFO - KEEP: CR2405136609_结算平台功能优化 - 文档标题为“需求规格说明书”，包含需求背景、业务流程、功能说明、非功能需求等结构化章节，详细描述了系统功能优化点、业务规则、角色权限和接口要求，符合软件需求文档的特征。
+2025-12-09 10:37:33,036 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:37:36,162 - INFO - KEEP: CR2405136809_进件中心新增展示职业字段 - 该文档包含需求背景（字段未展示）、范围（进件中心系统）、功能描述（新增字段展示、数据来源、展示规则）等结构化章节，符合软件需求文档的特征。
+2025-12-09 10:37:36,286 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:37:39,226 - INFO - KEEP: CR2405147368_360奇富地推项目二期迭代需求 - 该文档包含需求背景、目的、范围、功能描述、业务流程、接口要求及业务规则说明，且结构完整，符合软件需求文档的特征。
+2025-12-09 10:37:39,422 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:37:43,510 - INFO - KEEP: CR2405158660_TOB服务费老客结算规则优化需求 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程等标准章节；明确描述了系统功能范围（TOB服务费结算规则优化）和具体的业务规则变更（优化前规则与优化后规则）；文档结构清晰，包含目录、修订记录及功能需求等结构化描述。
+2025-12-09 10:37:47,526 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:37:50,799 - INFO - KEEP: CR2405158670_新增已使用额度和最新有效额度标签 - 该文本具备软件需求文档的核心特征：包含明确的需求背景、业务价值、详细的功能（标签）描述、具体的业务规则和配置示例，且文档结构清晰，符合需求文档的格式要求。
+2025-12-09 10:37:50,981 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:37:54,406 - INFO - KEEP: CR2405159120_新增最近登录渠道及时间 - 该文档具备软件需求文档的核心特征：包含明确的需求背景、需求价值和结构化需求内容（如新增和优化具体字段），描述了系统需要实现的功能点（新增登录时间、渠道字段）及其业务目标（支持精准营销）。
+2025-12-09 10:37:54,694 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:37:58,536 - INFO - KEEP: CR2405159183_还呗融担项目风险需求 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程、功能点清单（如信审页面功能、风险报表功能点等）、结构化需求描述（如决策流程节点、接口清单、字段映射）、以及明确的系统功能与非功能需求说明，符合需求文档的定义。
+2025-12-09 10:37:58,729 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:38:01,522 - INFO - KEEP: CR2405160075_收钱吧循环贷营销卡券对接 - 该文档标题为“业务需求说明书”，并包含需求背景、目的、范围、功能摘要、业务流程、业务规则、接口描述等结构化章节，符合软件需求文档的特征。
+2025-12-09 10:38:01,642 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:38:04,781 - INFO - KEEP: CR2405169762_2024年经营管理考核报表固化需求 - 该文档包含需求背景（总体要求）、明确的功能描述（报表线上化、可视化）、结构化需求（报表字段、时间、权限等）以及具体的业务规则说明，符合软件需求文档的特征。
+2025-12-09 10:38:05,168 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:38:07,998 - INFO - REMOVE: CR2405169868_营销中心贷后宽表需求 - 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 10:38:08,004 - INFO - Moved to rubbish2: CR2405169868_营销中心贷后宽表需求 - Reason: 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 10:38:08,143 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:38:11,818 - INFO - KEEP: CR2405169918_监管报表增加新产品 - 该文档标题为“业务需求说明书”，并包含需求概述、需求背景、业务目标、术语与缩略语、业务流程、功能需求等典型软件需求文档的结构化章节，明确描述了新增产品属性及对BI监管报表的改造需求，符合软件需求文档的特征。
+2025-12-09 10:38:12,025 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:38:16,213 - INFO - KEEP: CR2405212536_美团月付产品需求说明书_风险需求 - 该文档标题为“业务需求说明书”，并包含软件需求文档的典型特征：有明确的需求背景、业务目标、业务流程章节，提供了详细的功能需求说明（如决策流程节点、审批系统前置规则、接口清单等），且文档结构完整，包含目录、修订记录及多个需求规格说明章节。
+2025-12-09 10:38:16,327 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:38:19,401 - INFO - REMOVE: CR2405223148_奇富数科线下地推项目渠道二期需求 - 该文档是技术测试报告，内容聚焦于测试人员、测试周期、案例执行情况和测试结论，属于测试报告类别，而非描述需求背景、功能或业务规则的软件需求文档。
+2025-12-09 10:38:19,404 - INFO - Moved to rubbish2: CR2405223148_奇富数科线下地推项目渠道二期需求 - Reason: 该文档是技术测试报告，内容聚焦于测试人员、测试周期、案例执行情况和测试结论，属于测试报告类别，而非描述需求背景、功能或业务规则的软件需求文档。
+2025-12-09 10:38:19,573 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:38:22,891 - INFO - KEEP: CR2405223249_利楚扫呗API对接 - 该文档标题为“业务需求说明书”，并包含需求概述、需求背景、业务目标、功能需求等结构化章节，详细描述了系统功能、业务流程、接口要求及业务规则，符合软件需求文档的特征。
+2025-12-09 10:38:23,034 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:38:26,449 - INFO - KEEP: CR2405223266_客户回捞（360融担）业务需求 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、功能摘要、详细的业务流程描述（如授信流程、用信流程等）、明确的业务规则说明以及结构化的章节划分（如需求概述、需求规格说明），符合软件需求文档的定义。
+2025-12-09 10:38:26,564 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:38:30,403 - INFO - KEEP: CR2405223515_通用快贷进件申请字段优化 - 该文档具备软件需求文档的核心特征：包含需求背景、目的、功能摘要等结构化章节；详细描述了系统功能修改点（如字段调整为选输、新增字段、校验规则）和业务规则；内容围绕系统功能需求展开，而非测试、运维或流程审批等内容。
+2025-12-09 10:38:30,602 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:38:33,119 - INFO - KEEP: CR2405223721_客服系统征信异议处理工单优化需求V3.0 - 文档标题为“需求说明书”，且目录结构包含需求概述（背景、目标等）和需求说明（功能说明、业务流程等），符合软件需求文档的典型特征。
+2025-12-09 10:38:33,232 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:38:37,105 - INFO - KEEP: CR2405233990_优化授信行为增加担保贷虚拟码 - 该文档具备软件需求文档的核心特征：包含明确的需求背景、需求价值和详细的需求内容章节；具体描述了系统需新增的功能（为担保贷产品增加虚拟码）和业务规则（标签配置逻辑）；内容结构化，有功能点说明和规则示例。
+2025-12-09 10:38:37,371 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:38:40,250 - INFO - REMOVE: CR2405234021_消保智能审核需求 - 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 10:38:40,253 - INFO - Moved to rubbish2: CR2405234021_消保智能审核需求 - Reason: 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 10:38:40,372 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:38:44,419 - INFO - KEEP: CR2405234510_自营循环贷担保客户回捞流程改造 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程、功能点清单、详细的功能需求描述（如新增流程、接口、规则等），且文档结构完整（有目录、修订记录及各需求章节），内容详细描述了系统功能、业务流程和业务规则。
+2025-12-09 10:38:44,529 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:38:47,290 - INFO - REMOVE: CR2405245038_账务中心非中邮出资产品级风险管理参数优化需求 - 该文档标题为“SIT测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告范畴，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 10:38:47,294 - INFO - Moved to rubbish2: CR2405245038_账务中心非中邮出资产品级风险管理参数优化需求 - Reason: 该文档标题为“SIT测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告范畴，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 10:38:47,411 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:38:51,913 - INFO - KEEP: CR2405245039_开发并调用自营渠道TOB项目识别标签进决策中心 - 该文档具备软件需求文档的核心特征：包含明确的需求背景、业务目标、业务流程章节；详细描述了系统需要新增的功能（如XML文件、字段定义、调用逻辑）；提供了结构化的需求描述（如功能需求列表、字段说明、判断逻辑）。其内容与格式均符合需求说明书的定义，而非测试报告、会议纪要等其他类型文档。
+2025-12-09 10:38:52,043 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:38:55,988 - INFO - KEEP: CR2405245183_客服系统延展期数字人面审业务需求V1.0 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程等章节；详细描述了系统功能调整（如查询条件、列表字段、状态逻辑）和具体的业务规则；以结构化的方式（功能说明、业务规则、操作界面等）对需求进行了明确说明。
+2025-12-09 10:38:56,110 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:38:59,884 - INFO - KEEP: CR2405245452_利楚扫呗API对接（风险需求） - 该文档具有软件需求文档的典型特征：包含需求背景、业务目标、业务流程、功能需求（如决策流程节点、接口复用说明、数据落库要求等）、非功能需求章节，并采用结构化的目录和需求描述方式，符合业务需求说明书的格式。
+2025-12-09 10:39:00,028 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:39:02,944 - INFO - REMOVE: CR2405245533_【魔盒】策略有效性指标开发需求 - 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 10:39:02,978 - INFO - Moved to rubbish2: CR2405245533_【魔盒】策略有效性指标开发需求 - Reason: 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 10:39:03,123 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:39:06,944 - INFO - KEEP: CR2405275720_奇富数科渠道新增预审流程_风险需求 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程、功能点清单、详细的功能需求描述（如流程节点、规则、接口清单）、非功能需求章节，且结构完整，内容详实，旨在定义系统应实现的功能和约束。
+2025-12-09 10:39:07,086 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:39:10,823 - INFO - KEEP: CR2405276161_客户回捞项目一期（客服需求） - 文本具有软件需求文档的典型特征：包含需求概述（背景、目标、相关方）、需求规格说明（功能概要、业务流程），并详细描述了系统功能点、业务规则和结构化需求（如功能列表、流程说明）。内容聚焦于系统功能变更和新增要求，而非测试、运维或审批流程。
+2025-12-09 10:39:10,953 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:39:16,069 - INFO - KEEP: CR2405276284_阿里本地生活新增调额调价流程（风险需求） - 该文档具备软件需求文档的核心特征：1. 包含需求背景、业务目标、业务流程等标准章节；2. 详细描述了系统功能（如决策流程、信审页面功能）、接口要求、业务规则；3. 提供了结构化的需求描述（如功能点清单、流程说明、接口清单）；4. 整体内容围绕新功能的规格说明展开，而非测试、运维或会议记录等类型。
+2025-12-09 10:39:16,370 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:39:19,782 - INFO - KEEP: CR2405286638_账务中心新增按月付息按年还本功能需求 - 该文档具备软件需求文档的核心特征：包含明确的需求背景、业务目标章节；详细描述了新增还款方式的功能范围、业务规则（如利息和本金计算逻辑）及控制条件；内容结构清晰，有目录和功能点说明，属于对系统功能的需求定义。
+2025-12-09 10:39:19,888 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:39:23,398 - INFO - KEEP: CR2405286821_云闪付_360融担项目 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、功能点清单、需求规格说明（如审批系统前置规则、决策流程节点、接口要求、数据库落库说明等）、结构化目录以及明确的业务规则和功能描述。
+2025-12-09 10:39:23,518 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:39:27,128 - INFO - KEEP: CR2405287133_饿了么（toB）用户信息更新需求 - 第二个文档（业务需求说明书）包含需求背景、业务目标、功能描述、业务流程和业务规则等结构化需求说明，符合软件需求文档特征。第一个文档是测试报告，不符合需求文档定义。
+2025-12-09 10:39:27,247 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:39:30,592 - INFO - KEEP: CR2405287142_饿了么（toB）提现流程优化需求 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、功能需求等结构化章节；详细描述了“提现流程优化”的具体功能、业务规则和接口要求；内容完整，旨在定义系统应实现的行为和约束。
+2025-12-09 10:39:30,730 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:39:33,612 - INFO - KEEP: CR2405287428_客服机器人智能预判需求 - 该文档结构完整，包含需求背景、业务目标、详细的功能描述（如客群管理、标签管理、服务策略等）、业务规则说明以及操作页面原型，符合软件需求文档的特征。
+2025-12-09 10:39:33,727 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:39:36,419 - INFO - REMOVE: CR2405297550_历史老带新邀请关系释放 - 文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如需求背景、功能描述等）。
+2025-12-09 10:39:36,423 - INFO - Moved to rubbish2: CR2405297550_历史老带新邀请关系释放 - Reason: 文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如需求背景、功能描述等）。
+2025-12-09 10:39:36,547 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:39:40,198 - INFO - KEEP: CR2405297625_二代人行数字解读分月末实时查询需求 - 该文档标题为“业务需求说明书”，结构包含需求背景、业务目标、业务流程、需求与功能点清单、功能需求等标准章节，并详细描述了具体的业务目标、目标客群判断逻辑和系统操作流程，符合软件需求文档的特征。
+2025-12-09 10:39:40,337 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:39:43,841 - INFO - KEEP: CR2405297793_新增融担账户资金监控账户业务需求 - 该文档标题为“需求规格说明书”，结构包含需求背景、业务目标、业务流程、需求与功能点清单、功能需求等标准章节，详细描述了系统功能、监控规则、数据口径等具体需求，符合软件需求文档的特征。
+2025-12-09 10:39:44,010 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:39:48,214 - INFO - KEEP: CR2405297813_抖音月付、字节放心借产品核销需求 - 该文本具备软件需求文档的核心特征：包含需求背景、业务目标、整体业务流程、详细的功能描述（如数据推送、案件查询、分批管理、核销流程等）、明确的业务规则（如案件状态处理、金额阈值判断）以及结构化的章节划分（引言、需求概述等），旨在定义系统应实现的功能和行为。
+2025-12-09 10:39:49,308 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:39:52,214 - INFO - KEEP: CR2405309158_中邮消费金融客户回捞项目会计核算业务需求说明书 - 第二个文档（业务需求说明书）包含需求背景、业务目标、业务流程、功能需求清单等软件需求文档的典型章节和结构化描述，符合判断标准。第一个文档是测试报告，不符合需求文档特征。
+2025-12-09 10:39:52,353 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:39:56,726 - INFO - KEEP: CR2405319568_清分中心进件渠道自动同步需求 - 该文档具备软件需求文档的核心特征：包含明确的需求背景和概述，详细描述了系统功能（如页面展示、查询条件、导入导出规则、自动/手工同步功能）、业务流程（如三种同步方案）和业务规则（如字段校验规则），并以结构化的章节（如功能描述、方案对比）进行组织，旨在定义系统应实现的能力和约束。
+2025-12-09 10:39:56,861 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:40:00,107 - INFO - REMOVE: CR2405319934_邮数通外部账号申请优化业务需求 - 该文档标题为“SIT测试业务系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征。
+2025-12-09 10:40:00,114 - INFO - Moved to rubbish2: CR2405319934_邮数通外部账号申请优化业务需求 - Reason: 该文档标题为“SIT测试业务系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征。
+2025-12-09 10:40:00,115 - INFO - ============================================================
+2025-12-09 10:40:00,116 - INFO - Processing complete!
+2025-12-09 10:40:00,117 - INFO - Total kept: 38
+2025-12-09 10:40:00,117 - INFO - Total moved to rubbish2: 11
+2025-12-09 10:40:00,117 - INFO - ============================================================
+2025-12-09 10:51:16,446 - INFO - ============================================================
+2025-12-09 10:51:16,446 - INFO - Starting requirement document filtering
+2025-12-09 10:51:16,447 - INFO - Model: deepseek
+2025-12-09 10:51:16,447 - INFO - Dry run: False
+2025-12-09 10:51:16,447 - INFO - ============================================================
+2025-12-09 10:51:16,688 - INFO - Processing month: 2024-06
+2025-12-09 10:51:16,696 - INFO - Found 38 requirement files in 2024-06
+2025-12-09 10:51:17,393 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:51:22,024 - INFO - KEEP: CR2406030975_线上线下融合优客贷流程改造 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程、功能点清单、功能需求和非功能需求等结构化章节；详细描述了系统功能、业务规则和接口要求；内容完整，远超100字实质内容。其结构和内容符合需求说明书的定义，而非测试报告、会议纪要等其他类型文档。
+2025-12-09 10:51:22,342 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:51:25,870 - INFO - REMOVE: CR2406031349_征信报送客户个人证件有效期信息记录取值优化需求 - 该文本仅为一份需求确认单的封面或填写说明页，主要包含填写规范、授权提醒和在线文档链接指引，并未包含任何具体的需求背景、业务目标、功能描述、业务流程或结构化需求说明等软件需求文档的核心内容。
+2025-12-09 10:51:25,872 - INFO - Moved to rubbish2: CR2406031349_征信报送客户个人证件有效期信息记录取值优化需求 - Reason: 该文本仅为一份需求确认单的封面或填写说明页，主要包含填写规范、授权提醒和在线文档链接指引，并未包含任何具体的需求背景、业务目标、功能描述、业务流程或结构化需求说明等软件需求文档的核心内容。
+2025-12-09 10:51:26,009 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:51:30,217 - INFO - KEEP: CR2406031500_度小满分润项目风险需求 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程、功能点清单（如信审页面功能、接口清单）、结构化需求描述（如产品属性、审批流程节点、数据校验规则）以及明确的系统功能与接口要求，符合需求文档的典型结构。
+2025-12-09 10:51:30,331 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:51:34,235 - INFO - KEEP: CR2406031701_优化属性审批状态增加补充授权信息状态 - 该文本具备软件需求文档的核心特征：包含需求背景、价值、具体内容等结构化章节；详细描述了需要优化的系统功能（审批状态属性、用户行为）和业务规则（标签配置规则）；旨在定义新的系统行为以实现业务目标（圈定特定客户并做前端展示）。
+2025-12-09 10:51:34,462 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:51:38,070 - INFO - KEEP: CR2406042891_度小满借钱（分润）项目产品需求 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、功能描述等结构化章节；详细描述了系统功能（结清证明对接流程）、业务流程与接口交互；有明确的功能点与业务规则说明；整体为需求规格说明书的格式。
+2025-12-09 10:51:38,186 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:51:41,286 - INFO - KEEP: CR2406042954_循环额度授信有效期修改 - 该文档包含需求背景（提升客户体验、增加竞争力）、明确的范围（涉及产品与系统）、功能模块说明、以及结构化的需求描述（具体业务规则、接口交互逻辑、生效时间规则等），符合软件需求文档的特征。
+2025-12-09 10:51:41,401 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:51:44,571 - INFO - REMOVE: CR2406053515_线上线下融合线下业务优化需求 - 该文档标题为“SIT测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告类别，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 10:51:44,577 - INFO - Moved to rubbish2: CR2406053515_线上线下融合线下业务优化需求 - Reason: 该文档标题为“SIT测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告类别，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 10:51:44,715 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:51:48,267 - INFO - KEEP: CR2406064545_抖音放心借联助一体风险需求 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程、功能需求（如决策流程节点、接口清单、业务规则）、结构化目录（需求概述、规格说明等），并详细描述了系统功能、接口要求和业务规则。
+2025-12-09 10:51:48,535 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:51:52,572 - INFO - KEEP: CR2406075142_关于优化关联交易系统数据采集和一键备案等功能的需求 - 该文档具备软件需求文档的核心特征：包含明确的需求背景和业务目标，以结构化章节详细描述了多项具体的系统功能优化需求（如审批节点调整、自动同步功能、数据采集逻辑等），并说明了业务规则和流程，符合功能描述、业务流程说明等要求。
+2025-12-09 10:51:52,687 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:51:55,333 - INFO - KEEP: CR2406075726_客服系统投诉调解线上化优化V1.1 - 该文档包含需求背景、业务目标、功能描述、业务规则等结构化章节，明确描述了系统需新增的骑缝章和批量邮件发送功能，符合软件需求文档的特征。
+2025-12-09 10:51:55,444 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:51:58,424 - INFO - KEEP: CR2406116369_费用支出立项申请及审批需求 - 该文档标题为“业务需求说明书”，内容结构完整，包含需求背景、业务目标、业务流程、详细的功能需求描述（如字段规则、界面模块、业务规则）以及非功能需求，符合软件需求文档的特征。
+2025-12-09 10:51:58,539 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:52:02,028 - INFO - KEEP: CR2406116600_中邮消费金融公司融担业务监控功能优化业务需求说明书V2.0 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程等结构化章节；详细描述了系统功能（如监控规则、参数配置、预警功能）、业务规则和接口要求；提供了明确的功能点清单和需求规格说明，内容详实。
+2025-12-09 10:52:02,141 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:52:05,091 - INFO - REMOVE: CR2406127281_线下受薪客群申请评分V2上线需求 - 该文档标题为“SIT测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告类文档，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 10:52:05,095 - INFO - Moved to rubbish2: CR2406127281_线下受薪客群申请评分V2上线需求 - Reason: 该文档标题为“SIT测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告类文档，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 10:52:05,212 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:52:08,770 - INFO - KEEP: CR2406127815_贷中调整产品要素方案 - 该文档标题为“业务需求说明书”，内容结构包含需求概述（背景、目标）、需求规格说明（涉及产品）、业务流程方案设计、数据存储说明、非功能需求等章节，详细描述了系统功能、业务流程、接口与数据要求，符合软件需求文档的特征。
+2025-12-09 10:52:08,878 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:52:12,907 - INFO - KEEP: CR2406138547_新增哈啰渠道线上自动开具证明需求 （客服部分） - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、功能描述等结构化章节；详细描述了系统功能（如结清证明对接流程、API调用）和业务流程；明确了功能点与业务规则；文档结构清晰，包含目录、修订记录及具体的需求规格说明。
+2025-12-09 10:52:13,042 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:52:16,057 - INFO - KEEP: CR2406138608_车主贷借款合同下载 - 该文档具备软件需求文档的核心特征：包含需求背景、目的、功能描述（如新增合同下载接口）、业务流程和业务规则说明，且结构完整，属于需求规格说明书。
+2025-12-09 10:52:16,176 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:52:19,175 - INFO - KEEP: CR2406149690_渠道配置优化 - 该文档包含明确的修订记录、需求概述、范围、功能模块说明和详细的需求说明，具体描述了系统功能的修改点、查询条件、字段展示规则和业务逻辑，符合软件需求文档的结构化特征。
+2025-12-09 10:52:19,289 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:52:22,504 - INFO - REMOVE: CR2406170277_征信后管系统新增异议处理功能需求 - 该文档是SIT测试报告，主要内容包括测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告类别，而非描述需求背景、功能、业务流程的软件需求文档。
+2025-12-09 10:52:22,508 - INFO - Moved to rubbish2: CR2406170277_征信后管系统新增异议处理功能需求 - Reason: 该文档是SIT测试报告，主要内容包括测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告类别，而非描述需求背景、功能、业务流程的软件需求文档。
+2025-12-09 10:52:23,000 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:52:26,648 - INFO - KEEP: CR2406182579_逾期协商还款转线需求 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、功能描述等结构化章节；详细描述了系统功能（如新增接口、工作台优化）、业务流程和业务规则；内容为明确的功能点说明，而非测试、运维、会议纪要等其他类型文档。
+2025-12-09 10:52:26,774 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:52:30,793 - INFO - KEEP: CR2406182625_标签虚拟产品枚举值中文调整 - 该文本具备软件需求文档的核心特征：包含明确的“需求背景”和“需求内容”章节，详细描述了需要调整的系统功能（标签枚举值）和具体的业务规则（将“加邮贷”调整为“循环贷加邮客群”），并列举了涉及的具体用户属性和行为，属于结构化的需求描述。
+2025-12-09 10:52:30,916 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:52:34,667 - INFO - KEEP: CR2406193343_中邮消费金融资金账户余额对账功能迭代需求 - 该文档标题为“需求规格说明书”，并包含软件需求文档的典型特征：有明确的需求背景、业务目标、业务流程说明、功能需求章节、功能点清单以及结构化的目录（如非功能需求、附录等），符合判断标准中的1、2、3、4点。
+2025-12-09 10:52:34,831 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:52:38,651 - INFO - KEEP: CR2406215595_监管报表增加新产品 - 该文档标题为“业务需求说明书”，并包含需求概述、需求背景、业务目标、术语与缩略语、业务流程、功能需求等典型软件需求文档的结构化章节。内容明确描述了新增产品属性、报表统计逻辑等具体功能点和业务规则，符合软件需求文档的特征。
+2025-12-09 10:52:38,768 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:52:42,068 - INFO - KEEP: CR2406215719_通用循环贷标准API结清证明优化 - 文本包含明确的软件需求文档特征：有结构化的章节（需求概述、需求规格说明），描述了需求背景、业务目标、功能说明、业务流程和接口调整，属于对系统功能优化的具体需求描述。
+2025-12-09 10:52:42,192 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:52:46,400 - INFO - KEEP: CR2406215797_小赢科技担保引流项目 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、功能描述等结构化章节；详细描述了系统功能、业务流程（如结清证明申请、数据流转、判断逻辑）和接口交互；提供了明确的功能点与业务规则说明（如开具条件、时间逻辑）；整体为典型的需求规格说明书结构。
+2025-12-09 10:52:46,526 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:52:51,480 - INFO - REMOVE: CR2406215890_费用支出数字化转型项目需求 - 提供的文本主要由两部分组成。第一部分是SIT测试报告，内容为测试人员、周期、结果等，属于明确的测试文档。第二部分虽然标题为需求文档且包含功能描述、业务流程等章节，但内容不完整，存在大量待梳理、待确认的占位项和图片引用，实质性需求描述过少且结构化不足。综合来看，整体文本不符合完整、结构化软件需求文档的特征。
+2025-12-09 10:52:51,485 - INFO - Moved to rubbish2: CR2406215890_费用支出数字化转型项目需求 - Reason: 提供的文本主要由两部分组成。第一部分是SIT测试报告，内容为测试人员、周期、结果等，属于明确的测试文档。第二部分虽然标题为需求文档且包含功能描述、业务流程等章节，但内容不完整，存在大量待梳理、待确认的占位项和图片引用，实质性需求描述过少且结构化不足。综合来看，整体文本不符合完整、结构化软件需求文档的特征。
+2025-12-09 10:52:51,610 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:52:55,482 - INFO - KEEP: CR2406246467_乐信担保引流二期 - 该文档标题为“业务需求说明书”，内容包含需求背景、目的、业务范围、系统相关方等概述章节，并详细描述了“凭证材料申请”等多个功能点的具体业务流程、业务规则和接口要求，具有明确的结构化需求描述，符合软件需求文档的特征。
+2025-12-09 10:52:55,594 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:52:58,665 - INFO - REMOVE: CR2406258521_征信查询前置系统源代码优化需求 - 该文本是一个需求确认单的模板或填写说明，主要规定了填写规范、审批流程和文档链接，并未包含任何具体的需求背景、业务目标、功能描述或结构化需求说明，因此不符合软件需求文档的特征。
+2025-12-09 10:52:58,667 - INFO - Moved to rubbish2: CR2406258521_征信查询前置系统源代码优化需求 - Reason: 该文本是一个需求确认单的模板或填写说明，主要规定了填写规范、审批流程和文档链接，并未包含任何具体的需求背景、业务目标、功能描述或结构化需求说明，因此不符合软件需求文档的特征。
+2025-12-09 10:52:58,792 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:53:02,959 - INFO - KEEP: CR2406268796_客户回捞（360融担）二期迭代需求 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、产品范围等章节；详细描述了“用信流程新增紧急联系人字段”和“对账文件新增结算明细文件”的功能说明、业务流程和业务规则；内容为结构化的需求规格说明，而非测试报告、会议纪要等其他类型文档。
+2025-12-09 10:53:03,080 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:53:06,797 - INFO - KEEP: CR2406269561_期前机器人6月语义优化需求 - 该文档具备软件需求文档的核心特征：包含明确的需求背景、业务目标、功能需求章节（如功能说明），并采用结构化的目录和需求描述格式（如功能列表）。其内容旨在定义对机器人平台语料优化的功能要求，属于系统改进的需求规格说明。
+2025-12-09 10:53:06,936 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:53:10,717 - INFO - KEEP: CR2406269664_模型开发平台特征工程重构 - 该文档标题为《业务需求说明书》，并包含需求背景、业务目标、术语定义、功能点清单等标准章节。内容详细描述了系统功能模块（如特征工程、模型构建）的具体需求、业务规则和操作流程，具有明确的结构化需求描述，符合软件需求文档的特征。
+2025-12-09 10:53:10,873 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:53:15,498 - INFO - KEEP: CR2406270660_小赢科技（担保）项目需求 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程、功能点清单（如风险报表、接口调用、决策流程等）、非功能需求、明确的系统功能与规则说明（如审批规则、字段映射、短信模板等），且结构完整，符合需求文档的典型章节组织。
+2025-12-09 10:53:15,776 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:53:18,953 - INFO - KEEP: CR2406270919_渠道号申请关联工作协同平台合同审批流程 - 该文档包含需求背景、范围、功能模块说明和详细的需求描述，具体说明了系统功能、业务规则、接口调用和界面交互等结构化需求，符合软件需求文档的特征。
+2025-12-09 10:53:19,238 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:53:22,422 - INFO - KEEP: CR2406271469_关于指定账号取消审计部与风险部决策中心系统权限隔离 - 该文档具有软件需求文档的典型结构，包含需求背景、业务目标、业务流程、功能点清单等章节，并明确描述了系统功能变更（取消特定账号的部门隔离权限限制），符合软件需求文档的特征。
+2025-12-09 10:53:22,576 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:53:26,445 - INFO - KEEP: CR2406282101_贷中调整产品要素_客服需求 - 该文档具备软件需求文档的核心特征：包含明确的需求概述、背景、业务流程、流程图及结构化功能说明（如字段优化、操作界面、业务规则），详细描述了系统功能、接口和业务规则，符合需求文档的定义。
+2025-12-09 10:53:26,617 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:53:30,971 - INFO - KEEP: CR2406282296_征信后管征信异议处理_客服配套需求 - 该文档具有软件需求文档的典型特征：包含需求背景、业务目标、业务流程等结构化章节；详细描述了系统功能（如工单优化、信息同步）、业务规则和操作界面；内容为功能点说明而非测试、运维或会议记录。
+2025-12-09 10:53:31,121 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:53:34,135 - INFO - KEEP: CR2406282605_核销需求迭代优化 - 该文档包含需求概述、功能描述、业务流程、业务规则等结构化章节，详细描述了系统新增的自动审查功能、操作流程、数据字段和审查规则，符合软件需求文档的特征。
+2025-12-09 10:53:34,284 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:53:38,029 - INFO - KEEP: CR2406283239_新增营运还款要素相关标签 - 该文本具备软件需求文档的核心特征：包含明确的“需求背景”和“需求内容”章节，描述了新增系统功能（用户属性标签）的具体业务目标、功能描述以及结构化的业务规则说明（如标签值类型、更新方式、规则逻辑）。
+2025-12-09 10:53:38,149 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:53:42,294 - INFO - KEEP: CR2406283771_智能催收机器人6月迭代优化需求 - 该文档具有软件需求文档的典型特征：包含需求背景、业务目标、业务流程等结构化章节；详细描述了系统功能（如知识库管理、一键上线、录音合成）、业务规则和操作流程；提供了明确的功能点清单和需求规格说明，符合软件需求文档的定义。
+2025-12-09 10:53:42,295 - INFO - ============================================================
+2025-12-09 10:53:42,295 - INFO - Processing complete!
+2025-12-09 10:53:42,295 - INFO - Total kept: 32
+2025-12-09 10:53:42,295 - INFO - Total moved to rubbish2: 6
+2025-12-09 10:53:42,296 - INFO - ============================================================
+2025-12-09 10:59:31,566 - INFO - ============================================================
+2025-12-09 10:59:31,566 - INFO - Starting requirement document filtering
+2025-12-09 10:59:31,566 - INFO - Model: deepseek
+2025-12-09 10:59:31,566 - INFO - Dry run: False
+2025-12-09 10:59:31,566 - INFO - ============================================================
+2025-12-09 10:59:31,827 - INFO - Processing month: 2024-08
+2025-12-09 10:59:31,844 - INFO - Found 54 requirement files in 2024-08
+2025-12-09 10:59:32,834 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:59:35,847 - INFO - KEEP: CR2408015668_关于下架官网展示产品加邮贷、业主贷的需求 - 文本明确提出了一个功能变更需求（下架官网特定产品的展示），并指定了实施范围（PC端和移动端），符合软件需求文档中描述系统功能或变更要求的特征。
+2025-12-09 10:59:36,003 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:59:39,485 - INFO - KEEP: CR2408015936_客户回捞（永鸿兴融担）对接及分发中心优化需求 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、功能描述等结构化章节；详细描述了系统功能（如分发中心、贷款协议同步）、业务流程和业务规则；有明确的功能点与接口要求说明；整体为结构化的需求规格说明。
+2025-12-09 10:59:39,622 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:59:42,639 - INFO - REMOVE: CR2408026289_关于地址解析服务部署以及新版农户、新市民标签开发的需求 - 该文档标题为“性能测试报告”，内容主要描述性能测试的目的、结论、策略、资源及测试结果数据，属于测试报告范畴，不符合软件需求文档应包含需求背景、功能描述、业务规则等特征。
+2025-12-09 10:59:42,643 - INFO - Moved to rubbish2: CR2408026289_关于地址解析服务部署以及新版农户、新市民标签开发的需求 - Reason: 该文档标题为“性能测试报告”，内容主要描述性能测试的目的、结论、策略、资源及测试结果数据，属于测试报告范畴，不符合软件需求文档应包含需求背景、功能描述、业务规则等特征。
+2025-12-09 10:59:42,790 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:59:46,694 - INFO - KEEP: CR2408026351_减免调账单支持客户自主上传材料需求 - 该文档标题为《业务需求规格说明书》，内容包含需求背景、业务目标、详细的功能描述（如发送短信、H5页面、还款承诺书模板）、业务规则、操作界面说明、数据字段定义等结构化需求，符合软件需求文档的特征。
+2025-12-09 10:59:46,863 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:59:50,128 - INFO - KEEP: CR2408026494_司法评分卡接入决策引擎 - 该文档标题为“需求规格说明书”，内容结构包含需求背景、业务目标、功能描述（如司法评分卡入策略的具体逻辑）、数据流程及非功能需求等章节，符合软件需求文档的特征。
+2025-12-09 10:59:50,254 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:59:54,289 - INFO - KEEP: CR2408026827_智能机器人8月优化迭代需求 - 该文本是《智能机器人8月迭代业务需求规格说明书》的文档模板或框架，其章节结构完全符合软件需求文档的特征，包含需求背景、功能描述、业务流程、功能点清单、非功能需求等核心部分，旨在定义系统需求，而非测试报告、会议纪要等其他类型文档。
+2025-12-09 10:59:54,422 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 10:59:57,687 - INFO - KEEP: CR2408057388_身份证OCR接口新增字段渠道侧改造 - 该文档标题为需求文档，内容包含需求概述、范围、功能模块说明，并具体描述了新增字段、业务规则（如触发条件和前端提示文案）以及影响的应用范围，符合软件需求文档的结构化特征。
+2025-12-09 10:59:57,828 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:00:01,982 - INFO - KEEP: CR2408057640_可撤销贷款承诺账务处理需求 - 该文档具备软件需求文档的核心特征：包含明确的需求背景、业务目标、结构化目录（功能需求、非功能需求等），并详细描述了系统需要实现的账务处理逻辑、业务规则、会计分录及特殊场景处理，属于对软件系统的功能性要求说明。
+2025-12-09 11:00:02,130 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:00:06,265 - INFO - KEEP: CR2408078823_自营循环贷担保客户回捞流程新增通过前筛规则的分发机构列表 - 该文档具备软件需求文档的核心特征：包含明确的需求背景、业务目标、业务流程章节；详细描述了系统功能改造（如新增字段、流程节点）；提供了结构化的功能点清单和功能需求说明；文档整体采用标准的需求说明书模板和目录结构。
+2025-12-09 11:00:06,438 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:00:09,429 - INFO - REMOVE: CR2408078994_业务会计调账流程优化需求 - 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 11:00:09,434 - INFO - Moved to rubbish2: CR2408078994_业务会计调账流程优化需求 - Reason: 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 11:00:09,556 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:00:12,913 - INFO - REMOVE: CR2408079253_关于ToB优客贷“其他月收入”字段配置需求 - 该文档标题为“SIT测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告类文档，不符合软件需求文档的特征（如描述需求背景、功能点、业务规则等）。
+2025-12-09 11:00:12,918 - INFO - Moved to rubbish2: CR2408079253_关于ToB优客贷“其他月收入”字段配置需求 - Reason: 该文档标题为“SIT测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告类文档，不符合软件需求文档的特征（如描述需求背景、功能点、业务规则等）。
+2025-12-09 11:00:13,058 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:00:16,734 - INFO - KEEP: CR2408089473_人行征信报告XML新增字段 - 该文档采用了标准的软件需求文档模板，包含需求背景、业务目标、功能需求、非功能需求等结构化章节，并明确描述了系统改造内容（在人行征信报告XML中新增字段送决策中心），符合软件需求文档的特征。
+2025-12-09 11:00:16,891 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:00:20,844 - INFO - KEEP: CR2408089881_核销系统迭代优化需求 - 该文档标题为《核销业务需求规格说明书》，内容包含需求背景、业务目标、功能点清单及详细的功能需求描述（如字段新增、逻辑优化、操作界面说明等），并具有结构化的章节（需求概述、需求规格说明），完全符合软件需求文档的特征。
+2025-12-09 11:00:20,980 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:00:23,548 - INFO - KEEP: CR2408090466_延展期流程增加实名认证状态判断 - 该文档包含需求背景、功能描述、明确的功能点与业务规则说明，并结构化地描述了系统在不同实名状态下的处理流程，符合软件需求文档的特征。
+2025-12-09 11:00:23,718 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:00:26,998 - INFO - KEEP: CR2408121181_决策中心的编排绑定数据取消自动开启空跑 - 该文档标题为“业务需求规格说明书”，结构包含需求背景、功能描述、业务规则等章节，并详细说明了功能需求和非功能需求，符合软件需求文档的特征。
+2025-12-09 11:00:27,134 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:00:30,515 - INFO - KEEP: CR2408121529_营销策略引擎对接大数据时机模型配置优化 - 该文档具备软件需求文档的核心特征：包含需求背景和价值说明，并详细描述了具体的功能修改需求（如触达日期校验规则的变更、提示文案的增加），内容结构化，明确了功能点、业务规则和系统位置。
+2025-12-09 11:00:30,649 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:00:34,010 - INFO - KEEP: CR2408132081_邮数通数字服务平台优化需求 - 该文档标题为“需求规格说明书”，并包含需求背景、业务目标、功能点清单及明确的功能需求描述（如“最终费率”字段精度调整的具体位置），其结构和内容符合软件需求文档的特征。
+2025-12-09 11:00:34,142 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:00:37,169 - INFO - KEEP: CR2408142845_优客贷客群拒绝原因映射迭代需求202408月 - 该文档标题为“业务需求规格说明书”，并包含需求背景、功能需求、非功能需求、业务流程、业务规则等典型软件需求文档的结构化章节，符合软件需求文档的特征。
+2025-12-09 11:00:37,297 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:00:40,113 - INFO - KEEP: CR2408143005_新增电子律师函厂商对接 - 该文档标题为“业务需求规格说明书”，内容包含需求背景、业务目标、详细的功能说明、业务流程描述、业务规则及操作界面等结构化章节，符合软件需求文档的特征。
+2025-12-09 11:00:40,249 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:00:43,948 - INFO - KEEP: CR2408143089_得物借钱风险启动策略 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程等结构化章节；详细描述了系统功能（如决策流程节点、接口清单、数据校验）、业务规则和交互要求；文档结构清晰，有目录和功能说明，属于需求规格说明类文档。
+2025-12-09 11:00:44,080 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:00:46,977 - INFO - KEEP: CR2408143123_友福同享活动新增内部员工相关标签 - 该文档标题明确为需求文档，内容结构包含需求背景、需求价值和需求内容等标准章节，详细描述了新增标签的功能目标、具体标签定义及业务规则，符合软件需求文档的特征。
+2025-12-09 11:00:47,123 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:00:50,375 - INFO - KEEP: CR2408143251_微粒贷核销后还款账务处理功能调整需求 - 文档标题为“需求说明书”，结构包含需求概述（背景、目标、业务流程）、需求与功能点清单、需求规格说明（功能需求、非功能需求）等典型软件需求文档章节，旨在描述系统功能调整的具体需求。
+2025-12-09 11:00:50,499 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:00:53,873 - INFO - REMOVE: CR2408143269_邮数通外部账号自动分配机构权限业务需求 - 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能点、业务规则等）。
+2025-12-09 11:00:53,877 - INFO - Moved to rubbish2: CR2408143269_邮数通外部账号自动分配机构权限业务需求 - Reason: 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能点、业务规则等）。
+2025-12-09 11:00:54,022 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:00:58,672 - INFO - KEEP: CR2408143417_征信异议工单短信监控需求 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、功能描述等结构化章节；详细描述了系统功能（如新增监控报表、自动建单）、业务流程、业务规则和操作界面；提供了明确的功能点清单和需求规格说明；文档标题为“业务需求规格说明书”，内容完整且超过100字。
+2025-12-09 11:00:58,988 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:01:02,842 - INFO - KEEP: CR2408153557_新增审批提额结果行为 - 该文档标题明确为“需求文档”，内容结构包含需求背景、需求价值和需求内容等标准章节。需求内容部分详细描述了系统功能的变更（优化现有行为、新增行为）和具体的业务规则（标签配置规则示例），符合软件需求文档的结构化特征和功能描述要求。
+2025-12-09 11:01:02,981 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:01:06,189 - INFO - REMOVE: CR2408153929_东华二代征信报送系统用户功能优化需求 - 文本内容仅为需求确认单的通用备注和填写指引，未包含任何具体的需求背景、业务目标、功能描述、业务流程或结构化需求说明，实质内容过少且属于流程性文档。
+2025-12-09 11:01:06,196 - INFO - Moved to rubbish2: CR2408153929_东华二代征信报送系统用户功能优化需求 - Reason: 文本内容仅为需求确认单的通用备注和填写指引，未包含任何具体的需求背景、业务目标、功能描述、业务流程或结构化需求说明，实质内容过少且属于流程性文档。
+2025-12-09 11:01:06,329 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:01:09,377 - INFO - KEEP: CR2408164566_2024年经营管理考核报表固化需求优化 - 文本描述了系统（魔盒报表）需要新增、删除、更新和优化具体业务指标的功能需求，包含明确的功能点和业务规则说明，符合软件需求文档的特征。
+2025-12-09 11:01:09,519 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:01:12,429 - INFO - KEEP: CR2408165125_BOS系统智能路由异常码换线规则需求 - 该文档标题为“需求规格说明书”，并包含需求背景、业务目标、功能描述、业务流程、业务规则、功能点清单等软件需求文档的典型章节和结构化内容，符合软件需求文档的特征。
+2025-12-09 11:01:12,570 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:01:15,950 - INFO - KEEP: CR2408196381_营运管理客户个性化还款方案审批流程合并 - 该文档标题为“业务需求规格说明书”，内容包含需求背景、业务目标、功能点清单、详细的业务规则、操作界面描述、系统交互逻辑和结构化需求说明，完全符合软件需求文档的特征。
+2025-12-09 11:01:16,093 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:01:20,339 - INFO - KEEP: CR2408196386_中移和包360融担产品二代征信报送业务需求 - 该文档标题为《业务需求说明书》，具备软件需求文档的典型特征：包含需求背景、业务目标、功能需求（如二代征信报送规则、短信模板、系统字段配置等）、非功能需求等结构化章节，并详细描述了系统功能与业务规则，符合软件需求文档的定义。
+2025-12-09 11:01:20,470 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:01:23,311 - INFO - REMOVE: CR2408206621_“友福同享 好礼随心兑”活动积分扣减和权益补发需求 - 文本仅提供了文档标题'中邮消费金融系统需求确认单'，内容过少，无实质性的需求描述（如背景、功能、规则等），不符合软件需求文档的结构化特征。
+2025-12-09 11:01:23,317 - INFO - Moved to rubbish2: CR2408206621_“友福同享 好礼随心兑”活动积分扣减和权益补发需求 - Reason: 文本仅提供了文档标题'中邮消费金融系统需求确认单'，内容过少，无实质性的需求描述（如背景、功能、规则等），不符合软件需求文档的结构化特征。
+2025-12-09 11:01:23,462 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:01:27,153 - INFO - KEEP: CR2408206654_执行案件自动化转派需求 - 该文档具备软件需求文档的核心特征：包含需求概述、业务目标、详细的功能规格说明（如新增发起留案确认操作、留案确认管理优化等）、业务流程描述、业务规则、操作界面说明、岗位权限控制及异常处理等结构化内容，符合需求文档的定义。
+2025-12-09 11:01:27,290 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:01:30,353 - INFO - KEEP: CR2408206759_委外佣金自动化核对需求 - 文档标题为“需求规格说明书”，内容包含需求背景、业务目标、功能点详细描述、业务流程、业务规则、操作界面说明等结构化需求特征，符合软件需求文档的定义。
+2025-12-09 11:01:30,490 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:01:33,873 - INFO - REMOVE: CR2408217597_【数据需求】额度测算魔盒报表需求 - 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 11:01:33,878 - INFO - Moved to rubbish2: CR2408217597_【数据需求】额度测算魔盒报表需求 - Reason: 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 11:01:34,008 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:01:36,947 - INFO - REMOVE: CR2408217603_线下邮你贷业务优化需求（双录文案等） - 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如需求背景、功能描述等）。
+2025-12-09 11:01:36,952 - INFO - Moved to rubbish2: CR2408217603_线下邮你贷业务优化需求（双录文案等） - Reason: 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如需求背景、功能描述等）。
+2025-12-09 11:01:37,093 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:01:40,269 - INFO - KEEP: CR2408217850_电催投诉台账报表字段统计逻辑优化 - 该文档标题为“业务需求规格说明书”，内容包含需求背景、业务目标、功能需求描述（明确三个字段的统计逻辑优化），并具有结构化的章节（如需求概述、需求规格说明），符合软件需求文档的特征。
+2025-12-09 11:01:40,400 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:01:44,117 - INFO - KEEP: CR2408228330_友福同享活动优化老客及团长相关标签 - 该文档具备软件需求文档的核心特征：包含需求背景、价值目标和具体需求内容章节，明确描述了需要优化和新增的系统功能（用户属性标签的实时更新与新增），并指向了更详细的需求清单（标签口径说明），属于结构化的需求描述。
+2025-12-09 11:01:44,257 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:01:47,634 - INFO - KEEP: CR2408228637_委外系统8月迭代优化需求 - 该文档标题为《委外催收优化业务需求规格说明书》，内容结构包含需求概述、需求规格说明等章节，并详细描述了功能需求（如新增角色、优化查询、增加字段等）、业务流程、业务规则及操作界面，符合软件需求文档的特征。
+2025-12-09 11:01:47,766 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:01:51,792 - INFO - KEEP: CR2408228865_新增篡改检测指标_风险需求_V1.0 - 该文档采用了标准软件需求文档的结构，包含需求背景、业务目标、业务流程、功能说明（如授信/用信阶段指标计算、地址处理逻辑、接口调用说明）和非功能需求等章节，明确描述了系统功能、业务规则和接口要求，符合软件需求文档的特征。
+2025-12-09 11:01:51,946 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:01:55,135 - INFO - KEEP: CR2408239319_逾期11天失联评分卡 - 该文档标题为“业务需求规格说明书”，内容包含需求背景、业务目标、功能点清单和详细的需求规格说明（如数据获取逻辑、业务规则、非功能需求等），符合软件需求文档的结构化特征。
+2025-12-09 11:01:55,279 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:01:58,306 - INFO - KEEP: CR2408239653_增信中心链接支持配置在协同渠道金刚位 - 该文档包含需求背景、范围、功能模块说明和具体需求描述，明确了功能点（提供通用链接、配置金刚位、登录规则等）和业务规则，结构符合软件需求文档特征。
+2025-12-09 11:01:58,439 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:02:01,413 - INFO - KEEP: CR2408239683_新增提现归因模型授信综合概率 - 该文档标题明确为需求文档，并包含需求背景、需求价值、需求内容等结构化章节，具体描述了新增标签的功能目标与内容，符合软件需求文档的特征。
+2025-12-09 11:02:01,561 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:02:04,589 - INFO - REMOVE: CR2408260276_前端客群监控指标（线下、统一运营）需求 - 该文档标题及内容明确为“系统集成测试报告”，包含测试周期、案例执行情况、缺陷分析、测试结论等章节，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 11:02:04,595 - INFO - Moved to rubbish2: CR2408260276_前端客群监控指标（线下、统一运营）需求 - Reason: 该文档标题及内容明确为“系统集成测试报告”，包含测试周期、案例执行情况、缺陷分析、测试结论等章节，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 11:02:04,738 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:02:08,843 - INFO - KEEP: CR2408271319_蚂蚁反向清退功能优化 - 该文档具有软件需求文档的典型特征：包含需求背景、业务目标、业务流程等章节；描述了系统功能（如优化清退逻辑、去重、拦截并返回异常信息）和明确的业务规则（30天内发起过清退的用户不再发起）；文档结构完整，包含目录、修订记录及需求规格说明，符合结构化需求描述的要求。
+2025-12-09 11:02:08,980 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:02:12,515 - INFO - KEEP: CR2408281683_360借条大额模式（智信产品）风险启动策略 - 该文档标题为“业务需求说明书”，并包含需求概述（背景、目标、业务流程）、功能说明（决策流程节点、接口清单、业务规则）、非功能需求等结构化章节，符合软件需求文档的特征。
+2025-12-09 11:02:12,649 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:02:16,409 - INFO - KEEP: CR2408281765_监管报表增加小赢科技 - 该文档标题为“业务需求说明书”，具备软件需求文档的典型结构（如需求背景、业务目标、功能需求等章节），并具体描述了系统改造的功能需求（如BI监管报表新增产品统计逻辑、指标调整等），符合软件需求文档的特征。
+2025-12-09 11:02:16,559 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:02:21,229 - INFO - KEEP: CR2408281831_模型开发平台优化 - 该文档具备软件需求文档的核心特征：1. 包含需求背景、业务目标、业务流程等标准章节；2. 详细描述了系统各模块（如样本选取、策略回溯、模型构建等）的功能、交互逻辑和业务规则；3. 提供了结构化的需求描述和明确的功能点清单；4. 整体内容围绕系统功能优化展开，属于需求规格说明范畴。
+2025-12-09 11:02:21,378 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:02:24,234 - INFO - KEEP: CR2408291951_悦跑圈APP客群引流 - 该文档标题为“业务需求说明书”，内容包含需求背景、目的、范围、业务流程、系统改造点、接口要求、异常处理等结构化章节，符合软件需求文档的特征描述。
+2025-12-09 11:02:24,369 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:02:27,509 - INFO - KEEP: CR2408292156_渠道号清分规则修改 - 该文档包含需求背景、范围、功能模块说明，并详细描述了业务规则修改（修改前后规则对比、存量数据处理）和系统影响，符合软件需求文档的结构化特征。
+2025-12-09 11:02:27,663 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:02:31,011 - INFO - KEEP: CR2408292359_抖音月付续期功能 - 文档标题为“需求说明书”，结构包含需求背景、业务目标、业务功能需求（含详细业务流程说明）、非功能需求等典型需求文档章节，并描述了系统功能、业务规则和接口要求，符合软件需求文档特征。
+2025-12-09 11:02:31,152 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:02:35,212 - INFO - KEEP: CR2408302889_微粒贷双边审批迭代风险需求 - 该文档标题为“业务需求说明书”，具备软件需求文档的典型结构，包含需求背景、业务目标、术语定义、业务流程、功能说明（如新增独立审批规则、名单校验等具体功能点）和非功能需求章节，内容详细描述了系统功能、业务规则和接口要求，符合软件需求文档的特征。
+2025-12-09 11:02:35,354 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:02:38,652 - INFO - KEEP: CR2408302894_官网产品信息介绍调整需求 - 该文档明确描述了官网产品信息的功能性变更需求（删除和增加特定产品介绍），包含具体的功能点说明（如弹窗交互）和业务规则（如申请条件、额度、利率），结构上分为明确的章节，符合软件需求文档的特征。
+2025-12-09 11:02:38,788 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:02:42,653 - INFO - REMOVE: CR2408303005_积分中心新增白名单及冻结规则自定义配置需求 - 该文档标题为“SIT测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告类文档，不符合软件需求文档的特征（如需求背景、功能描述等）。
+2025-12-09 11:02:42,656 - INFO - Moved to rubbish2: CR2408303005_积分中心新增白名单及冻结规则自定义配置需求 - Reason: 该文档标题为“SIT测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告类文档，不符合软件需求文档的特征（如需求背景、功能描述等）。
+2025-12-09 11:02:42,793 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:02:46,281 - INFO - KEEP: CR2408303010_个税新增衍生变量计算并送决策中心 - 该文档标题为“需求说明书”，并具备软件需求文档的典型特征：包含需求背景、业务目标、功能点清单、功能需求（含逻辑调整和新增变量描述）、非功能需求等结构化章节，明确描述了系统需要实现的功能和业务规则。
+2025-12-09 11:02:46,282 - INFO - ============================================================
+2025-12-09 11:02:46,283 - INFO - Processing complete!
+2025-12-09 11:02:46,283 - INFO - Total kept: 44
+2025-12-09 11:02:46,283 - INFO - Total moved to rubbish2: 10
+2025-12-09 11:02:46,283 - INFO - ============================================================
+2025-12-09 11:03:57,626 - INFO - ============================================================
+2025-12-09 11:03:57,626 - INFO - Starting requirement document filtering
+2025-12-09 11:03:57,626 - INFO - Model: deepseek
+2025-12-09 11:03:57,627 - INFO - Dry run: False
+2025-12-09 11:03:57,627 - INFO - ============================================================
+2025-12-09 11:03:57,879 - INFO - Processing month: 2024-10
+2025-12-09 11:03:57,888 - INFO - Found 43 requirement files in 2024-10
+2025-12-09 11:03:58,700 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:04:02,720 - INFO - KEEP: CR2410080379_车主贷担保合同保存 - 该文档标题为“业务需求说明书”，内容包含需求背景、目的、业务范围、功能需求（如授信确认环节增加担保合同、存量业务担保合同拉取）、业务规则、接口要求等结构化章节，符合软件需求文档的特征描述。
+2025-12-09 11:04:02,853 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:04:06,744 - INFO - KEEP: CR2410091019_蚂蚁花呗联营拆分利息余额字段需求 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、功能描述等结构化章节；详细描述了系统功能（如账务文件字段变更）、业务流程和接口要求；提供了明确的功能点与业务规则说明（如新增subsidy_int_bal字段及其规则）；整体为结构化的需求描述文档。
+2025-12-09 11:04:06,896 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:04:10,889 - INFO - KEEP: CR2410101471_360大额低息资产对接_风险需求 - 该文档采用了标准软件需求文档的结构，包含需求概述（背景、目标、业务流程）、功能需求（如人工审批流程、信审页面功能、接口清单、同盾入黑功能等）、非功能需求等章节，并明确列出了需求与功能点清单，符合软件需求文档的特征。
+2025-12-09 11:04:11,099 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:04:15,162 - INFO - REMOVE: CR2410101580_风控模型统计表优化需求 - 该文档标题为“SIT测试业务系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 11:04:15,164 - INFO - Moved to rubbish2: CR2410101580_风控模型统计表优化需求 - Reason: 该文档标题为“SIT测试业务系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 11:04:15,647 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:04:18,951 - INFO - KEEP: CR2410101858_客户回捞支持催收划扣功能 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、功能描述等结构化章节；详细描述了系统接口功能、业务流程和业务规则；内容为明确的功能点说明，而非测试报告、会议纪要或运维工单等类型。
+2025-12-09 11:04:19,129 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:04:22,393 - INFO - KEEP: CR2410101864_信审中心百行个税页面逻辑调整 - 该文档标题为“业务需求说明书”，内容包含明确的需求背景、业务目标、业务流程说明以及结构化的功能点清单（如展示逻辑调整、剔除特定类目），这些特征均符合软件需求文档的定义。
+2025-12-09 11:04:22,553 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:04:26,288 - INFO - KEEP: CR2410112542_征信数据质量考评机构端提数需求 - 该文档具备软件需求文档的核心特征：包含明确的需求背景、业务目标、业务流程章节；详细描述了系统功能（数据提取内容、格式、规则等）；提供了结构化的需求描述（如功能说明、数据项列表、业务规则）；文档整体结构完整，符合需求说明书的典型格式。
+2025-12-09 11:04:29,837 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:04:33,914 - INFO - KEEP: CR2410112684_账务中心查询日志需求 - 文本包含明确的软件需求文档特征：有“业务需求规格说明书”标题，具备需求概述、背景目标、功能需求（具体功能点描述）和非功能需求等结构化章节，符合软件需求文档的定义。第二个文件是测试报告，但判断依据以第一个需求文档为主。
+2025-12-09 11:04:34,172 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:04:37,219 - INFO - KEEP: CR2410123645_“奇富数科”渠道预审流程回传预估额度及定价 - 该文档标题明确为“业务需求说明书”，内容包含需求背景、目的、范围、功能摘要、业务流程（流程图）、接口要求及安全要求，符合软件需求文档的结构化特征，旨在定义系统功能和业务规则。
+2025-12-09 11:04:37,672 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:04:41,755 - INFO - KEEP: CR2410123649_决策中心输出优客贷是否合照标签需求（IT需求） - 该文档标题为“业务需求规格说明书”，内容包含需求背景、业务目标、功能点清单、详细的功能需求描述（包括业务规则、逻辑判断、接口说明）、业务流程、非功能需求等结构化章节，完全符合软件需求文档的特征。
+2025-12-09 11:04:44,931 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:04:49,103 - INFO - KEEP: CR2410155246_邮数通电催业务支持手工短信费用扣减 - 该文档标题为“需求规格说明书”，内容包含需求背景、功能点清单及详细的需求规格说明（如“电催系统记录手工短信发送组别”和“邮数通电催业务支持手工短信费用扣减”），描述了具体的系统功能、业务规则和操作界面，符合软件需求文档的结构化特征。
+2025-12-09 11:04:49,461 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:04:53,185 - INFO - KEEP: CR2410155280_对客资料收集 - 该文档标题为“需求规格说明书”，内容包含需求背景、业务目标、详细的功能点清单（如资料收集配置、资料收集、资料展示及使用的具体操作、字段、规则）、结构化描述（如功能列表、界面元素、业务流程说明），完全符合软件需求文档的特征。
+2025-12-09 11:04:53,414 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:04:56,903 - INFO - KEEP: CR2410155532_中邮消费金融有限公司投诉调解线上化业务需求 - 该文档标题为《业务需求规格说明书》，内容包含需求背景及业务目标、业务流程、功能点清单、详细的功能规格说明（包括功能描述、业务规则、操作界面、岗位权限等）以及非功能需求，完全符合软件需求文档的结构化特征。
+2025-12-09 11:04:57,053 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:05:00,315 - INFO - KEEP: CR2410166195_抖音小程序新增征信分授权流程 - 该文档包含需求背景、功能模块说明、详细的需求描述（包括业务规则、判断逻辑和接口调用说明），并具有结构化的章节（如简介、范围、需求说明），符合软件需求文档的特征。
+2025-12-09 11:05:00,491 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:05:04,631 - INFO - KEEP: CR2410166250_消息平台营销类推送屏蔽功能修改 - 该文档具备软件需求文档的核心特征：包含需求背景与概述、明确的功能模块说明、详细的需求说明（以修改前后对比形式结构化描述了具体的业务规则和过滤逻辑），并界定了涉及的系统范围。内容聚焦于系统功能修改，而非测试、运维或流程审批等类型。
+2025-12-09 11:05:04,801 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:05:08,123 - INFO - REMOVE: CR2410166319_线下邮你贷与优客贷实现营销员黑名单统一管理的需求 - 该文本是SIT（系统集成测试）报告和测试案例文档，主要内容包括测试人员、测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告类别，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 11:05:08,125 - INFO - Moved to rubbish2: CR2410166319_线下邮你贷与优客贷实现营销员黑名单统一管理的需求 - Reason: 该文本是SIT（系统集成测试）报告和测试案例文档，主要内容包括测试人员、测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告类别，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 11:05:08,267 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:05:11,993 - INFO - KEEP: CR2410176539_新入调解机构统一标准化对接需求 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、功能描述等结构化章节；详细描述了系统功能（如案件自动入池、接口交互）、业务流程和业务规则；内容为需求规格说明，而非测试报告、会议纪要等其他类型文档。
+2025-12-09 11:05:12,134 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:05:15,027 - INFO - REMOVE: CR2410176624_线下产品新增策略运营指标需求 - 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 11:05:15,030 - INFO - Moved to rubbish2: CR2410176624_线下产品新增策略运营指标需求 - Reason: 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 11:05:15,174 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:05:19,314 - INFO - KEEP: CR2410176662_催收自动化排名及派案预测需求 - 该文档标题为“需求规格说明书”，内容结构完整，包含需求概述、业务目标、详细的功能规格说明（如排名机构设置、考核周期管理、综合排名、派案预测）、业务规则、操作界面描述和计算逻辑，符合软件需求文档的特征。
+2025-12-09 11:05:19,471 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:05:22,200 - INFO - KEEP: CR2410187700_关于官网增加“时政要闻”的需求 - 文本描述了明确的功能需求（新增栏目、位置布局、展示规则、模板参考）和业务规则（标题过长处理），并包含结构化描述，符合软件需求文档的特征。
+2025-12-09 11:05:22,326 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:05:25,877 - INFO - KEEP: CR2410187773_抖音月付实时分润需求 - 该文档标题为“需求说明书”，并包含引言、需求背景、业务目标、业务功能需求（含功能说明、业务流程、系统改动）、非功能需求等结构化章节，详细描述了系统功能、业务流程和接口要求，符合软件需求文档的特征。
+2025-12-09 11:05:26,009 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:05:30,063 - INFO - KEEP: CR2410187889_ITM政策需求增加自动生成政策单号功能 - 第一份文档（ITM风险需求新增自动生成政策单号功能）具有软件需求文档的典型特征：包含需求背景、业务目标、功能描述等结构化章节，详细描述了系统功能、业务流程和明确的业务规则说明。第二份文档是测试报告，属于非需求文档类别。
+2025-12-09 11:05:30,220 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:05:33,607 - INFO - KEEP: CR2410187917_智能审计系统现场功能需求 - 该文本具备软件需求文档的核心特征：包含引言（目的、术语）、业务需求概述（背景、目标）、详细的功能需求章节（如非现场审计、数据管理等），并结构化描述了具体功能点、业务规则和界面要素，符合需求规格说明书的定义。
+2025-12-09 11:05:33,785 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:05:37,479 - INFO - KEEP: CR2410218722_新增百易分基础标签 - 该文本具备软件需求文档的核心特征：包含明确的“需求概述”（背景、目标）和“需求规格说明”（功能需求、非功能需求）章节，并描述了新增系统功能（百易分基础标签）及其业务目标，结构符合需求文档格式。
+2025-12-09 11:05:37,653 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:05:40,447 - INFO - KEEP: CR2410228955_邮数通委外年度服务费台账需求 - 该文档标题为“需求规格说明书”，内容包含需求概述、需求规格说明等结构化章节，详细描述了系统功能点、业务规则、操作界面和业务流程，符合软件需求文档的特征。
+2025-12-09 11:05:40,574 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:05:44,150 - INFO - KEEP: CR2410229058_授信场景学籍接口调用需求 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程等结构化章节，并详细描述了新增接口的功能说明、接口清单、决策规则、数据落库等具体功能点与业务规则，符合需求规格说明书的定义。
+2025-12-09 11:05:44,329 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:05:48,072 - INFO - KEEP: CR2410230054_抖音月付清退时效优化需求 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程等标准章节；详细描述了“实时生成黑名单完成清退”的具体功能需求、业务规则和数据处理逻辑；文档结构完整，符合需求说明书的格式要求。
+2025-12-09 11:05:48,252 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:05:51,522 - INFO - KEEP: CR2410230070_风险拒绝码统一分类需求 - 该文档标题为“需求说明书”，包含需求背景、业务目标、功能点清单等结构化章节，详细描述了系统需要实现的功能（如新增维护页面、数据存储规则、历史数据处理逻辑）和业务规则，符合软件需求文档的特征。
+2025-12-09 11:05:51,653 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:05:55,079 - INFO - KEEP: CR2410239971_新增三方回家相关标签 - 该文档具备软件需求文档的核心特征：包含明确的需求背景、需求价值和详细的需求内容章节；描述了需要新增的标签、属性及涉及的业务范围；有结构化的需求描述（如标签概述和具体功能点列表）。
+2025-12-09 11:05:55,224 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:06:01,175 - INFO - REMOVE: CR2410240738_三方回家可营销客户标签需求 - 提供的文本包含两个文档。第一个文档（SIT测试报告）是测试报告，属于“不是软件需求文档的情况”中的第1类。第二个文档（需求说明书）虽然标题和结构类似需求文档，但根据其内容节选（如“不涉及”频繁出现、缺少实质性的功能描述和业务规则说明），它可能是一个不完整或内容过少的框架，但仅凭节选无法完全断定。然而，由于判断是基于整体提供的文本，而第一个文档明确不是需求文档，因此综合判断为否。
+2025-12-09 11:06:01,177 - INFO - Moved to rubbish2: CR2410240738_三方回家可营销客户标签需求 - Reason: 提供的文本包含两个文档。第一个文档（SIT测试报告）是测试报告，属于“不是软件需求文档的情况”中的第1类。第二个文档（需求说明书）虽然标题和结构类似需求文档，但根据其内容节选（如“不涉及”频繁出现、缺少实质性的功能描述和业务规则说明），它可能是一个不完整或内容过少的框架，但仅凭节选无法完全断定。然而，由于判断是基于整体提供的文本，而第一个文档明确不是需求文档，因此综合判断为否。
+2025-12-09 11:06:01,320 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:06:06,816 - INFO - KEEP: CR2410240755_中邮消费金融有限公司AI大模型工单优化2.1业务需求 - 该文档标题为“业务需求规格说明书”，并包含需求概述、背景目标、业务流程、功能点清单、详细功能说明（如规则、界面、权限）及非功能需求等结构化章节，符合软件需求文档的特征。
+2025-12-09 11:06:06,953 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:06:10,648 - INFO - KEEP: CR2410240805_悦跑圈授信用信结果回传 - 该文档具备软件需求文档的核心特征：包含需求背景、目的、范围等章节；详细描述了“授信用信结果回传”的业务流程、系统交互及接口字段要求；有结构化的功能点与改造点说明；整体内容完整，属于业务需求说明书。
+2025-12-09 11:06:10,888 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:06:14,422 - INFO - KEEP: CR2410251327_客户引流在线服务需求 - 该文档具备软件需求文档的核心特征：包含需求背景与业务目标、详细的功能描述（如新增菜单、配置规则、业务流程）、结构化的需求清单和功能点说明、接口定义以及非功能需求章节，符合需求文档的典型结构。
+2025-12-09 11:06:14,559 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:06:17,503 - INFO - KEEP: CR2410251679_优化反洗钱系统客户九要素信息展示 - 该文本包含需求背景（审计发现问题）、明确的变更内容（新增字段和展示流程），并描述了具体的系统功能点，符合软件需求文档的结构化特征。
+2025-12-09 11:06:17,660 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:06:20,893 - INFO - REMOVE: CR2410251751_【费用支出】试运行需求迭代二 - 文本内容为系统集成测试报告（SIT测试报告），主要包含测试人员、测试周期、案例执行情况和测试结论，属于测试报告类别，不符合软件需求文档的特征（如需求背景、功能描述、业务规则等）。
+2025-12-09 11:06:20,896 - INFO - Moved to rubbish2: CR2410251751_【费用支出】试运行需求迭代二 - Reason: 文本内容为系统集成测试报告（SIT测试报告），主要包含测试人员、测试周期、案例执行情况和测试结论，属于测试报告类别，不符合软件需求文档的特征（如需求背景、功能描述、业务规则等）。
+2025-12-09 11:06:21,024 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:06:24,158 - INFO - KEEP: CR2410282166_抖音星选新增额度续期功能（风险需求） - 该文档标题为“业务需求说明书”，并包含需求背景、业务目标、业务流程、功能需求清单等结构化章节，内容详细描述了系统功能、业务规则和接口要求，符合软件需求文档的特征。
+2025-12-09 11:06:24,294 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:06:27,287 - INFO - KEEP: CR2410282650_360借条（循环）产品二代征信报送业务需求 - 该文档标题为“业务需求说明书”，并包含需求背景、业务目标、业务流程、功能需求、非功能需求等结构化章节，详细描述了系统功能、业务规则和接口要求，符合软件需求文档的特征。
+2025-12-09 11:06:27,428 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:06:30,660 - INFO - KEEP: CR2410293312_中邮消费金融公司融担业务监控新增账户业务需求说明书 - 该文档标题为“需求规格说明书”，内容结构包含需求背景、业务目标、业务流程、功能点清单及详细的功能需求、非功能需求等章节，符合软件需求文档的典型特征。
+2025-12-09 11:06:30,920 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:06:34,810 - INFO - KEEP: CR2410303601_二代人行标图标签开发修复 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程、功能模块（如“我的工作台”、“数据源管理”等）的详细规格说明、非功能需求章节，以及结构化的目录和需求清单，符合需求文档的定义。
+2025-12-09 11:06:34,941 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:06:38,460 - INFO - KEEP: CR2410303701_中邮消费已授权客户贷款信息纳入母行统一授信视图 - 该文档标题为“业务需求说明书”，内容结构包含需求背景、业务目标、功能点清单、功能需求、非功能需求等典型软件需求文档章节，详细描述了系统开发的目标、范围和规格，符合软件需求文档的特征。
+2025-12-09 11:06:38,584 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:06:43,291 - INFO - KEEP: CR2410303736_先息后本字段送渠道系统 - 该文档具备软件需求文档的核心特征：1. 包含需求背景、业务目标、业务流程等标准章节；2. 明确描述了系统功能（透传先息后本字段、数据存储与同步）和接口要求（决策中心输出字段至渠道系统）；3. 提供了结构化的功能点清单和功能需求说明；4. 文档整体结构完整，符合需求规格说明书的格式。
+2025-12-09 11:06:43,421 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:06:46,970 - INFO - KEEP: CR2410303967_客服系统展期申请书调整业务需求 - 该文档标题为“业务需求规格说明书”，并包含需求概述、需求背景及业务目标、业务流程、需求与功能点清单、需求规格说明（含功能说明、业务规则等）以及非功能需求等结构化章节，符合软件需求文档的核心特征。
+2025-12-09 11:06:47,148 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:06:49,772 - INFO - KEEP: CR2410303981_智能催收机器人10月迭代优化需求 - 该文档标题为“需求规格说明书”，并包含需求概述、功能需求、非功能需求等结构化章节，符合软件需求文档的特征。
+2025-12-09 11:06:49,774 - INFO - ============================================================
+2025-12-09 11:06:49,774 - INFO - Processing complete!
+2025-12-09 11:06:49,775 - INFO - Total kept: 38
+2025-12-09 11:06:49,775 - INFO - Total moved to rubbish2: 5
+2025-12-09 11:06:49,775 - INFO - ============================================================
+2025-12-09 11:06:57,966 - INFO - ============================================================
+2025-12-09 11:06:57,966 - INFO - Starting requirement document filtering
+2025-12-09 11:06:57,966 - INFO - Model: deepseek
+2025-12-09 11:06:57,967 - INFO - Dry run: False
+2025-12-09 11:06:57,967 - INFO - ============================================================
+2025-12-09 11:06:58,195 - INFO - Processing month: 2024-11
+2025-12-09 11:06:58,206 - INFO - Found 46 requirement files in 2024-11
+2025-12-09 11:06:59,004 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:07:01,802 - INFO - KEEP: CR2411015244_贷款用途工单转重审任务需求 - 该文档标题为“需求规格说明书”，内容结构包含需求概述、需求规格说明等章节，详细描述了系统功能、业务流程、业务规则和操作界面，符合软件需求文档的特征。
+2025-12-09 11:07:01,955 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:07:06,311 - INFO - KEEP: CR2411045740_邮数通渠道业务数据调整需求 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程、功能点清单等结构化章节，并详细描述了为修复数据问题而需系统执行的功能需求（如补跑、重跑、调整数据的具体场景和规则）。文档结构完整，内容聚焦于系统应实现的功能和业务规则，而非测试、运维或流程审批记录。
+2025-12-09 11:07:06,447 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:07:10,135 - INFO - KEEP: CR2411046274_电催作业系统11月优化需求 - 该文档标题为“需求规格说明书”，目录结构包含需求概述、需求背景、业务流程、功能说明等典型软件需求文档章节，并详细描述了多个功能点的优化需求、业务规则和系统行为，符合软件需求文档的结构化特征。
+2025-12-09 11:07:10,298 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:07:15,064 - INFO - KEEP: CR2411057040_邮数通平台邮政邮储引荐服务费合同协议管理需求 - 该文档具备软件需求文档的核心特征：包含需求背景、需求概述、功能模块（计费规则模块/合同协议）的详细描述，并具体列出了页面示意、功能点（如新增、上传、删除、导出等）和业务规则（如字段说明、枚举值、自动填充逻辑），结构清晰，旨在定义系统功能和业务要求。
+2025-12-09 11:07:15,187 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:07:18,501 - INFO - KEEP: CR2411057093_饿了么C端前置预审规则优化 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、功能说明等结构化章节，并明确描述了系统功能（审批前置规则优化）和业务目标，符合需求文档的格式与内容要求。
+2025-12-09 11:07:18,645 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:07:22,092 - INFO - KEEP: CR2411057294_新增先息后本建议标识标签 - 该文本具备软件需求文档的核心特征：包含明确的“需求背景”、“需求价值”、“需求内容”等结构化章节；详细描述了新增标签的功能目标、业务规则（如标签类型、更新方式、规则）和具体实现内容，旨在指导系统开发。
+2025-12-09 11:07:22,631 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:07:26,304 - INFO - KEEP: CR2411067925_用户中心客户地址更新需求 - 文本包含明确的“需求背景”和“需求内容”，描述了问题的来源（数据检查发现问题）以及需要实现的功能目标（优化补充居住地址信息进用户中心），并涉及业务流程（协同跑数据、提供信息、OCR识别），符合软件需求文档的特征。
+2025-12-09 11:07:26,443 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:07:29,339 - INFO - KEEP: CR2411068308_客户回捞代偿证明需求 - 该文档标题为“业务需求说明书”，并包含需求背景、业务目标、功能描述（代偿证明）、业务流程、业务规则及接口要求等结构化章节，符合软件需求文档的特征。
+2025-12-09 11:07:29,478 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:07:32,332 - INFO - KEEP: CR2411078723_新增统一运营客户生命周期标签 - 该文档标题明确为“需求文档”，并包含需求背景、需求价值、需求内容等结构化章节，描述了新增业务功能（客户生命周期标签）的目标和具体内容，符合软件需求文档的特征。
+2025-12-09 11:07:32,508 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:07:35,982 - INFO - REMOVE: CR2411089352_策略有效性结果表指标变更及增加短期指标等计算（报表、预警平台）需求 - 该文档标题虽包含“需求”字样，但实际内容为系统集成测试（SIT）报告，包含测试周期、案例执行情况、缺陷分析和测试结论等章节，符合“测试报告”的特征，而非描述需求背景、功能、业务流程的软件需求文档。
+2025-12-09 11:07:35,983 - INFO - Moved to rubbish2: CR2411089352_策略有效性结果表指标变更及增加短期指标等计算（报表、预警平台）需求 - Reason: 该文档标题虽包含“需求”字样，但实际内容为系统集成测试（SIT）报告，包含测试周期、案例执行情况、缺陷分析和测试结论等章节，符合“测试报告”的特征，而非描述需求背景、功能、业务流程的软件需求文档。
+2025-12-09 11:07:36,117 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:07:38,713 - INFO - KEEP: CR2411089795_智能催收机器人11月迭代优化需求 - 该文档标题为“需求规格说明书”，并包含需求背景、业务目标、功能描述、业务流程、功能点清单等软件需求文档的典型结构化章节，符合判断标准。
+2025-12-09 11:07:38,857 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:07:42,503 - INFO - KEEP: CR2411089870_客服工单AI大模型V2.2优化需求 - 该文档标题为“业务需求规格说明书”，内容结构包含需求概述、需求背景及业务目标、业务流程、需求与功能点清单、详细的需求规格说明（包括功能说明、业务规则、操作界面描述等）以及非功能需求，符合软件需求文档的典型特征。
+2025-12-09 11:07:42,670 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:07:46,519 - INFO - KEEP: CR2411089875_客服系统第三方贷款销户需求 - 该文档具备软件需求文档的核心特征：包含需求背景与业务目标、结构化目录（功能点清单、需求规格说明）、详细的功能描述（如新增操作页面、业务规则）、业务流程说明、接口要求（调用注销接口）以及非功能需求章节，符合需求文档的定义。
+2025-12-09 11:07:46,768 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:07:50,694 - INFO - KEEP: CR2411110213_外部机构催记及录音统一回传需求 - 该文档标题为“需求规格说明书”，内容包含明确的需求背景、功能描述（如催收记录和录音回传接口）、详细的业务规则与接口参数说明，并具有结构化的章节（如需求概述、需求规格说明），符合软件需求文档的特征。
+2025-12-09 11:07:50,826 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:07:53,949 - INFO - KEEP: CR2411110218_新增市场三方客群类型等标签 - 该文档标题明确为“需求文档”，内容结构包含需求背景、需求价值、需求内容等标准章节，并详细描述了新增和优化系统标签的功能点、业务规则及配置示例，符合软件需求文档的结构化特征。
+2025-12-09 11:07:54,086 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:07:58,248 - INFO - KEEP: CR2411110241_电子律师函发送二期优化需求 - 该文档标题为“需求规格说明书”，内容包含需求背景、业务目标、详细的功能描述（如电子律师函手工导入修改、案件详情页面增加操作等）、结构化需求规格说明（功能点、业务规则、界面要求、配置规则）、业务流程说明以及非功能需求，完全符合软件需求文档的特征。
+2025-12-09 11:07:58,833 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:08:02,163 - INFO - KEEP: CR2411110508_调账平台减免顺序改造需求 - 该文档具备软件需求文档的核心特征：包含明确的需求背景、业务目标、功能描述（如减免顺序调整、超额备注等）、结构化章节（需求概述、需求规格说明），并详细定义了业务规则、系统改造要求和接口流程，符合软件需求文档的定义。
+2025-12-09 11:08:02,395 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:08:06,440 - INFO - KEEP: CR2411110840_邮数通平台对接财务系统事由字段优化需求 - 该文档包含明确的需求背景、业务目标、详细的功能描述（事由字段的自动生成规则、取值逻辑、多笔账单处理等），并提供了结构化的需求说明（如适用板块、模板、示例、取值映射），符合软件需求文档的特征。
+2025-12-09 11:08:06,617 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:08:10,526 - INFO - KEEP: CR2411121315_淘宝消费贷项目二期迭代需求 - 该文档标题为《业务需求说明书》，内容结构包含需求概述（背景、目标）、功能需求规格说明（详细描述了解绑卡、手机号更换、支付账户查询、合同签章等功能的业务流程、业务规则和接口要求），符合软件需求文档的结构化特征，旨在定义系统新增功能和行为。
+2025-12-09 11:08:10,667 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:08:14,033 - INFO - KEEP: CR2411121588_三方产品新增额度续期功能（风险需求） - 该文档标题为“业务需求说明书”，具有软件需求文档的典型结构（如需求背景、业务目标、功能需求等章节），并详细描述了系统功能（如额度续期流程、客户清退规则）和业务规则，符合软件需求文档的特征。
+2025-12-09 11:08:14,182 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:08:17,546 - INFO - KEEP: CR2411122020_新增IOC策略器打标记录标签 - 该文档标题明确为“需求文档”，并包含需求背景、需求价值、需求内容等结构化章节。需求内容部分详细描述了拟新增的标签、相关行为属性的修改以及具体的标签配置规则示例，符合软件需求文档描述系统功能、业务规则等特征。
+2025-12-09 11:08:17,736 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:08:20,888 - INFO - KEEP: CR2411132506_饿了么（ToC）支持营销派券需求 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、功能需求等结构化章节；详细描述了优惠券发放、使用等系统功能、业务流程和业务规则；内容完整，属于典型的业务需求说明书。
+2025-12-09 11:08:21,081 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:08:24,394 - INFO - REMOVE: CR2411132730_自营及协同渠道风险预警平台新增策略运营指标需求 - 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 11:08:24,396 - INFO - Moved to rubbish2: CR2411132730_自营及协同渠道风险预警平台新增策略运营指标需求 - Reason: 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 11:08:24,518 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:08:27,433 - INFO - KEEP: CR2411142909_贷后批量决策引擎增加债转标识 - 该文档标题为“需求规格说明书”，并包含需求背景、业务目标、功能描述、业务规则等软件需求文档的典型章节和结构化内容，旨在定义系统需实现的功能变更。
+2025-12-09 11:08:27,562 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:08:30,864 - INFO - REMOVE: CR2411142970_三方渠道风险预警平台新增策略运营指标需求 - 该文档标题及内容明确为“系统集成测试报告”，包含测试周期、案例执行情况、缺陷分析和测试结论等章节，属于测试报告范畴，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 11:08:30,865 - INFO - Moved to rubbish2: CR2411142970_三方渠道风险预警平台新增策略运营指标需求 - Reason: 该文档标题及内容明确为“系统集成测试报告”，包含测试周期、案例执行情况、缺陷分析和测试结论等章节，属于测试报告范畴，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 11:08:30,994 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:08:34,206 - INFO - KEEP: CR2411143064_新增还款金奖励账务中心需求 - 该文档标题为“业务需求规格说明书”，内容包含需求背景、业务目标、术语定义、功能需求（详细描述了还款金抵扣的业务规则、逻辑和案例）、业务流程描述、非功能需求章节等，完全符合软件需求文档的结构化特征。
+2025-12-09 11:08:34,333 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:08:37,518 - INFO - KEEP: CR2411143090_归集管理魔盒触发的预警消息 - 该文档标题为“需求规格说明书”，并包含需求概述、业务流程、功能点清单、功能需求与非功能需求等结构化章节，明确描述了系统功能、业务规则和修改逻辑，符合软件需求文档的特征。
+2025-12-09 11:08:37,661 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:08:40,483 - INFO - KEEP: CR2411184308_客服智能话务标签系统优化需求 - 该文档包含需求背景、业务目标、功能说明、业务规则等结构化章节，详细描述了系统功能、业务流程和具体功能点，符合软件需求文档的特征。
+2025-12-09 11:08:40,616 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:08:44,021 - INFO - KEEP: CR2411195759_蚂蚁花呗及花呗信用借据级资金流水文件对接需求 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、功能描述、业务流程、业务规则、非功能需求等结构化章节，详细描述了系统需实现的功能、接口、数据处理等具体需求，符合需求说明书的典型格式与内容要求。
+2025-12-09 11:08:44,147 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:08:47,508 - INFO - KEEP: CR2411216704_360融担产品流程优化 - 该文档具备软件需求文档的核心特征：包含需求背景、目的、业务范围、相关方等概述章节；有明确的功能需求章节（如额度恢复优化、存量业务额度调整），并描述了具体的业务规则和业务流程；文档结构完整，符合需求说明书的典型格式。
+2025-12-09 11:08:47,676 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:08:50,942 - INFO - REMOVE: CR2411217022_促活客群模型(纯同盾)上线需求 - 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告范畴，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 11:08:50,944 - INFO - Moved to rubbish2: CR2411217022_促活客群模型(纯同盾)上线需求 - Reason: 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告范畴，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 11:08:51,067 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:08:54,163 - INFO - REMOVE: CR2411217025_促活客群模型(有人行)上线需求 - 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 11:08:54,166 - INFO - Moved to rubbish2: CR2411217025_促活客群模型(有人行)上线需求 - Reason: 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 11:08:54,292 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:08:57,658 - INFO - KEEP: CR2411217115_通用循环贷用信拒绝原因接口优化需求 - 该文档标题为“业务需求说明书”，内容包含需求背景、业务目标、功能需求（拒绝码映射）等结构化章节，并详细描述了功能说明、业务流程和业务规则，符合软件需求文档的特征。
+2025-12-09 11:08:57,784 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:09:01,117 - INFO - KEEP: CR2411217230_合作机构信息表更新需求_1121 - 文档标题为“需求说明书”，且内容结构包含需求背景、业务目标、业务流程、功能需求、非功能需求等软件需求文档的典型章节，明确描述了系统需要更新的具体功能（合作机构信息表更新）。
+2025-12-09 11:09:01,298 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:09:05,481 - INFO - KEEP: CR2411217249_反欺诈疑似欺诈关联人灰名单入库联动需求 - 该文档具备软件需求文档的核心特征：包含明确的需求背景、业务目标、业务流程章节；详细描述了系统功能（如自动同步身份证至灰名单、团伙判断规则、历史数据回溯）和业务规则；文档结构完整，包含需求概述、功能需求清单、非功能需求等典型章节，符合需求说明书的格式。
+2025-12-09 11:09:05,623 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:09:09,881 - INFO - KEEP: CR2411217279_I9减值_银行存款业务_系统改造需求 - 该文档具备软件需求文档的核心特征：包含明确的需求背景、业务目标、业务流程、功能需求清单、结构化功能描述（如数据传入、参数配置、减值计算等具体功能点）以及非功能需求章节，内容完整且超过100字，符合需求文档的定义，而非测试报告、会议纪要等其他类型文档。
+2025-12-09 11:09:10,017 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:09:13,209 - INFO - KEEP: CR2411227513_在线客服重构需求V1.0（APP重构） - 该文档标题为“业务需求规格说明书”，并包含需求背景、业务目标、功能点清单、详细的业务规则、操作界面描述、业务流程及非功能需求等结构化章节，完全符合软件需求文档的特征。
+2025-12-09 11:09:13,353 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:09:17,475 - INFO - KEEP: CR2411258325_执行款标记及司法费用管理优化需求 - 该文档标题为“需求规格说明书”，内容包含需求概述、背景目标，并详细描述了多个功能模块（如执行款流水预关联、对公回款标记、案件状态上传等）的业务规则、操作界面、数据字段和校验逻辑，符合软件需求文档的结构化特征。
+2025-12-09 11:09:17,631 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:09:20,720 - INFO - KEEP: CR2411269191_实名认证流程身份证核验优化_风险需求 - 第二个文档（业务需求说明书）包含需求背景、业务目标、业务流程、功能需求清单、非功能需求等结构化章节，符合软件需求文档特征。第一个文档是测试报告，不符合需求文档定义。
+2025-12-09 11:09:20,859 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:09:24,297 - INFO - KEEP: CR2411269305_核销系统迭代优化需求 - 该文档标题为“需求规格说明书”，内容包含需求背景、功能点清单、详细的功能需求描述（如3.1至3.4节的功能描述、业务规则等）、非功能需求及结构化章节，符合软件需求文档的特征。
+2025-12-09 11:09:24,445 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:09:28,958 - INFO - KEEP: CR2411269395_慧用车_车主贷风险开发需求 - 该文档具有软件需求文档的典型特征：包含需求背景、业务目标、业务流程、功能需求清单、非功能需求等结构化章节；详细描述了系统功能、决策流程、接口变更、数据落库等具体需求；文档标题为“业务需求说明书”，且内容完整，远超100字。
+2025-12-09 11:09:29,093 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:09:32,226 - INFO - KEEP: CR2411270057_优化反洗钱系统接入用户中心客户证有效期文件的需求 - 该文本包含需求背景（人行监管发现问题）、变更内容（功能优化描述），并明确提出了系统对接的具体业务规则和逻辑（如优先对接特定表、取值规则），符合软件需求文档的结构化特征。
+2025-12-09 11:09:32,353 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:09:35,143 - INFO - KEEP: CR2411270101_奇富数科渠道停止校验朴道腾云反欺诈分.XML校验 - 该文档标题为“业务需求说明书”，并包含需求背景、目的、来源、范围、涉及系统及明确的功能描述（编排停用调用及下线校验逻辑），符合软件需求文档的结构化特征。
+2025-12-09 11:09:35,334 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:09:38,113 - INFO - KEEP: CR2411279937_清分中心增加新产品业财对账、资金对账需求 - 该文档标题为“需求规格说明书”，并包含需求背景、业务目标、业务流程、功能需求、非功能需求等结构化章节，符合软件需求文档的特征。
+2025-12-09 11:09:38,258 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:09:41,120 - INFO - KEEP: CR2411280530_车主贷产品功能拓展 - 该文档标题为业务需求说明书，结构包含需求概述、功能需求等章节，详细描述了多个新增接口的功能、输入输出及业务规则，符合软件需求文档的特征。
+2025-12-09 11:09:41,303 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:09:44,573 - INFO - KEEP: CR2411280674_客户回捞催收划扣业务账务中心减免、退费接口配套需求 - 该文档标题为“业务需求规格说明书”，内容结构包含需求概述、需求规格说明等章节，明确描述了需求背景、业务目标、功能需求（如接口变更、业务场景示例）和非功能需求，符合软件需求文档的结构化特征。
+2025-12-09 11:09:44,574 - INFO - ============================================================
+2025-12-09 11:09:44,574 - INFO - Processing complete!
+2025-12-09 11:09:44,574 - INFO - Total kept: 41
+2025-12-09 11:09:44,574 - INFO - Total moved to rubbish2: 5
+2025-12-09 11:09:44,575 - INFO - ============================================================
+2025-12-09 11:15:22,929 - INFO - ============================================================
+2025-12-09 11:15:22,929 - INFO - Starting requirement document filtering
+2025-12-09 11:15:22,930 - INFO - Model: deepseek
+2025-12-09 11:15:22,930 - INFO - Dry run: False
+2025-12-09 11:15:22,930 - INFO - ============================================================
+2025-12-09 11:15:23,173 - INFO - Processing month: 2024-12
+2025-12-09 11:15:23,181 - INFO - Found 47 requirement files in 2024-12
+2025-12-09 11:15:23,922 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:15:27,122 - INFO - KEEP: CR2412021462_审批流中心增加互联网用户角色 - 该文档标题为“业务需求规格说明书”，内容包含需求背景、业务目标、业务流程描述、明确的功能点（如新增角色、初始化配置、菜单屏蔽）以及结构化的需求规格说明章节，符合软件需求文档的特征。
+2025-12-09 11:15:27,316 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:15:30,727 - INFO - KEEP: CR2412021929_度小满借钱贷中重检需求 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程、功能需求清单等结构化章节；详细描述了系统功能、决策流程、接口要求及业务规则；内容完整，远超100字，且标题明确为“业务需求说明书”。
+2025-12-09 11:15:30,865 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:15:33,920 - INFO - KEEP: CR2412032608_APP消息提示小红点显示优化 - 该文档包含需求背景（客服反馈的问题）、需求概述、修改前后的功能描述以及明确的需求范围（针对安卓系统机型和新版本APP），符合软件需求文档的结构化特征，旨在定义系统功能的变更。
+2025-12-09 11:15:34,061 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:15:36,573 - INFO - REMOVE: CR2412032639_调账单初审复核环节业务流程调整 - 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征。
+2025-12-09 11:15:36,576 - INFO - Moved to rubbish2: CR2412032639_调账单初审复核环节业务流程调整 - Reason: 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征。
+2025-12-09 11:15:36,697 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:15:40,762 - INFO - KEEP: CR2412032771_银联商务授信状态查询功能优化 - 该文档具备软件需求文档的核心特征：包含需求背景、目的、业务范围、相关方等概述章节；详细描述了功能需求（授信状态查询优化）及具体的业务规则（如额度状态定义和判断逻辑）；文档结构清晰，有目录和章节划分，属于对系统功能进行定义和说明的规格文档。
+2025-12-09 11:15:40,909 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:15:44,204 - INFO - KEEP: CR2412043097_三方合作渠道反洗钱九要素校验需求 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、功能需求等结构化章节；详细描述了反洗钱九要素校验的具体功能、业务流程和业务规则；内容为对系统行为的明确要求，而非测试、运维或会议记录等类型。
+2025-12-09 11:15:44,336 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:15:48,331 - INFO - KEEP: CR2412043331_2024年12月电催作业系统迭代优化需求 - 该文档标题为“需求规格说明书”，包含需求概述、需求清单、需求背景、业务流程、功能点详细描述（如案件标记功能优化、案件查询支持案件号查询等）、系统相关方等结构化章节，符合软件需求文档的特征。
+2025-12-09 11:15:48,846 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:15:53,981 - INFO - KEEP: CR2412043472_学籍接口调用需求_新增二代人行贷款种类 - 该文档具备软件需求文档的核心特征：包含明确的需求背景、业务目标、业务流程（虽说明不涉及改造但仍作为必填章节列出）、功能说明（具体描述了接口字段新增及落库要求），并采用结构化的需求描述格式（如目录、功能说明、非功能需求等章节）。其内容旨在定义系统需实现的新功能（新增人行征信字段并落库），而非测试、运维或流程审批类文档。
+2025-12-09 11:15:54,180 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:15:57,541 - INFO - KEEP: CR2412043515_新增三方回家授信客户识别变量供决策中心贷中调用 - 该文档具有软件需求文档的典型特征：包含需求背景、业务目标、业务流程、功能需求（明确描述新增变量供决策中心调用）等结构化章节，并提供了具体的功能点（标签ID和名称）说明，符合需求文档的定义。
+2025-12-09 11:15:57,927 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:16:01,418 - INFO - KEEP: CR2412043592_客服投诉工单优化V1.0 - 该文档标题为“业务需求说明书”，内容结构完整，包含需求背景、业务目标、功能点清单、详细的需求规格说明（包括功能说明、业务流程描述、业务规则及操作界面）以及非功能需求，完全符合软件需求文档的特征。
+2025-12-09 11:16:01,562 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:16:04,961 - INFO - KEEP: CR2412053980_蚂蚁花呗信用购征信文件及贷中交互文件对接需求 - 该文档具备软件需求文档的典型特征：包含需求背景、业务目标、功能描述、业务流程、非功能需求等结构化章节，详细描述了系统对接的功能点、文件处理流程及业务规则，是一份完整的业务需求说明书。
+2025-12-09 11:16:05,109 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:16:09,066 - INFO - KEEP: CR2412053987_邮数通费用年结保障需求 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程、功能点清单等结构化章节；详细描述了多个渠道的费用处理功能需求、业务规则变更和系统改造说明；文档结构完整，内容具体，属于对软件系统提出的功能性需求规格说明。
+2025-12-09 11:16:09,209 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:16:13,459 - INFO - KEEP: CR2412054456_湖北村医三农项目(风险需求） - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程等结构化章节；详细描述了系统功能（如决策流程节点、信审页面功能、接口修改）、业务规则和流程说明；内容完整且超过100字实质内容，属于对系统功能、接口及非功能方面进行规格定义的文档。
+2025-12-09 11:16:13,583 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:16:17,563 - INFO - KEEP: CR2412064750_线下受薪申请评分V2新增业务场景 - 该文档标题为“业务需求说明书”，并包含软件需求文档的典型特征：有明确的章节结构（需求背景、业务目标、业务流程、需求与功能点清单等），详细描述了功能模块（如“我的工作台”、“数据源管理”），并包含非功能需求部分，符合需求文档的定义。
+2025-12-09 11:16:17,720 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:16:20,602 - INFO - KEEP: CR2412095935_友福同享活动老客户营销码优化及中心查询补充优化内容 - 文本包含明确的需求背景、修订记录和详细的功能点描述（如字段的增删改、展示格式、业务规则逻辑），符合软件需求文档的结构化特征。
+2025-12-09 11:16:20,743 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:16:24,801 - INFO - KEEP: CR2412096041_湖南高速联合放款项目（风险需求） - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程等概述章节；详细描述了系统功能（如决策流程节点、接口、配置）、业务规则和结构化需求（如功能列表、流程说明）；内容完整，属于系统开发前的需求定义文档。
+2025-12-09 11:16:24,934 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:16:28,568 - INFO - KEEP: CR2412096310_抖音月付清退销户流程优化需求 - 该文档标题为“需求说明书”，包含需求背景、业务目标、功能描述、业务流程说明、非功能需求等结构化章节，详细描述了系统功能优化、接口交互和业务规则，符合软件需求文档的特征。
+2025-12-09 11:16:28,690 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:16:31,919 - INFO - REMOVE: CR2412106766_前端客群监控指标（三方渠道）需求 - 该文档标题为“SIT测试业务系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 11:16:31,920 - INFO - Moved to rubbish2: CR2412106766_前端客群监控指标（三方渠道）需求 - Reason: 该文档标题为“SIT测试业务系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 11:16:32,055 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:16:35,707 - INFO - KEEP: CR2412118003_调账单初审复核环节业务流程调整 - 该文档标题为“业务需求规格说明书”，内容包含需求背景、业务目标、功能点清单、详细的业务规则及操作界面描述，并采用结构化的章节组织（如需求概述、需求规格说明），符合软件需求文档的特征。
+2025-12-09 11:16:35,828 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:16:38,825 - INFO - KEEP: CR2412128428_360借条大额审批流程及额度策略优化 - 该文档标题为“业务需求说明书”，并包含需求背景、业务目标、业务流程、功能说明、非功能需求等结构化章节，详细描述了系统功能、接口调整和业务规则，符合软件需求文档的特征。
+2025-12-09 11:16:38,961 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:16:43,061 - INFO - KEEP: CR2412128510_审批反洗钱核验优化（自营） - 该文档具有软件需求文档的典型特征：包含需求背景、业务目标、业务流程、功能需求清单等结构化章节；详细描述了系统功能、业务规则和接口要求（如数据落库、同步）；文档整体为需求规格说明的框架，而非测试、运维或会议记录等类型。
+2025-12-09 11:16:43,182 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:16:46,399 - INFO - KEEP: CR2412138956_核销系统迭代优化需求 - 该文档标题为“需求规格说明书”，内容结构包含需求背景、功能点清单、详细的功能需求描述（包括功能描述、业务规则等）、非功能需求等章节，符合软件需求文档的典型特征。
+2025-12-09 11:16:46,533 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:16:49,885 - INFO - KEEP: CR2412160104_中邮钱包APP调整启动页版权所有标签 - 文档标题为“需求规格说明书”，并包含需求背景、业务目标、功能点清单等结构化章节，明确描述了“删除启动页底部版权声明”这一具体功能调整，符合软件需求文档的特征。
+2025-12-09 11:16:50,014 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:16:54,276 - INFO - KEEP: CR2412181627_中邮三方场景产品反洗钱客户信息校验需求 - 该文档具备软件需求文档的核心特征：包含明确的引言（需求背景、业务目标）、需求概述、结构化的业务功能需求（如联系方式校验、职业校验的具体规则）、非功能需求（性能、数据处理）以及附件。内容详细描述了系统需要实现的功能、业务规则和校验逻辑，符合需求文档的定义。
+2025-12-09 11:16:54,417 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:16:58,236 - INFO - KEEP: CR2412192442_ITM审批新增默认需求 - 文本包含明确的软件需求文档特征：有需求背景、业务目标、业务流程、功能点清单等结构化章节，描述了具体的系统功能变更（为特定选择框新增默认值），符合需求文档的格式和内容要求。虽然第二部分是测试报告，但核心的第一部分文档是典型的需求规格说明。
+2025-12-09 11:16:58,369 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:17:01,693 - INFO - KEEP: CR2412202948_营销活动参与对象禁入相关标签 - 该文档标题明确为“需求文档”，并包含需求背景、需求价值、需求内容等结构化章节，详细描述了系统需新增和优化的功能点（如用户属性、行为事件、标签口径等），符合软件需求文档的特征。
+2025-12-09 11:17:01,815 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:17:05,026 - INFO - KEEP: CR2412203140_协商还款人工转线需求 - 该文档标题为“业务需求规格说明书”，内容包含需求背景、业务目标、业务流程、功能点清单、详细的功能说明、业务规则及非功能需求等结构化章节，完全符合软件需求文档的特征。
+2025-12-09 11:17:05,166 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:17:07,860 - INFO - KEEP: CR2412203344_优化反洗钱系统接入用户中心客户职业和联系方式文件的需求 - 该文本包含需求背景（人行监管发现问题）、业务目标（补齐存量客户信息）、明确的功能变更描述（优化接口映射、补齐数据），并结构化列出了具体变更内容，符合软件需求文档的特征。
+2025-12-09 11:17:07,987 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:17:10,742 - INFO - KEEP: CR2412203406_优客贷拒绝原因映射迭代需求 - 该文档包含需求背景、业务流程、功能说明等结构化章节，明确描述了因新增授信规则而需进行的系统功能迭代优化，符合软件需求文档的特征。
+2025-12-09 11:17:10,893 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:17:14,008 - INFO - REMOVE: CR2412234704_数据服务平台页面脱敏优化需求 - 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 11:17:14,010 - INFO - Moved to rubbish2: CR2412234704_数据服务平台页面脱敏优化需求 - Reason: 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 11:17:14,198 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:17:17,232 - INFO - KEEP: CR2412245058_关于优化责任认定系统抽样规则和工作调查等功能的需求 - 该文档包含明确的需求背景（工作背景）、结构化的功能调整列表（如规则配置、界面优化、逻辑修改等），并详细描述了具体的功能点与业务规则，符合软件需求文档的特征。
+2025-12-09 11:17:17,400 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:17:21,190 - INFO - KEEP: CR2412245221_中邮三方场景产品额度续期改造及反向清退需求 - 该文档标题为“业务需求说明书”，内容结构包含需求背景、业务目标、产品概述、业务功能需求（含详细业务流程和规则）、非功能需求等章节，符合软件需求文档的特征描述。
+2025-12-09 11:17:21,324 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:17:24,403 - INFO - KEEP: CR2412245300_核销系统迭代优化需求 - 该文档标题为“需求规格说明书”，内容包含需求背景、业务目标、功能描述、业务流程、业务规则等结构化章节，并详细列出了具体的功能点清单和需求规格说明，符合软件需求文档的特征。
+2025-12-09 11:17:24,534 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:17:28,524 - INFO - KEEP: CR2412245439_云闪付融担产品流程优化 - 该文档标题为“业务需求说明书”，内容包含需求背景、目的、相关方、详细的功能需求说明（如授信流程优化、用信流程优化等章节，并描述了业务流程和业务规则），以及安全要求，符合软件需求文档的结构化特征和内容要求。
+2025-12-09 11:17:28,803 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:17:32,189 - INFO - KEEP: CR2412245448_拉卡拉循环产品流程优化 - 该文档具备软件需求文档的核心特征：包含需求背景、目的、功能需求说明（含具体业务规则和接口要求）、安全要求等结构化章节，并详细描述了系统功能变更和业务规则。
+2025-12-09 11:17:32,782 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:17:36,686 - INFO - KEEP: CR2412245457_资产保全系统新增债转材料电子用印功能 - 该文档具备软件需求文档的核心特征：包含明确的需求背景与业务目标、详细的功能描述（如新增菜单、列表字段、操作规则）、结构化的需求规格说明（分章节描述功能点、业务流程、业务规则、界面及权限），并定义了非功能需求，符合软件需求文档的定义。
+2025-12-09 11:17:36,820 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:17:41,200 - INFO - KEEP: CR2412245615_360融担（银联云闪付）新增预授信 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、功能描述（如预授信流程、决策流程节点、接口要求）、结构化的需求规格说明（功能点清单、业务规则）以及非功能需求章节，旨在定义系统应实现的功能和行为。
+2025-12-09 11:17:41,352 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:17:45,390 - INFO - KEEP: CR2412256407_得物借钱及360等渠道前置规则优化 - 该文档具备软件需求文档的核心特征：包含明确的需求背景、业务目标、功能说明（如审批系统前置规则优化）等结构化章节，旨在描述系统功能变更的具体要求，而非测试、运维、会议纪要等其他类型文档。
+2025-12-09 11:17:45,600 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:17:48,515 - INFO - KEEP: CR2412266884_新增协同渠道风险客群分类 - 该文档标题明确为需求文档，并包含需求背景、价值、内容等结构化章节。内容详细描述了拟新增的用户属性标签及其具体的配置规则和业务逻辑，符合软件需求文档的特征。
+2025-12-09 11:17:48,871 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:17:51,891 - INFO - KEEP: CR2412267128_度小满分润项目优化需求 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、功能点清单等结构化章节，并明确描述了系统功能（审批系统前置规则）的具体修改要求，属于对软件系统的功能性需求说明。
+2025-12-09 11:17:52,046 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:17:56,018 - INFO - KEEP: CR2412277246_度小满分润预授信变量送入决策中心 - 该文档标题为“需求说明书”，包含需求背景、业务目标、功能点清单等结构化章节，并明确描述了系统功能（将预授信变量送入决策中心）和业务规则（调用最近一次预授信信息），符合软件需求文档的特征。
+2025-12-09 11:17:56,169 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:17:59,873 - INFO - KEEP: CR2412277358_机构服务费总额自动化比对及复核 - 该文档标题为“需求规格说明书”，内容包含需求概述、业务目标、详细的功能规格说明（如功能点、业务规则、界面操作、接口要求）、业务流程及结构化需求描述，符合软件需求文档的特征。
+2025-12-09 11:18:00,009 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:18:03,827 - INFO - KEEP: CR2412277502_微粒贷项目接口下线 - 该文档标题为“业务需求说明书”，结构包含需求概述（背景、目标、业务流程）和需求规格说明（功能说明、非功能需求），明确描述了系统功能（如接口下线、策略下线）和业务目标，符合软件需求文档的特征。
+2025-12-09 11:18:03,967 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:18:07,951 - INFO - KEEP: CR2412277610_阳光消金联合贷产品项目对接需求 - 该文档标题为“业务需求说明书”，并包含引言、需求背景、业务目标、需求概述、业务流程、业务规则、功能描述、非功能需求等典型软件需求文档的结构化章节，详细描述了系统功能、接口、文件交互和业务规则，符合软件需求文档的特征。
+2025-12-09 11:18:08,089 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:18:11,644 - INFO - KEEP: CR2412308531_贷后凭证重审功能优化 - 该文档标题为“需求规格说明书”，内容包含需求概述、需求规格说明等结构化章节，详细描述了功能优化背景、具体功能点、业务规则、操作界面和流程，符合软件需求文档的特征。
+2025-12-09 11:18:11,802 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:18:14,991 - INFO - KEEP: CR2412319111_批量债转需求 - 该文档标题为“需求规格说明书”，并包含需求背景、业务目标、功能描述、业务流程、功能点清单、非功能需求等软件需求文档的典型结构化章节，符合判断标准。
+2025-12-09 11:18:15,131 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 11:18:17,945 - INFO - KEEP: CR2412319268_审批前置反洗钱核验优化（三方） - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程、功能需求清单等结构化章节，并详细描述了系统功能、业务规则及接口要求，符合需求文档的定义。
+2025-12-09 11:18:17,946 - INFO - ============================================================
+2025-12-09 11:18:17,946 - INFO - Processing complete!
+2025-12-09 11:18:17,946 - INFO - Total kept: 44
+2025-12-09 11:18:17,946 - INFO - Total moved to rubbish2: 3
+2025-12-09 11:18:17,946 - INFO - ============================================================
+2025-12-09 13:49:11,310 - INFO - ============================================================
+2025-12-09 13:49:11,311 - INFO - Starting requirement document filtering
+2025-12-09 13:49:11,311 - INFO - Model: deepseek
+2025-12-09 13:49:11,311 - INFO - Dry run: False
+2025-12-09 13:49:11,311 - INFO - ============================================================
+2025-12-09 13:49:11,558 - INFO - Processing month: 2025-01
+2025-12-09 13:49:11,572 - INFO - Found 21 requirement files in 2025-01
+2025-12-09 13:49:12,339 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:49:15,150 - INFO - KEEP: CR2501030636_全自营渠道额度说明文案调整需求 - 该文档包含需求概述、需求范围、功能描述（额度文案调整、弹窗文案修改）和明确的业务规则说明，并结构化地列出了涉及渠道、产品和系统，符合软件需求文档的特征。
+2025-12-09 13:49:15,355 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:49:19,600 - INFO - KEEP: CR2501030807_淘宝渠道对账文件优化账务中心业务需求说明 - 该文档标题为“业务需求规格说明书”，并包含需求概述、需求背景、业务目标、功能需求、非功能需求等结构化章节，明确描述了系统需提供的对账文件字段和变更规则，符合软件需求文档的特征。
+2025-12-09 13:49:19,921 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:49:23,154 - INFO - REMOVE: CR2501061910_预警平台线下产品新增指标需求 - 该文档标题为“SIT测试业务系统集成测试报告”，内容包含测试周期、案例执行情况分析、缺陷分析和测试验收结论，属于测试报告，不符合软件需求文档的特征。
+2025-12-09 13:49:23,156 - INFO - Moved to rubbish2: CR2501061910_预警平台线下产品新增指标需求 - Reason: 该文档标题为“SIT测试业务系统集成测试报告”，内容包含测试周期、案例执行情况分析、缺陷分析和测试验收结论，属于测试报告，不符合软件需求文档的特征。
+2025-12-09 13:49:23,306 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:49:26,240 - INFO - KEEP: CR2501072324_驻场实时报表数据推送功能 - 该文档标题为《业务需求规格说明书》，内容包含需求背景、业务目标、功能点清单、详细的功能描述、业务规则、操作界面说明及数据处理逻辑，符合软件需求文档的结构化特征。
+2025-12-09 13:49:26,369 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:49:30,535 - INFO - KEEP: CR2501094168_标图见知流水开发类标签口径调整 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程等标准章节；详细描述了功能需求（标签计算逻辑调整）和业务规则；文档结构完整，包含需求概述、规格说明等，符合需求文档的典型格式。
+2025-12-09 13:49:30,659 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:49:34,714 - INFO - KEEP: CR2501104299_涉诉客户还款方案迭代优化 - 该文档标题为“需求规格说明书”，内容结构包含需求背景、功能点清单、针对多个系统（资产保全、委外电催、审批中心）的详细功能描述、业务规则、流程变更说明以及非功能需求等章节，符合软件需求文档的结构化特征，旨在定义系统功能和行为。
+2025-12-09 13:49:34,888 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:49:38,249 - INFO - KEEP: CR2501104607_搭建反洗钱系统客户风险评定标准并行环境 - 该文档包含明确的需求背景（监管整改要求）、业务目标（灰度测试新评定标准）、功能描述（搭建并行环境以实现同步测试），并结构化地说明了变更内容和期望效果，符合软件需求文档的特征。
+2025-12-09 13:49:38,426 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:49:43,337 - INFO - KEEP: CR2501135125_ITM风险需求新增自动生成政策单号功能优化 - 文本包含明确的软件需求文档特征：有“业务需求说明书”标题，结构包含需求背景、业务目标、功能需求等章节，并详细描述了功能点逻辑优化（如【生成政策单号】字段的修改逻辑）。虽然部分章节内容为“不涉及”，但整体文档结构完整，符合需求文档定义。第二个文件是测试报告，但问题主要针对第一个文件进行判断。
+2025-12-09 13:49:43,455 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:49:46,502 - INFO - KEEP: CR2501135225_360融担产品利率挡板稽核 - 该文档标题为“业务需求说明书”，结构包含需求概述（背景、目的、范围、相关方）、需求规格、功能需求（包含业务流程和业务规则描述）等典型软件需求文档章节，旨在定义系统需实现的功能和业务规则。
+2025-12-09 13:49:46,673 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:49:50,671 - INFO - KEEP: CR2501146321_ITM系统政策单指标操作类型增加强校验 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、功能描述等结构化章节；详细描述了系统需要新增的校验功能点（如指标操作类型与数据的逻辑校验规则）；文档整体结构清晰，符合需求说明书的格式。
+2025-12-09 13:49:50,800 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:49:53,882 - INFO - KEEP: CR2501156631_用途回访功能优化需求 - 该文档标题为“需求规格说明书”，并包含需求概述、功能需求、业务流程、业务规则等软件需求文档的典型结构化章节，旨在定义系统功能与规格。
+2025-12-09 13:49:54,006 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:49:56,778 - INFO - REMOVE: CR2501156752_学历预测模型(无人行)上线需求 - 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告范畴，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 13:49:56,781 - INFO - Moved to rubbish2: CR2501156752_学历预测模型(无人行)上线需求 - Reason: 该文档标题为“系统集成测试报告”，内容包含测试周期、案例执行情况、缺陷分析和测试结论，属于测试报告范畴，不符合软件需求文档的特征（如描述需求背景、功能、业务流程等）。
+2025-12-09 13:49:56,931 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:49:59,793 - INFO - KEEP: CR2501156801_海尔学易分期账务文件还款明细增加字段 - 该文档标题为“业务需求说明书”，内容包含需求背景、目的、功能需求等结构化章节，并具体描述了系统功能变更（增加字段、修改推送内容）和业务规则，符合软件需求文档的特征。
+2025-12-09 13:49:59,995 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:50:03,446 - INFO - KEEP: CR2501167564_饿了么（ToC）用信静默存证功能优化 - 该文档标题为“业务需求说明书”，内容结构包含需求背景、业务目标、功能需求、业务流程描述、业务规则等典型软件需求文档章节，详细描述了系统功能优化、接口交互和业务规则，符合软件需求文档的特征。
+2025-12-09 13:50:03,578 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:50:07,331 - INFO - KEEP: CR2501178264_百融云创用信新增字段xml - 该文档标题为“业务需求说明书”，并包含软件需求文档的典型特征：有明确的文档修订记录和结构化目录（如需求背景、业务目标、业务流程、功能需求等章节），内容具体描述了系统功能（如用信环节调用特定数据文件、字段一致性要求）和业务流程，符合需求文档的定义。
+2025-12-09 13:50:07,471 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:50:10,854 - INFO - KEEP: CR2501219674_分期乐产品利率挡板稽核 - 该文档具备软件需求文档的核心特征：包含需求背景、目的、业务范围、功能需求（利率挡板稽核）、业务规则、安全要求等结构化章节，并明确描述了系统功能与业务规则，符合需求文档的格式与内容要求。
+2025-12-09 13:50:10,975 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:50:14,028 - INFO - KEEP: CR2501220538_客户回捞回传合同编号及贷款主账号需求 - 该文档标题为“业务需求说明书”，内容结构包含需求概述（背景、目标）、需求规格说明（功能需求、业务流程、业务规则、接口列表），符合软件需求文档的特征描述。
+2025-12-09 13:50:14,148 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:50:16,878 - INFO - KEEP: CR2501220657_优化电销及外呼相关行为 - 该文档包含需求背景、价值、具体功能描述（标签优化、配置规则）等结构化章节，明确说明了系统需要实现的功能点和业务规则，符合软件需求文档的特征。
+2025-12-09 13:50:17,006 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:50:19,822 - INFO - KEEP: CR2501220692_银联商务渠道屏蔽还款结果通知 - 该文档具备软件需求文档的核心特征：包含需求背景、目的、业务范围、功能需求（屏蔽还款结果异步通知）、业务规则等结构化章节，旨在明确描述系统需要实现的功能变更。
+2025-12-09 13:50:19,948 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:50:23,922 - INFO - KEEP: CR2501230908_统一认证工号申请互斥逻辑优化 - 该文档标题为“业务需求规格说明书”，内容包含需求背景、业务目标、功能描述（工号申请互斥逻辑优化、“角色名称”选项优化）、明确的业务规则说明（如互斥逻辑判断规则和示例），以及结构化的章节划分（需求概述、需求规格说明、非功能需求等），符合软件需求文档的核心特征。
+2025-12-09 13:50:24,067 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:50:27,565 - INFO - KEEP: CR2501262589_百融产品新增送值字段至决策中心 - 该文档具备软件需求文档的核心特征：包含需求背景、业务目标、业务流程等结构化章节；明确描述了在特定接口（XML）中新增字段的功能需求、数据来源及落库要求；文档目录和内容组织形式符合需求规格说明书的规范。
+2025-12-09 13:50:27,566 - INFO - ============================================================
+2025-12-09 13:50:27,566 - INFO - Processing complete!
+2025-12-09 13:50:27,566 - INFO - Total kept: 19
+2025-12-09 13:50:27,566 - INFO - Total moved to rubbish2: 2
+2025-12-09 13:50:27,567 - INFO - ============================================================

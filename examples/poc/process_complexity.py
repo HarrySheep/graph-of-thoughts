@@ -5,7 +5,7 @@ def parse_complex_excel(file_path):
     # 请务必将 '系统复杂度评分-更新' 换成你 Excel 底部实际的 Tab 名字
     # header=None 表示不让 pandas 自作聪明去猜表头，我们按坐标硬解
     try:
-        df = pd.read_excel(file_path, sheet_name='系统复杂度评分-更新', header=None)
+        df = pd.read_excel(file_path, sheet_name='系统复杂度评估-旧2022年-供参考', header=None)
     except ValueError:
         print("错误：找不到指定的 Sheet，请检查代码里的 sheet_name 是否和 Excel 左下角的名字完全一致。")
         return None
