@@ -207,8 +207,8 @@ def process_got_selection(root_dir, limit=None):
                 print(f"Error processing {req_folder}: {e}")
 
 if __name__ == "__main__":
-    root_directory = r"d:\Downloads\aDrive\GOT\GOT\code\graph-of-thoughts\examples\poc\requirement fetch"
+    root_directory = r"d:\MEM\论文\GOT\code\graph-of-thoughts\examples\poc\requirement fetch"
     print(f"Starting GoT selection in: {root_directory}")
     # Limit to 1 for testing first
-    process_got_selection(root_directory, limit=1)
+    process_got_selection(root_directory, limit=5)
     print("GoT selection complete.")
