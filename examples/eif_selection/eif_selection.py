@@ -1277,11 +1277,11 @@ if __name__ == "__main__":
     print(f"   - 预算: ${budget}")
     print(f"   - 样本数量: {len(samples)}")
     print(f"   - 方法: {[method.__name__ for method in approaches]}")
-    print(f"   - 模型: r1-7b")
+    print(f"   - 模型: deepseek")
     print("=" * 50)
 
 
-    spent = run(samples, approaches, budget, "qwen3-30b")
+    spent = run(samples, approaches, budget, "deepseek")
 
     print("=" * 50)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
     print(f"✅ 实验完成！")

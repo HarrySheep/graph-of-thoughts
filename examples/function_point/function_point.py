@@ -810,14 +810,14 @@ if __name__ == "__main__":
     print("=" * 50)
     
     budget = 5
-    samples = [8,9]  # 只使用第一个样本进行测试
-    approaches = [got]  # 使用所有方法进行测试
+    samples = [0,1,2,3,4,5,6,7,8,9]  # 只使用第一个样本进行测试
+    approaches = [io]  # 使用所有方法进行测试
 
     print(f"📊 实验配置:")
     print(f"   - 预算: ${budget}")
     print(f"   - 样本数量: {len(samples)}")
     print(f"   - 方法: {[method.__name__ for method in approaches]}")
-    print(f"   - 模型: qwen3")
+    print(f"   - 模型: r1")
     print("=" * 50)
 
 
