@@ -21,7 +21,6 @@ pip-log.txt
 *.pyproj.user
 
 # Data
-results/
 *.out
 *.err
 
@@ -36,3 +35,4 @@ examples/poc/requirement fetch/
 examples/poc/requirement fetch backup/
 examples/poc/系统复杂度评估20240711.xlsx
 examples/dump result/
+examples/keyword_counting/results

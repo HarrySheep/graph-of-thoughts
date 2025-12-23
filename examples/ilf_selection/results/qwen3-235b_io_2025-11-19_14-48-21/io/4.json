@@ -1,0 +1,101 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "requirement_text": "# 人力资源管理系统 - 共享数据管理模块需求文档\n\n## 1. 模块概述\n本模块实现人力资源部门与安全部门对员工基础数据的共享管理，确保两个部门在各自业务领域能够维护和访问所需的员工信息。\n\n## 2. 用户角色与需求\n\n### 2.1 人力资源部门需求\n**数据维护要求**：\n- 员工ID（唯一标识）\n- 员工姓名\n- 员工通讯地址\n- 薪资等级\n- 职位名称\n- 养老金资格日期（系统自动计算）\n\n**核心业务流程**：\n- 新员工记录创建时自动触发养老金资格日期计算\n- 基础信息修改需记录变更历史\n\n### 2.2 安全部门需求\n**数据维护要求**：\n- 员工ID（关联键）\n- 安全等级（需背景调查后手动设置）\n\n**报表需求**：\n- 员工安全清单报表包含：\n  - 员工总数统计\n  - 员工姓名\n  - 安全等级分类\n\n## 3. 数据模型设计\n\n### 3.1 核心数据实体\n**EMPLOYEE_MASTER（员工主表）**：\n- EMP_ID（主键）\n- EMP_NAME\n- MAILING_ADDRESS\n- PAY_GRADE\n- JOB_TITLE\n- PENSION_ELIG_DATE（自动计算）\n- CREATE_TIMESTAMP\n\n**EMPLOYEE_SECURITY（员工安全表）**：\n- EMP_ID（外键）\n- SECURITY_LEVEL\n- LAST_VERIFIED_DATE\n- CLEARANCE_STATUS\n\n### 3.2 数据流设计\n```\n[人力资源系统] --创建--> 员工主记录 --> [安全系统] --分配--> 安全等级\n                        ↓\n                [生成养老金资格日期]\n```\n\n## 4. 功能规格说明\n\n### 4.1 人力资源功能\n1. **员工信息管理**：\n   - 支持增删改查操作\n   - 地址变更历史跟踪\n   - 自动计算养老金资格日期（基于雇佣日期+预设规则）\n\n2. **数据接口**：\n   - 实时向安全系统推送新员工ID\n   - 支持基础信息变更通知\n\n### 4.2 安全部门功能\n1. **安全等级管理**：\n   - 背景调查完成后手动设置等级\n   - 支持等级调整审批流程\n   - 安全认证有效期管理\n\n2. **安全报表**：\n   - 按安全等级分类统计\n   - 支持导出PDF/Excel格式\n   - 敏感数据脱敏处理\n\n## 5. 系统集成要求\n\n### 5.1 数据同步机制\n- 实时同步：\n  - 新员工创建事件\n  - 员工ID变更事件\n- 定时同步：\n  - 每日凌晨同步基础信息变更\n\n### 5.2 接口规范\n- REST API端点：\n  - `POST /api/employees` 创建员工\n  - `PUT /api/security-levels` 更新安全等级\n- 数据格式：JSON\n\n## 6. 安全与审计\n\n1. **访问控制**：\n   - 人力资源用户：读写员工基础信息\n   - 安全部门用户：读写安全等级\n   - 只读角色：报表查看权限\n\n2. **审计要求**：\n   - 记录安全等级变更操作\n   - 保存养老金计算日志\n\n## 7. 非功能性需求\n\n1. **性能指标**：\n   - 新员工记录创建响应时间<2秒\n   - 千人规模安全报表生成时间<15秒\n\n2. **数据一致性**：\n   - 确保员工ID在两个系统的唯一性\n   - 离职员工数据同步冻结\n\n## 8. 附录\n\n### 8.1 数据字典\n| 字段名 | 类型 | 描述 | 来源系统 |\n|--------|------|------|----------|\n| EMP_ID | VARCHAR(20) | 员工唯一标识 | HR |\n| SECURITY_LEVEL | ENUM | 安全等级分类 | Security |\n\n### 8.2 相关文档\n1. 养老金计算规则手册\n2. 安全等级分类标准\n3. 数据同步技术规范\n\n文档版本：1999年1月版（基于Function Point Counting Practices 6-43至6-44节）",
+        "ground_truth": [
+          "Employee information (HR Application)",
+          "Employee information (Security Application)"
+        ],
+        "current": "\n\nILF功能点列表：[EMPLOYEE_MASTER, EMPLOYEE_SECURITY]",
+        "method": "io",
+        "final_answer": [
+          "EMPLOYEE_MASTER",
+          "EMPLOYEE_SECURITY"
+        ],
+        "evaluation_metrics": {
+          "f1_score": 0.8999999999999999,
+          "precision": 0.8999999999999999,
+          "recall": 0.8999999999999999,
+          "exact_matches": 0,
+          "fuzzy_score": 1.7999999999999998,
+          "semantic_matches": [
+            "EMPLOYEE_MASTER <-> Employee information (HR Application) (0.95)",
+            "EMPLOYEE_SECURITY <-> Employee information (Security Application) (0.85)"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "operation": "score",
+    "thoughts": [
+      {
+        "requirement_text": "# 人力资源管理系统 - 共享数据管理模块需求文档\n\n## 1. 模块概述\n本模块实现人力资源部门与安全部门对员工基础数据的共享管理，确保两个部门在各自业务领域能够维护和访问所需的员工信息。\n\n## 2. 用户角色与需求\n\n### 2.1 人力资源部门需求\n**数据维护要求**：\n- 员工ID（唯一标识）\n- 员工姓名\n- 员工通讯地址\n- 薪资等级\n- 职位名称\n- 养老金资格日期（系统自动计算）\n\n**核心业务流程**：\n- 新员工记录创建时自动触发养老金资格日期计算\n- 基础信息修改需记录变更历史\n\n### 2.2 安全部门需求\n**数据维护要求**：\n- 员工ID（关联键）\n- 安全等级（需背景调查后手动设置）\n\n**报表需求**：\n- 员工安全清单报表包含：\n  - 员工总数统计\n  - 员工姓名\n  - 安全等级分类\n\n## 3. 数据模型设计\n\n### 3.1 核心数据实体\n**EMPLOYEE_MASTER（员工主表）**：\n- EMP_ID（主键）\n- EMP_NAME\n- MAILING_ADDRESS\n- PAY_GRADE\n- JOB_TITLE\n- PENSION_ELIG_DATE（自动计算）\n- CREATE_TIMESTAMP\n\n**EMPLOYEE_SECURITY（员工安全表）**：\n- EMP_ID（外键）\n- SECURITY_LEVEL\n- LAST_VERIFIED_DATE\n- CLEARANCE_STATUS\n\n### 3.2 数据流设计\n```\n[人力资源系统] --创建--> 员工主记录 --> [安全系统] --分配--> 安全等级\n                        ↓\n                [生成养老金资格日期]\n```\n\n## 4. 功能规格说明\n\n### 4.1 人力资源功能\n1. **员工信息管理**：\n   - 支持增删改查操作\n   - 地址变更历史跟踪\n   - 自动计算养老金资格日期（基于雇佣日期+预设规则）\n\n2. **数据接口**：\n   - 实时向安全系统推送新员工ID\n   - 支持基础信息变更通知\n\n### 4.2 安全部门功能\n1. **安全等级管理**：\n   - 背景调查完成后手动设置等级\n   - 支持等级调整审批流程\n   - 安全认证有效期管理\n\n2. **安全报表**：\n   - 按安全等级分类统计\n   - 支持导出PDF/Excel格式\n   - 敏感数据脱敏处理\n\n## 5. 系统集成要求\n\n### 5.1 数据同步机制\n- 实时同步：\n  - 新员工创建事件\n  - 员工ID变更事件\n- 定时同步：\n  - 每日凌晨同步基础信息变更\n\n### 5.2 接口规范\n- REST API端点：\n  - `POST /api/employees` 创建员工\n  - `PUT /api/security-levels` 更新安全等级\n- 数据格式：JSON\n\n## 6. 安全与审计\n\n1. **访问控制**：\n   - 人力资源用户：读写员工基础信息\n   - 安全部门用户：读写安全等级\n   - 只读角色：报表查看权限\n\n2. **审计要求**：\n   - 记录安全等级变更操作\n   - 保存养老金计算日志\n\n## 7. 非功能性需求\n\n1. **性能指标**：\n   - 新员工记录创建响应时间<2秒\n   - 千人规模安全报表生成时间<15秒\n\n2. **数据一致性**：\n   - 确保员工ID在两个系统的唯一性\n   - 离职员工数据同步冻结\n\n## 8. 附录\n\n### 8.1 数据字典\n| 字段名 | 类型 | 描述 | 来源系统 |\n|--------|------|------|----------|\n| EMP_ID | VARCHAR(20) | 员工唯一标识 | HR |\n| SECURITY_LEVEL | ENUM | 安全等级分类 | Security |\n\n### 8.2 相关文档\n1. 养老金计算规则手册\n2. 安全等级分类标准\n3. 数据同步技术规范\n\n文档版本：1999年1月版（基于Function Point Counting Practices 6-43至6-44节）",
+        "ground_truth": [
+          "Employee information (HR Application)",
+          "Employee information (Security Application)"
+        ],
+        "current": "\n\nILF功能点列表：[EMPLOYEE_MASTER, EMPLOYEE_SECURITY]",
+        "method": "io",
+        "final_answer": [
+          "EMPLOYEE_MASTER",
+          "EMPLOYEE_SECURITY"
+        ]
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.8999999999999999
+    ]
+  },
+  {
+    "operation": "ground_truth_evaluator",
+    "thoughts": [
+      {
+        "requirement_text": "# 人力资源管理系统 - 共享数据管理模块需求文档\n\n## 1. 模块概述\n本模块实现人力资源部门与安全部门对员工基础数据的共享管理，确保两个部门在各自业务领域能够维护和访问所需的员工信息。\n\n## 2. 用户角色与需求\n\n### 2.1 人力资源部门需求\n**数据维护要求**：\n- 员工ID（唯一标识）\n- 员工姓名\n- 员工通讯地址\n- 薪资等级\n- 职位名称\n- 养老金资格日期（系统自动计算）\n\n**核心业务流程**：\n- 新员工记录创建时自动触发养老金资格日期计算\n- 基础信息修改需记录变更历史\n\n### 2.2 安全部门需求\n**数据维护要求**：\n- 员工ID（关联键）\n- 安全等级（需背景调查后手动设置）\n\n**报表需求**：\n- 员工安全清单报表包含：\n  - 员工总数统计\n  - 员工姓名\n  - 安全等级分类\n\n## 3. 数据模型设计\n\n### 3.1 核心数据实体\n**EMPLOYEE_MASTER（员工主表）**：\n- EMP_ID（主键）\n- EMP_NAME\n- MAILING_ADDRESS\n- PAY_GRADE\n- JOB_TITLE\n- PENSION_ELIG_DATE（自动计算）\n- CREATE_TIMESTAMP\n\n**EMPLOYEE_SECURITY（员工安全表）**：\n- EMP_ID（外键）\n- SECURITY_LEVEL\n- LAST_VERIFIED_DATE\n- CLEARANCE_STATUS\n\n### 3.2 数据流设计\n```\n[人力资源系统] --创建--> 员工主记录 --> [安全系统] --分配--> 安全等级\n                        ↓\n                [生成养老金资格日期]\n```\n\n## 4. 功能规格说明\n\n### 4.1 人力资源功能\n1. **员工信息管理**：\n   - 支持增删改查操作\n   - 地址变更历史跟踪\n   - 自动计算养老金资格日期（基于雇佣日期+预设规则）\n\n2. **数据接口**：\n   - 实时向安全系统推送新员工ID\n   - 支持基础信息变更通知\n\n### 4.2 安全部门功能\n1. **安全等级管理**：\n   - 背景调查完成后手动设置等级\n   - 支持等级调整审批流程\n   - 安全认证有效期管理\n\n2. **安全报表**：\n   - 按安全等级分类统计\n   - 支持导出PDF/Excel格式\n   - 敏感数据脱敏处理\n\n## 5. 系统集成要求\n\n### 5.1 数据同步机制\n- 实时同步：\n  - 新员工创建事件\n  - 员工ID变更事件\n- 定时同步：\n  - 每日凌晨同步基础信息变更\n\n### 5.2 接口规范\n- REST API端点：\n  - `POST /api/employees` 创建员工\n  - `PUT /api/security-levels` 更新安全等级\n- 数据格式：JSON\n\n## 6. 安全与审计\n\n1. **访问控制**：\n   - 人力资源用户：读写员工基础信息\n   - 安全部门用户：读写安全等级\n   - 只读角色：报表查看权限\n\n2. **审计要求**：\n   - 记录安全等级变更操作\n   - 保存养老金计算日志\n\n## 7. 非功能性需求\n\n1. **性能指标**：\n   - 新员工记录创建响应时间<2秒\n   - 千人规模安全报表生成时间<15秒\n\n2. **数据一致性**：\n   - 确保员工ID在两个系统的唯一性\n   - 离职员工数据同步冻结\n\n## 8. 附录\n\n### 8.1 数据字典\n| 字段名 | 类型 | 描述 | 来源系统 |\n|--------|------|------|----------|\n| EMP_ID | VARCHAR(20) | 员工唯一标识 | HR |\n| SECURITY_LEVEL | ENUM | 安全等级分类 | Security |\n\n### 8.2 相关文档\n1. 养老金计算规则手册\n2. 安全等级分类标准\n3. 数据同步技术规范\n\n文档版本：1999年1月版（基于Function Point Counting Practices 6-43至6-44节）",
+        "ground_truth": [
+          "Employee information (HR Application)",
+          "Employee information (Security Application)"
+        ],
+        "current": "\n\nILF功能点列表：[EMPLOYEE_MASTER, EMPLOYEE_SECURITY]",
+        "method": "io",
+        "final_answer": [
+          "EMPLOYEE_MASTER",
+          "EMPLOYEE_SECURITY"
+        ],
+        "evaluation_metrics": {
+          "f1_score": 0.8999999999999999,
+          "precision": 0.8999999999999999,
+          "recall": 0.8999999999999999,
+          "exact_matches": 0,
+          "fuzzy_score": 1.7999999999999998,
+          "semantic_matches": [
+            "EMPLOYEE_MASTER <-> Employee information (HR Application) (0.95)",
+            "EMPLOYEE_SECURITY <-> Employee information (Security Application) (0.85)"
+          ]
+        }
+      }
+    ],
+    "scored": [
+      true
+    ],
+    "scores": [
+      0.8999999999999999
+    ],
+    "compared_to_ground_truth": [
+      true
+    ],
+    "problem_solved": [
+      true
+    ]
+  },
+  {
+    "prompt_tokens": 1704,
+    "completion_tokens": 2091,
+    "cost": 0.006738000000000001
+  }
+]
