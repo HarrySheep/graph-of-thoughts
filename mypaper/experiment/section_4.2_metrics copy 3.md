@@ -52,11 +52,6 @@
         作为精确率与召回率的平滑权衡，F1 分数代表了模型在**“提取广度”与“语义精度”之间的综合效能**。在功能点分析的实战测试中，它是衡量方案优劣的最核心指标。
         $$ f1\_score = 2 \cdot \frac{precision \cdot recall}{precision + recall} $$
 
-5.  **推理成本 (Inference Cost)**：
-    为了评估不同推理范式的经济性，实验记录了每个样本在执行过程中的资源消耗。该指标由提示词 Token 数 ($Prompt\_Tokens$) 与生成的回复 Token 数 ($Completion\_Tokens$) 结合具体的模型单价 ($Price$) 复合计算得出：
-    $$ Cost = \frac{Prompt\_Tokens \cdot Price_{input} + Completion\_Tokens \cdot Price_{output}}{1000} $$
-    在功能点分析这一工业级应用场景下，推理成本是衡量方案能否大规模落地的关键约束指标。通过对比 GoT 与其他范式（如 CoT、ToT）在同一 $f1\_score$ 水平下的成本支出，可以直观地展示不同拓扑结构在“性能-效能比”上的优劣。
-
 
 
 通过引入这套语义感知匹配体系，评价过程从机械的字面校验升华为深层的意图对齐，从而能够更真实地反映模型在真实企业级复杂需求文档中识别核心逻辑文件的实战能力。
