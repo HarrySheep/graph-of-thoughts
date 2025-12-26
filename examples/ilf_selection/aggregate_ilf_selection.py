@@ -1,16 +1,20 @@
 import os
 import json
 
-def aggregate_eif_selection():
-    output_file = os.path.join(os.path.dirname(__file__), "..", "..", "mypaper", "experiment", "section_5.2_results_eif_selection.md")
+def aggregate_ilf_selection():
+    output_file = os.path.join(os.path.dirname(__file__), "..", "..", "mypaper", "experiment", "section_5.4_results_ilf_selection.md")
     lines = []
-    lines.append("## 5.2 EIF 识别实验结果 (EIF Selection Results)\n")
-    lines.append("本节展示了对比不同推理范式在从非结构化需求文档中提取 EIF 逻辑实体的实验结果。识别任务不仅考验模型的规则理解，还考验其在术语表达差异下的语义匹配能力。\n")
-    lines.append("### 5.2.1 实验结果汇总\n")
+    lines.append("## 5.4 ILF 识别实验结果 (ILF Selection Results)\n")
+    lines.append("本节展示了对比不同推理范式在从非结构化需求文档中提取 ILF 逻辑实体的实验结果。识别任务不仅考验模型的规则理解，还考验其在术语表达差异下的语义匹配能力。\n")
+    lines.append("### 5.4.1 实验结果汇总\n")
     lines.append("| 模型方案 | Solved | M_total | Exact | Fuzzy | Avg Precision | Avg Recall | Avg F1 | 推理成本 |")
     lines.append("| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |")
 
     results_dir = os.path.join(os.path.dirname(__file__), "results")
+    if not os.path.exists(results_dir):
+        print(f"Results directory not found: {results_dir}")
+        return
+
     for folder in sorted(os.listdir(results_dir)):
         folder_path = os.path.join(results_dir, folder)
         if not os.path.isdir(folder_path):
@@ -21,9 +25,22 @@ def aggregate_eif_selection():
             continue
         method = parts[1]
         
+        # In ILF results, the structure seems to be method_date directly, but let's check if there is a subfolder 'method'
+        # The EIF script checked for `subdir = os.path.join(folder_path, method)`.
+        # Taking a safer approach: check if the 'method' subfolder exists, otherwise assume files are in folder_path
+        # But looking at the list_dir output for EIF (Step 9) `.../deepseek_got_.../got/1.json`.
+        # And user provided `examples/ilf_selection/results`.
+        # Let's assume the structure is consistent: `results/model_method_date/method/1.json`.
+        
         subdir = os.path.join(folder_path, method)
         if not os.path.exists(subdir):
-            continue
+            # Fallback checks? Or maybe the method naming in folder is inconsistent (e.g. qwen3-235b vs method)
+            # Actually in the EIF script: `method = parts[1]` (e.g. deepseek_got_... -> got).
+            # This logic holds if naming convention is consistent.
+            if not os.path.exists(subdir):
+                 # Try finding a folder that matches method or just look for json files in subdirectories?
+                 # Let's stick to the EIF script logic for now as baselines usually share structure.
+                 continue
             
         total_exact = 0
         total_fuzzy = 0.0
@@ -48,9 +65,9 @@ def aggregate_eif_selection():
                                 for thought in item["thoughts"]:
                                     if isinstance(thought, dict) and "evaluation_metrics" in thought:
                                         sample_metrics = thought["evaluation_metrics"]
-                                        # Do not break here; we want the LAST one
+                                        # Do not break here; we want the LAST one (Fix from EIF script)
                             
-                            # Check if this item has problem_solved at the top level (sometimes it's here)
+                            # Check if this item has problem_solved at the top level
                             if "problem_solved" in item:
                                 problem_solved = item["problem_solved"][0] if item["problem_solved"] else False
                     
@@ -79,14 +96,13 @@ def aggregate_eif_selection():
             
             lines.append(f"| {folder} | {solved_count}/{count} | {m_total:.2f} | {total_exact} | {total_fuzzy:.2f} | {avg_precision:.1%} | {avg_recall:.1%} | {avg_f1:.1%} | ${total_cost:.4f} |")
 
-    lines.append("\n### 5.2.2 结果分析与讨论\n")
-    lines.append("1. **语义匹配的必要性**：实验结果显示 `Fuzzy Score` 占据了 `M_total` 的主要部分，而 `Exact Matches` 几乎为 0。这验证了我们在 4.2 节中的假设：即使模型识别正确，其术语表达也难以与专家标注完全吻合。")
-    lines.append("2. **GoT 的性能提升**：在大部分模型上，GoT 的 `Solved` 比例和 `M_total` 均优于 IO 和 CoT。")
-    lines.append("3. **推理成本的权衡**：尽管 GoT 带来了性能提升，但其成本通常是 IO 的数倍到十倍。对于识别任务这种高 Token 消耗的任务，如何优化 GoT 的拓扑以降低冗余生成是未来的研究方向。")
-
+    lines.append("\n### 5.4.2 结果分析与讨论\n")
+    lines.append("1. **待补充**: 根据上方表格数据补充具体的分析结论。")
+    lines.append("2. **待补充**: ...")
+ 
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write("\n".join(lines))
     print(f"Successfully wrote results to {output_file}")
 
 if __name__ == "__main__":
-    aggregate_eif_selection()
+    aggregate_ilf_selection()

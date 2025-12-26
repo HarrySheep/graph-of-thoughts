@@ -1272,17 +1272,17 @@ if __name__ == "__main__":
     
     budget = 5
     samples = [0,1,2,3,4,5]  # 使用前两个样本进行测试
-    approaches = [io]  # 先用简单方法测试
+    approaches = [tot]  # 先用简单方法测试
 
     print(f"📊 实验配置:")
     print(f"   - 预算: ${budget}")
     print(f"   - 样本数量: {len(samples)}")
     print(f"   - 方法: {[method.__name__ for method in approaches]}")
-    print(f"   - 模型: r1")
+    print(f"   - 模型: qwen3")
     print("=" * 50)
 
 
-    spent = run(samples, approaches, budget, "r1-7b")
+    spent = run(samples, approaches, budget, "qwen3-235b")
 
     print("=" * 50)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
     print(f"✅ 实验完成！")
